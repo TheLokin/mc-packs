@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "description": "§9Netherite Instamine §f\nJE 1.21+ §7By TheLokin"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "overlay_48"
+      }
+    ]
+  }
+}
