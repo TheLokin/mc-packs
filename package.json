@@ -1,0 +1,30 @@
+{
+  "name": "mc-packs",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "scrape": "tsx scripts/scrape.ts",
+    "release": "tsx scripts/release.ts",
+    "lint": "eslint --fix .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@ltd/j-toml": "1.38.0",
+    "cheerio": "1.2.0",
+    "dotenv": "17.4.2",
+    "jszip": "3.10.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "9.0.0",
+    "@types/node": "24.12.4",
+    "eslint": "10.4.0",
+    "prettier": "3.8.3",
+    "tsx": "4.22.3",
+    "typescript": "6.0.3"
+  }
+}

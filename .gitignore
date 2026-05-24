@@ -1,0 +1,21 @@
+# build output
+dist
+
+# dependencies
+node_modules
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea
+
+# agent skills
+.agents
+.claude
+skills-lock.json

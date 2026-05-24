@@ -1,0 +1,7 @@
+blockExoticSubdeps: true
+engineStrict: true
+ignoreScripts: true
+minimumReleaseAge: 1440
+saveExact: true
+shellEmulator: true
+trustPolicy: no-downgrade
