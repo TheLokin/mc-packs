@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "description": "§9Cheaper Shulker Boxes §f\nJE 1.20.3+ §7By TheLokin"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "overlay_48"
+      },
+      {
+        "directory": "overlay_41"
+      },
+      {
+        "directory": "overlay_26"
+      }
+    ]
+  }
+}
