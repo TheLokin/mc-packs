@@ -3,36 +3,30 @@ on:
   push:
     branches:
       - main
+
 jobs:
   release:
     if: github.repository_owner == 'TheLokin'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Environment variables
-        id: variables
-        run: |
-          echo "version=$(jq -r '.version' modrinth.json)" >> $GITHUB_OUTPUT
-          echo "changelog=$(jq -r '.changelog' modrinth.json)" >> $GITHUB_OUTPUT
-          echo "game_versions=$(jq -r '.game_versions' modrinth.json)" >> $GITHUB_OUTPUT
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          name: netherite-instamine-v${{ steps.variables.outputs.version }}
-          path: .
-      - name: Create zip file
-        run: zip -r netherite-instamine-v${{ steps.variables.outputs.version }}.zip . -x ".git/*" ".github/*" "modrinth.json" "LICENSE" "README.md"
-      - name: Publish to Modrinth
-        uses: Kir-Antipov/mc-publish@v3.3
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          files: netherite-instamine-v${{ steps.variables.outputs.version }}.zip
-          version: ${{ steps.variables.outputs.version }}
-          name: Netherite Instamine v${{ steps.variables.outputs.version }}
-          changelog: ${{ steps.variables.outputs.changelog }}
-          version-type: release
-          loaders: datapack
-          game-versions: ${{ steps.variables.outputs.game_versions }}
-          game-version-filter: releases
-          modrinth-id: c8sklsoI
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run release script
+        run: pnpm run release
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
