@@ -1,0 +1,16 @@
+{
+  "project_id": "RsDIjV1N",
+  "version_number": "1.0.0",
+  "changelog": "Initial release",
+  "game_versions": [
+    "26.1.2",
+    "26.1.1",
+    "26.1",
+    "1.21.11",
+    "1.21.10",
+    "1.21.9",
+    "1.21.8",
+    "1.21.7",
+    "1.21.6"
+  ]
+}
