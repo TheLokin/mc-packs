@@ -7,7 +7,6 @@ import { createProjectVersion, getProject, getProjectMembers, getProjectVersions
 import { packageDatapack } from "./package"
 
 const EXCLUDED_FILES = new Set(["pack.mcmeta", "modrinth.json", "README.md"])
-const BINARY_EXTENSIONS = /\.(?:png|ogg|nbt|bin)$/i
 const LEGACY_THRESHOLD = { datapack: 82, resourcepack: 65 }
 
 function parseOverlayRange(directory: string) {
@@ -94,12 +93,9 @@ async function zipFolder(folderPath: string, packType: "datapack" | "resourcepac
       if (entry.isDirectory()) {
         await collect(fullPath)
       } else if (entry.isFile() && !EXCLUDED_FILES.has(entry.name)) {
-        const isBinary = BINARY_EXTENSIONS.test(entry.name)
-
         zip.file(
           path.relative(folderPath, fullPath).replace(/\\/g, "/"),
           await fs.readFile(fullPath),
-          { binary: true, compression: isBinary ? "STORE" : "DEFLATE" },
         )
       }
     }
