@@ -147,7 +147,7 @@ async function main() {
       version_type: "release",
       loaders: ["datapack"],
       file: {
-        name: `${project.slug}-v${modrinth.version_number}.zip`,
+        name: `${project.slug}-${modrinth.version_number}.zip`,
         data: blobDatapack,
       },
     })
@@ -175,7 +175,7 @@ async function main() {
       loaders: ["fabric", "quilt", "forge", "neoforge"],
       environment: "server_only",
       file: {
-        name: `${project.slug}-v${modrinth.version_number}.jar`,
+        name: `${project.slug}-${modrinth.version_number}.jar`,
         data: blobMod,
       },
     })
