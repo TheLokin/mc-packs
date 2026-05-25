@@ -96,6 +96,7 @@ async function zipFolder(folderPath: string, packType: "datapack" | "resourcepac
         zip.file(
           path.relative(folderPath, fullPath).replace(/\\/g, "/"),
           await fs.readFile(fullPath),
+          { binary: true },
         )
       }
     }
