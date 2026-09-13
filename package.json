@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@11.10.0",
+  "packageManager": "pnpm@12.4.1",
   "engines": {
     "node": ">=22.12"
   },
@@ -17,14 +17,14 @@
     "@ltd/j-toml": "1.38.0",
     "cheerio": "1.2.0",
     "dotenv": "17.4.2",
-    "jszip": "3.10.1"
+    "jszip": "3.10.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "9.1.0",
-    "@types/node": "25.9.4",
-    "eslint": "10.6.0",
-    "prettier": "3.9.4",
-    "tsx": "4.23.0",
+    "@antfu/eslint-config": "9.5.1",
+    "@types/node": "24.13.4",
+    "eslint": "10.10.0",
+    "prettier": "3.9.6",
+    "tsx": "4.23.13",
     "typescript": "6.0.3"
   }
 }
