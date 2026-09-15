@@ -1,8 +1,8 @@
 blockExoticSubdeps: true
-minimumReleaseAgeExcludePrune: true
-engineStrict: true
-ignoreScripts: true
 minimumReleaseAge: 1440
-shellEmulator: true
+minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
+ignoreScripts: true
+shellEmulator: true
+engineStrict: true
 saveExact: true
