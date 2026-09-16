@@ -117,7 +117,19 @@ async function main() {
     const packPath = path.join(packsDir, packFolder.name)
     const modrinthPath = path.join(packPath, "modrinth.json")
 
-    const modrinth = await fs.readFile(modrinthPath, "utf-8").then((content) => JSON.parse(content))
+    const modrinth = await fs
+      .readFile(modrinthPath, "utf-8")
+      .then((content) => JSON.parse(content))
+      .then((data) =>
+        data.game_version
+          ? {
+              ...data,
+              version_number: `${data.version_number}-mc${data.game_version}`,
+              game_versions: [data.game_version],
+            }
+          : data,
+      )
+
     const versions = await getProjectVersions(modrinth.project_id).then((versions) =>
       versions.map((version) => version.version_number),
     )

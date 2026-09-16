@@ -1,6 +1,6 @@
 {
   "project_id": "RsDIjV1N",
-  "version_number": "26.2-1.0",
+  "version_number": "1.0",
   "changelog": "Bug fix for 26.2",
-  "game_versions": ["26.2"]
+  "game_version": "26.2"
 }
