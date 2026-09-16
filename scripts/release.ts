@@ -19,11 +19,18 @@ function parseOverlayRange(directory: string) {
   return { min, max }
 }
 
-async function generateMcMeta(folderPath: string, packType: "datapack" | "resourcepack") {
-  const modrinth = await fs
-    .readFile(path.join(folderPath, "modrinth.json"), "utf-8")
-    .then((content) => JSON.parse(content))
+interface Modrinth {
+  project_id: string
+  version_number: string
+  changelog: string
+  game_versions: string[]
+}
 
+async function generateMcMeta(
+  modrinth: Modrinth,
+  folderPath: string,
+  packType: "datapack" | "resourcepack",
+) {
   const minVersion = modrinth.game_versions[modrinth.game_versions.length - 1]
   const maxVersion = modrinth.game_versions[0]
 
@@ -78,10 +85,14 @@ async function generateMcMeta(folderPath: string, packType: "datapack" | "resour
   return result
 }
 
-async function zipFolder(folderPath: string, packType: "datapack" | "resourcepack") {
+async function zipFolder(
+  modrinth: Modrinth,
+  folderPath: string,
+  packType: "datapack" | "resourcepack",
+) {
   const zip = new JSZip()
 
-  const mcmeta = await generateMcMeta(folderPath, packType)
+  const mcmeta = await generateMcMeta(modrinth, folderPath, packType)
   zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
 
   async function collect(currentPath: string) {
@@ -115,20 +126,18 @@ async function main() {
     console.log(`📦 Packaging: ${packFolder.name}`)
 
     const packPath = path.join(packsDir, packFolder.name)
-    const modrinthPath = path.join(packPath, "modrinth.json")
 
-    const modrinth = await fs
-      .readFile(modrinthPath, "utf-8")
+    const modrinth: Modrinth = await fs
+      .readFile(path.join(packPath, "modrinth.json"), "utf-8")
       .then((content) => JSON.parse(content))
-      .then((data) =>
-        data.game_version
-          ? {
-              ...data,
-              version_number: `${data.version_number}-mc${data.game_version}`,
-              game_versions: [data.game_version],
-            }
-          : data,
-      )
+      .then((data) => ({
+        project_id: data.project_id,
+        version_number: data.game_version
+          ? `${data.version_number}-mc${data.game_version}`
+          : data.version_number,
+        changelog: data.changelog,
+        game_versions: data.game_versions || [data.game_version],
+      }))
 
     const versions = await getProjectVersions(modrinth.project_id).then((versions) =>
       versions.map((version) => version.version_number),
@@ -144,7 +153,7 @@ async function main() {
     const project = await getProject(modrinth.project_id)
     const members = await getProjectMembers(modrinth.project_id)
 
-    const zipDatapack = await zipFolder(packPath, "datapack")
+    const zipDatapack = await zipFolder(modrinth, packPath, "datapack")
     const blobDatapack = await zipDatapack.generateAsync({
       type: "blob",
       mimeType: "application/zip",
