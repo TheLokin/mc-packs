@@ -13,7 +13,7 @@
     "has_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sulfur_oxidizes_copper:waxed_oxidized_cut_copper_slab"
+        "recipes": "sulfur_oxidizes_copper:waxed_oxidized_cut_copper_slab"
       }
     }
   },

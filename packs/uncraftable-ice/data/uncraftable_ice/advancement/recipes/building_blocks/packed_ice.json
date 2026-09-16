@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["unpackable_honeycomb:honeycomb"]
+    "recipes": ["uncraftable_ice:packed_ice"]
   },
   "criteria": {
-    "has_honeycomb_block": {
+    "has_blue_ice": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [{ "item": "minecraft:honeycomb_block" }]
+        "items": [{ "item": "minecraft:blue_ice" }]
       }
     },
     "has_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "unpackable_honeycomb:honeycomb"
+        "recipes": "uncraftable_ice:packed_ice"
       }
     }
   },
-  "requirements": [["has_honeycomb_block", "has_recipe"]]
+  "requirements": [["has_blue_ice", "has_recipe"]]
 }

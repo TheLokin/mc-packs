@@ -13,7 +13,7 @@
     "has_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sulfur_oxidizes_copper:weathered_copper_bulb"
+        "recipes": "sulfur_oxidizes_copper:weathered_copper_bulb"
       }
     }
   },

@@ -1,6 +1,6 @@
 {
   "project_id": "ScmlvYHN",
-  "version_number": "1.1.0",
+  "version_number": "1.0",
   "changelog": "Update to 26.3",
-  "game_versions": ["26.3", "26.2"]
+  "game_version": "26.3"
 }

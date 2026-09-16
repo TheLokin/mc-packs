@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "rewards": {
-    "recipes": ["unpackable_ice:packed_ice"]
+    "recipes": ["uncraftable_ice:ice"]
   },
   "criteria": {
-    "has_blue_ice": {
+    "has_packed_ice": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [{ "item": "minecraft:blue_ice" }]
+        "items": [{ "item": "minecraft:packed_ice" }]
       }
     },
     "has_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "unpackable_ice:packed_ice"
+        "recipes": "uncraftable_ice:ice"
       }
     }
   },
-  "requirements": [["has_blue_ice", "has_recipe"]]
+  "requirements": [["has_packed_ice", "has_recipe"]]
 }
