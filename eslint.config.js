@@ -1,9 +1,3 @@
-import antfu from "@antfu/eslint-config"
+import protocol from "eslint-config-protocol"
 
-export default antfu({
-  type: "lib",
-  stylistic: false,
-  node: true,
-  typescript: true,
-  vue: false,
-})
+export default protocol()

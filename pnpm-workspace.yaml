@@ -1,8 +1,17 @@
-blockExoticSubdeps: true
-minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
 minimumReleaseAgeExcludePrune: true
+minimumReleaseAgeExclude:
+  - eslint-config-protocol@1.0.0
+
 trustPolicy: no-downgrade
-ignoreScripts: true
+trustPolicyExcludePrune: true
+
+update:
+  ignoreDeps:
+    - typescript@7
+
 shellEmulator: true
-engineStrict: true
 saveExact: true
+
+allowBuilds:
+  esbuild: true
