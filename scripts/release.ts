@@ -31,8 +31,8 @@ async function generateMcMeta(
   folderPath: string,
   packType: "datapack" | "resourcepack",
 ) {
-  const minVersion = modrinth.game_versions[modrinth.game_versions.length - 1]
-  const maxVersion = modrinth.game_versions[0]
+  const minVersion = modrinth.game_versions[modrinth.game_versions.length - 1]!
+  const maxVersion = modrinth.game_versions[0]!
 
   const minFormat = PACK_FORMATS[minVersion][packType]
   const maxFormat = PACK_FORMATS[maxVersion][packType]

@@ -4,14 +4,25 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
     "allowJs": true,
     "strict": true,
-    "noEmit": true,
+    "exactOptionalPropertyTypes": false,
+    "noUncheckedIndexedAccess": true,
+    "noErrorTruncation": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "stripInternal": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/node_modules/**"
+  ]
 }

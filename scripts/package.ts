@@ -141,7 +141,7 @@ export async function packageDatapack({
 
     let binary = ""
     for (let i = 0; i < classFile.byteLength; i++) {
-      binary += String.fromCharCode(classFile[i])
+      binary += String.fromCharCode(classFile[i]!)
     }
 
     let sanitizedId = project.id
