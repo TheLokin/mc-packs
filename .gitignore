@@ -1,21 +1,39 @@
-# build output
-dist
-
 # dependencies
-node_modules
+node_modules/
 
-# environment variables
+# build
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.astro/
+
+# cache
+.cache/
+.turbo/
+*.tsbuildinfo
+
+# tests
+coverage/
+
+# environment
 .env
 .env.*
 !.env.example
 
-# macOS-specific files
+# logs
+*.log
+
+# deploy
+.vercel/
+.netlify/
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# OS
 .DS_Store
-
-# jetbrains setting folder
-.idea
-
-# agent skills
-.agents
-.claude
-skills-lock.json
