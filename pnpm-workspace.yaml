@@ -1,7 +1,5 @@
 minimumReleaseAgeStrict: true
 minimumReleaseAgeExcludePrune: true
-minimumReleaseAgeExclude:
-  - eslint-config-protocol@1.0.0
 
 trustPolicy: no-downgrade
 trustPolicyExcludePrune: true
