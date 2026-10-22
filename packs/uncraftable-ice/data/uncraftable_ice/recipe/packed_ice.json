@@ -1,9 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": ["minecraft:blue_ice"],
+  "category": "building",
   "group": "packed_ice",
+  "ingredients": [
+    "minecraft:blue_ice"
+  ],
   "result": {
-    "id": "minecraft:packed_ice",
-    "count": 9
+    "count": 9,
+    "id": "minecraft:packed_ice"
   }
 }
