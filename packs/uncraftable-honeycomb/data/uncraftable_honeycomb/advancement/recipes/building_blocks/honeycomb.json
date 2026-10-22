@@ -1,21 +1,33 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": ["uncraftable_honeycomb:honeycomb"]
-  },
+
   "criteria": {
     "has_honeycomb_block": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": [{ "item": "minecraft:honeycomb_block" }]
-      }
+        "items": [
+          {
+            "item": "minecraft:honeycomb_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     },
-    "has_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
+    "has_the_recipe": {
       "conditions": {
         "recipes": "uncraftable_honeycomb:honeycomb"
-      }
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
-  "requirements": [["has_honeycomb_block", "has_recipe"]]
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_honeycomb_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uncraftable_honeycomb:honeycomb"
+    ]
+  }
 }
