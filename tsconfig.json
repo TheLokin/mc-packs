@@ -4,9 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "allowJs": true,
     "strict": true,
     "exactOptionalPropertyTypes": false,
@@ -19,10 +17,6 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": [
-    "**/*.ts"
-  ],
-  "exclude": [
-    "**/node_modules/**"
-  ]
+  "include": ["**/*.ts"],
+  "exclude": ["**/node_modules/**"]
 }
