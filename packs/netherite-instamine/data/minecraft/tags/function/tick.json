@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "netherite_instamine:tick"
-  ]
+  "values": ["netherite_instamine:tick"]
 }
