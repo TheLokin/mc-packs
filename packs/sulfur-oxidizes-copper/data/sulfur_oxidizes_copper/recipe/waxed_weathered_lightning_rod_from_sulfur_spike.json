@@ -3,7 +3,7 @@
   "category": "redstone",
   "group": "waxed_lightning_rod",
   "ingredients": [
-    "minecraft:waxed_oxidized_lightning_rod",
+    "minecraft:waxed_exposed_lightning_rod",
     "minecraft:sulfur_spike"
   ],
   "result": {
