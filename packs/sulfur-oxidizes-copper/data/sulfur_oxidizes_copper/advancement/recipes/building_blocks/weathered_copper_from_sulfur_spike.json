@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "sulfur_oxidizes_copper:weathered_copper_from_sulfur_spike_from_sulfur_spike"
+        "recipes": "sulfur_oxidizes_copper:weathered_copper_from_sulfur_spike"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sulfur_oxidizes_copper:weathered_copper_from_sulfur_spike_from_sulfur_spike"
+      "sulfur_oxidizes_copper:weathered_copper_from_sulfur_spike"
     ]
   }
 }
