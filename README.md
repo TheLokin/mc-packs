@@ -1,10 +1,6 @@
 # Minecraft Packs (mc-packs)
 
-A collection of quality of life improvements for Minecraft, focusing on simple changes that preserve the game's core essence.
-
-- Format: Available as both a Data Pack and a Mod.
-
-- Compatibility: Works on vanilla Minecraft and modded environments like Fabric, Quilt, Forge and NeoForge.
+A collection of lightweight Minecraft quality of life packs, available as datapacks and mods for vanilla and modded setups, with support for Fabric, Quilt, Forge and NeoForge.
 
 ## Packs
 
