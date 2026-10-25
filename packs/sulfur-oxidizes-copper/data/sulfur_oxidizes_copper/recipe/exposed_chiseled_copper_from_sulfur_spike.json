@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "chiseled_copper",
+  "ingredients": [
+    "minecraft:chiseled_copper",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:exposed_chiseled_copper"
+  }
+}

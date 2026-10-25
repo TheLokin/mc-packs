@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "waxed_copper_chest",
+  "ingredients": [
+    "minecraft:waxed_copper_chest",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:waxed_exposed_copper_chest"
+  }
+}

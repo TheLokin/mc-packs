@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "lightning_rod",
+  "ingredients": [
+    "minecraft:exposed_lightning_rod",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:weathered_lightning_rod"
+  }
+}

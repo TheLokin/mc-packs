@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "copper_lantern",
+  "ingredients": [
+    "minecraft:weathered_copper_lantern",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:oxidized_copper_lantern"
+  }
+}

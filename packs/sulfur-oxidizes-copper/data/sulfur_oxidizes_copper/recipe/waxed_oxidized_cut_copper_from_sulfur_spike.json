@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "waxed_cut_copper",
+  "ingredients": [
+    "minecraft:waxed_weathered_cut_copper",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:waxed_oxidized_cut_copper"
+  }
+}

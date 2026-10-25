@@ -1,10 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": ["minecraft:exposed_cut_copper_slab", "minecraft:honeycomb"],
   "group": "waxed_cut_copper_slab",
+  "ingredients": [
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:honeycomb"
+  ],
   "result": {
-    "id": "minecraft:waxed_exposed_cut_copper_slab",
-    "count": 1
+    "id": "minecraft:waxed_exposed_cut_copper_slab"
   }
 }

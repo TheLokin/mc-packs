@@ -1,10 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": ["minecraft:weathered_copper_grate", "minecraft:honeycomb"],
   "group": "waxed_copper_grate",
+  "ingredients": [
+    "minecraft:weathered_copper_grate",
+    "minecraft:honeycomb"
+  ],
   "result": {
-    "id": "minecraft:waxed_weathered_copper_grate",
-    "count": 1
+    "id": "minecraft:waxed_weathered_copper_grate"
   }
 }

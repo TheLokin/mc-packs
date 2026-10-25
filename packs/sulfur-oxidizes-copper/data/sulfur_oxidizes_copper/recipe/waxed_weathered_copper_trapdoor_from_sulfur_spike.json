@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "waxed_copper_trapdoor",
+  "ingredients": [
+    "minecraft:waxed_exposed_copper_trapdoor",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:waxed_weathered_copper_trapdoor"
+  }
+}

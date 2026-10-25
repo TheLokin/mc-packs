@@ -1,13 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "pattern": ["###"],
+  "group": "cut_copper_slab",
   "key": {
     "#": "minecraft:cut_copper"
   },
-  "group": "cut_copper_slab",
+  "pattern": [
+    "###"
+  ],
   "result": {
-    "id": "minecraft:cut_copper_slab",
-    "count": 6
+    "count": 6,
+    "id": "minecraft:cut_copper_slab"
   }
 }

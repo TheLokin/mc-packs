@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
-  "pattern": ["#", "#", "#"],
+  "group": "lightning_rod",
   "key": {
     "#": "minecraft:copper_ingot"
   },
-  "group": "lightning_rod",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
   "result": {
-    "id": "minecraft:lightning_rod",
-    "count": 1
+    "id": "minecraft:lightning_rod"
   }
 }

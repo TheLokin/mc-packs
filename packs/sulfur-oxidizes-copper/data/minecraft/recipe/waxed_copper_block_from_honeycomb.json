@@ -1,10 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": ["minecraft:copper_block", "minecraft:honeycomb"],
   "group": "waxed_copper_block",
+  "ingredients": [
+    "minecraft:copper_block",
+    "minecraft:honeycomb"
+  ],
   "result": {
-    "id": "minecraft:waxed_copper_block",
-    "count": 1
+    "id": "minecraft:waxed_copper_block"
   }
 }

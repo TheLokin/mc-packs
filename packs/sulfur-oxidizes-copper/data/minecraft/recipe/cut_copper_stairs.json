@@ -1,13 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "pattern": ["#  ", "## ", "###"],
+  "group": "cut_copper_stairs",
   "key": {
     "#": "minecraft:cut_copper"
   },
-  "group": "cut_copper_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
   "result": {
-    "id": "minecraft:cut_copper_stairs",
-    "count": 4
+    "count": 4,
+    "id": "minecraft:cut_copper_stairs"
   }
 }

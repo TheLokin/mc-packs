@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "copper_grate",
+  "ingredients": [
+    "minecraft:weathered_copper_grate",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:oxidized_copper_grate"
+  }
+}

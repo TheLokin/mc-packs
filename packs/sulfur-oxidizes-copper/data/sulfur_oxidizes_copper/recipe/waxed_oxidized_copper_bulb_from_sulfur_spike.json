@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "waxed_copper_bulb",
+  "ingredients": [
+    "minecraft:waxed_weathered_copper_bulb",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:waxed_oxidized_copper_bulb"
+  }
+}

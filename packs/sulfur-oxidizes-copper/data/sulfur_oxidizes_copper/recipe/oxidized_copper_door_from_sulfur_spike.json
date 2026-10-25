@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "copper_door",
+  "ingredients": [
+    "minecraft:weathered_copper_door",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:oxidized_copper_door"
+  }
+}

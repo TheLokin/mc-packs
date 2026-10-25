@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "copper_bars",
+  "ingredients": [
+    "minecraft:copper_bars",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:exposed_copper_bars"
+  }
+}

@@ -1,10 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": ["minecraft:exposed_copper_chain", "minecraft:honeycomb"],
+  "category": "building",
   "group": "waxed_copper_chain",
+  "ingredients": [
+    "minecraft:exposed_copper_chain",
+    "minecraft:honeycomb"
+  ],
   "result": {
-    "id": "minecraft:waxed_exposed_copper_chain",
-    "count": 1
+    "id": "minecraft:waxed_exposed_copper_chain"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cut_copper_slab",
+  "ingredients": [
+    "minecraft:exposed_cut_copper_slab",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:weathered_cut_copper_slab"
+  }
+}

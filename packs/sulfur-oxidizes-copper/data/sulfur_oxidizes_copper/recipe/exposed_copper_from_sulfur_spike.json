@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "copper_block",
+  "ingredients": [
+    "minecraft:copper_block",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:exposed_copper"
+  }
+}

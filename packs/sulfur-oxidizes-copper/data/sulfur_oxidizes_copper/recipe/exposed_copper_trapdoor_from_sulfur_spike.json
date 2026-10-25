@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "copper_trapdoor",
+  "ingredients": [
+    "minecraft:copper_trapdoor",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:exposed_copper_trapdoor"
+  }
+}

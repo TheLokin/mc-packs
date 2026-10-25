@@ -1,10 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": ["minecraft:copper_golem_statue", "minecraft:honeycomb"],
   "group": "waxed_copper_golem_statue",
+  "ingredients": [
+    "minecraft:copper_golem_statue",
+    "minecraft:honeycomb"
+  ],
   "result": {
-    "id": "minecraft:waxed_copper_golem_statue",
-    "count": 1
+    "id": "minecraft:waxed_copper_golem_statue"
   }
 }

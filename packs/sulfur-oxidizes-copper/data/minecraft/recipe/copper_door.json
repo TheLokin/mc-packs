@@ -1,13 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
-  "pattern": ["##", "##", "##"],
+  "group": "copper_door",
   "key": {
     "#": "minecraft:copper_ingot"
   },
-  "group": "copper_door",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
   "result": {
-    "id": "minecraft:copper_door",
-    "count": 1
+    "count": 3,
+    "id": "minecraft:copper_door"
   }
 }

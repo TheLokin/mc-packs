@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "waxed_cut_copper_stairs",
+  "ingredients": [
+    "minecraft:waxed_exposed_cut_copper_stairs",
+    "minecraft:sulfur_spike"
+  ],
+  "result": {
+    "id": "minecraft:waxed_weathered_cut_copper_stairs"
+  }
+}

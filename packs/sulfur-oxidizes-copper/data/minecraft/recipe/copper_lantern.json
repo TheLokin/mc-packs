@@ -1,14 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": ["###", "#/#", "###"],
-  "key": {
-    "#": "minecraft:copper_nugget",
-    "/": "minecraft:copper_torch"
-  },
   "group": "copper_lantern",
+  "key": {
+    "#": "minecraft:copper_torch",
+    "X": "minecraft:copper_nugget"
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
   "result": {
-    "id": "minecraft:copper_lantern",
-    "count": 4
+    "id": "minecraft:copper_lantern"
   }
 }
