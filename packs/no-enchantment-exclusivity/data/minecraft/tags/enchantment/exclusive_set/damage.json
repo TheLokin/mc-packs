@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:impaling",
+    "minecraft:density",
+    "minecraft:breach"
+  ]
+}
