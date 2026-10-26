@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "red_sandstone",
+  "ingredients": [
+    "minecraft:red_dye",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone",
+    "minecraft:sandstone"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:red_sandstone"
+  }
+}
