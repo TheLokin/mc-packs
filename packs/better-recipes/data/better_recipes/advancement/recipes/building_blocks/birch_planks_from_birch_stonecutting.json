@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_birch_log",
-      "has_birch_wood",
+      "has_stripped_birch_wood",
       "has_stripped_birch_log",
-      "has_stripped_birch_wood"
+      "has_birch_wood",
+      "has_birch_log"
     ]
   ],
   "rewards": {

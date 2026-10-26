@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_log",
-      "has_oak_wood",
+      "has_stripped_oak_wood",
       "has_stripped_oak_log",
-      "has_stripped_oak_wood"
+      "has_oak_wood",
+      "has_oak_log"
     ]
   ],
   "rewards": {

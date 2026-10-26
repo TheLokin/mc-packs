@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crimson_stem",
-      "has_crimson_hyphae",
+      "has_stripped_crimson_hyphae",
       "has_stripped_crimson_stem",
-      "has_stripped_crimson_hyphae"
+      "has_crimson_hyphae",
+      "has_crimson_stem"
     ]
   ],
   "rewards": {

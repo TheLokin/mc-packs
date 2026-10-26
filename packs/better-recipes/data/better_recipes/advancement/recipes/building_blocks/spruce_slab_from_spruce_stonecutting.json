@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_spruce_log",
-      "has_spruce_wood",
+      "has_stripped_spruce_wood",
       "has_stripped_spruce_log",
-      "has_stripped_spruce_wood"
+      "has_spruce_wood",
+      "has_spruce_log"
     ]
   ],
   "rewards": {

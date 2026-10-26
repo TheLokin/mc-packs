@@ -41,9 +41,9 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_warped_stem",
+      "has_stripped_warped_hyphae",
       "has_warped_hyphae",
-      "has_stripped_warped_hyphae"
+      "has_warped_stem"
     ]
   ],
   "rewards": {

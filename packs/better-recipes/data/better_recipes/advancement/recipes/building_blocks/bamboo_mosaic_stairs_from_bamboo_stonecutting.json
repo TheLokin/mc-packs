@@ -31,8 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bamboo_block",
-      "has_stripped_bamboo_block"
+      "has_stripped_bamboo_block",
+      "has_bamboo_block"
     ]
   ],
   "rewards": {

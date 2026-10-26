@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cherry_log",
-      "has_cherry_wood",
+      "has_stripped_cherry_wood",
       "has_stripped_cherry_log",
-      "has_stripped_cherry_wood"
+      "has_cherry_wood",
+      "has_cherry_log"
     ]
   ],
   "rewards": {

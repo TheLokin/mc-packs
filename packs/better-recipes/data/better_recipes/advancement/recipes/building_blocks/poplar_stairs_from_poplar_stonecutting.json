@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_poplar_log",
-      "has_poplar_wood",
+      "has_stripped_poplar_wood",
       "has_stripped_poplar_log",
-      "has_stripped_poplar_wood"
+      "has_poplar_wood",
+      "has_poplar_log"
     ]
   ],
   "rewards": {
