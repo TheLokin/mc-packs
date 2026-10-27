@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:cyan_dye",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart"
+  ],
+  "result": {
+    "id": "minecraft:warped_wart_block"
+  }
+}
