@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "better_recipes:cinnabar"
+        "recipes": "better_recipes:cinnabar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
