@@ -126,9 +126,17 @@ async function main() {
     console.log(`📦 Packaging: ${packFolder.name}`)
 
     const packPath = path.join(packsDir, packFolder.name)
+    const modrinthPath = path.join(packPath, "modrinth.json")
+
+    try {
+      await fs.access(modrinthPath)
+    } catch {
+      console.log(`⏭️ Skipping ${packFolder.name}: no modrinth.json`)
+      continue
+    }
 
     const modrinth: Modrinth = await fs
-      .readFile(path.join(packPath, "modrinth.json"), "utf-8")
+      .readFile(modrinthPath, "utf-8")
       .then((content) => JSON.parse(content))
       .then((data) => ({
         project_id: data.project_id,
