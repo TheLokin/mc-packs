@@ -6,7 +6,7 @@ dotenv.config({ quiet: true })
 const BASE_URL = "https://api.modrinth.com"
 const USER_AGENT = "mc-packs/1.0 (github.com/TheLokin/mc-packs)"
 
-async function modrinthFetch<T>(path: string, options: RequestInit = {}): Promise<T> {
+async function modrinthFetch<T>(path: string, options: RequestInit = {}) {
   const headers = new Headers(options.headers)
 
   headers.set("User-Agent", USER_AGENT)

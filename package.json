@@ -9,6 +9,7 @@
   },
   "scripts": {
     "scrape": "tsx scripts/scrape.ts",
+    "package": "tsx scripts/package-local.ts",
     "release": "tsx scripts/release.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --fix .",

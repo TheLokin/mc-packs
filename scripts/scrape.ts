@@ -1,6 +1,7 @@
+import type { PackFormat } from "./lib/utils"
 import fs from "node:fs/promises"
 import * as cheerio from "cheerio"
-import { ALL_GAME_VERSIONS, PACK_FORMATS } from "./constants"
+import { ALL_GAME_VERSIONS, PACK_FORMATS } from "./lib/utils"
 
 const BASE_URL = "https://minecraft.wiki"
 const USER_AGENT = "mc-packs/1.0 (github.com/TheLokin/mc-packs)"
@@ -17,53 +18,61 @@ async function minecraftWikiFetch(path: string) {
   return response.text()
 }
 
+function parseFormatValue(value: string) {
+  const normalized = value.trim()
+
+  if (!normalized) {
+    return null
+  }
+
+  const parsed = Number(normalized)
+
+  return Number.isFinite(parsed) ? parsed : null
+}
+
 function parsePackFormats(html: string) {
   const $ = cheerio.load(html)
-  let resourcePackFormat: number | null = null
-  let dataPackFormat: number | null = null
+
+  let datapack: number | null = null
+  let resourcepack: number | null = null
 
   $("table tr").each((_, row) => {
     const label = $(row).find("th").text().trim().toLowerCase()
     const value = $(row).find("td").text().trim()
 
-    if (label.includes("data pack")) dataPackFormat = Number(value)
-    if (label.includes("resource pack")) resourcePackFormat = Number(value)
+    if (label.includes("data pack")) {
+      datapack = parseFormatValue(value)
+    }
+
+    if (label.includes("resource pack")) {
+      resourcepack = parseFormatValue(value)
+    }
   })
 
-  return {
-    dataPackFormat,
-    resourcePackFormat,
-  }
+  return { datapack, resourcepack } as PackFormat
 }
 
-async function main() {
-  console.log("▶ Starting scraping...")
+console.log("▶ Starting scraping...")
 
-  const newPackFormats: typeof PACK_FORMATS = {}
-  for (const gameVersion of ALL_GAME_VERSIONS) {
-    if (PACK_FORMATS[gameVersion]) {
-      newPackFormats[gameVersion] = PACK_FORMATS[gameVersion]
-      continue
-    }
+const newPackFormats: Record<string, PackFormat> = {}
 
-    console.log(`↓ Fetching Minecraft ${gameVersion}...`)
-
-    const html = await minecraftWikiFetch(`/w/Java_Edition_${gameVersion}`)
-    const formats = parsePackFormats(html)
-
-    newPackFormats[gameVersion] = {
-      datapack: formats.dataPackFormat,
-      resourcepack: formats.resourcePackFormat,
-    }
+for (const gameVersion of ALL_GAME_VERSIONS) {
+  if (PACK_FORMATS[gameVersion]) {
+    newPackFormats[gameVersion] = PACK_FORMATS[gameVersion]
+    continue
   }
 
-  await fs.writeFile(
-    "packs/pack-formats.json",
-    `${JSON.stringify(newPackFormats, null, 2)}\n`,
-    "utf-8",
-  )
+  console.log(`↓ Fetching Minecraft ${gameVersion}...`)
 
-  console.log("✓ Scraping complete.")
+  const html = await minecraftWikiFetch(`/w/Java_Edition_${gameVersion}`)
+
+  newPackFormats[gameVersion] = parsePackFormats(html)
 }
 
-main()
+await fs.writeFile(
+  "packs/pack-formats.json",
+  `${JSON.stringify(newPackFormats, null, 2)}\n`,
+  "utf-8",
+)
+
+console.log("✓ Scraping complete.")

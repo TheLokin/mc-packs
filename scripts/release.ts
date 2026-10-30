@@ -1,214 +1,128 @@
+import type { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
-import process from "node:process"
-import JSZip from "jszip"
-import { PACK_FORMATS } from "./constants"
-import { createProjectVersion, getProject, getProjectMembers, getProjectVersions } from "./modrinth"
-import { packageDatapack } from "./package"
+import {
+  createProjectVersion,
+  getProject,
+  getProjectMembers,
+  getProjectVersions,
+} from "./lib/modrinth"
+import { readPackMetadata } from "./lib/utils"
+import { zipFolder } from "./packages/datapack"
+import { packageDatapack } from "./packages/mod"
 
-const EXCLUDED_FILES = new Set(["pack.mcmeta", "modrinth.json", "README.md"])
-const LEGACY_THRESHOLD = { datapack: 82, resourcepack: 65 }
+function bufferToBlob(buffer: Buffer, mimeType: string) {
+  const bytes = new Uint8Array(buffer.byteLength)
+  bytes.set(buffer)
 
-function parseOverlayRange(directory: string) {
-  const match = directory.match(/^overlay_(\d+)(?:_(\d+))?$/)
-  if (!match) throw new Error(`Invalid overlay directory name: ${directory}`)
-
-  const min = Number(match[1])
-  const max = match[2] !== undefined ? Number(match[2]) : min
-
-  return { min, max }
+  return new Blob([bytes.buffer], { type: mimeType })
 }
 
-interface Modrinth {
-  project_id: string
-  version_number: string
-  changelog: string
-  game_versions: string[]
-}
+async function releasePack(packName: string, packPath: string) {
+  const metadata = await readPackMetadata(packPath)
 
-async function generateMcMeta(
-  modrinth: Modrinth,
-  folderPath: string,
-  packType: "datapack" | "resourcepack",
-) {
-  const minVersion = modrinth.game_versions[modrinth.game_versions.length - 1]!
-  const maxVersion = modrinth.game_versions[0]!
+  const existingVersions = await getProjectVersions(metadata.project_id)
+  const versionNumbers = new Set(existingVersions.map((version) => version.version_number))
 
-  const minFormat = PACK_FORMATS[minVersion][packType]
-  const maxFormat = PACK_FORMATS[maxVersion][packType]
+  const datapackVersion = metadata.version_number
+  const modVersion = `${metadata.version_number}+mod`
 
-  const hasLegacy = minFormat < LEGACY_THRESHOLD[packType]
+  const needsDatapack = !versionNumbers.has(datapackVersion)
+  const needsMod = !versionNumbers.has(modVersion)
 
-  const mcmeta = await fs
-    .readFile(path.join(folderPath, "pack.mcmeta"), "utf-8")
-    .then((content) => JSON.parse(content))
-
-  const pack: Record<string, unknown> = { description: mcmeta.pack.description }
-
-  if (hasLegacy) {
-    pack.pack_format = minFormat
-    pack.min_format = minFormat
-    pack.max_format = maxFormat
-    pack.supported_formats = {
-      min_inclusive: minFormat,
-      max_inclusive: maxFormat,
-    }
-  } else {
-    pack.min_format = minFormat
-    pack.max_format = maxFormat
+  if (!needsDatapack && !needsMod) {
+    console.log(`⏭️ Skipping ${packName}: both versions already exist`)
+    return
   }
 
-  const result: Record<string, unknown> = { pack }
+  const project = await getProject(metadata.project_id)
 
-  if (mcmeta.overlays?.entries) {
-    result.overlays = {
-      entries: mcmeta.overlays.entries.map((entry: Record<string, unknown>) => {
-        const { min, max } = parseOverlayRange(entry.directory as string)
-        const resolved: Record<string, unknown> = {
-          directory: entry.directory,
-          min_format: min,
-          max_format: max,
-        }
+  console.log(`📦 Releasing ${packName} (${metadata.version_number})`)
 
-        if (min < LEGACY_THRESHOLD[packType]) {
-          resolved.formats = {
-            min_inclusive: min,
-            max_inclusive: max,
-          }
-        }
+  const datapackZip = await zipFolder(metadata, packPath, "datapack")
 
-        return resolved
-      }),
-    }
-  }
-
-  return result
-}
-
-async function zipFolder(
-  modrinth: Modrinth,
-  folderPath: string,
-  packType: "datapack" | "resourcepack",
-) {
-  const zip = new JSZip()
-
-  const mcmeta = await generateMcMeta(modrinth, folderPath, packType)
-  zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
-
-  async function collect(currentPath: string) {
-    const entries = await fs.readdir(currentPath, { withFileTypes: true })
-
-    for (const entry of entries) {
-      const fullPath = path.join(currentPath, entry.name)
-
-      if (entry.isDirectory()) {
-        await collect(fullPath)
-      } else if (entry.isFile() && !EXCLUDED_FILES.has(entry.name)) {
-        zip.file(
-          path.relative(folderPath, fullPath).replace(/\\/g, "/"),
-          await fs.readFile(fullPath),
-        )
-      }
-    }
-  }
-
-  await collect(folderPath)
-
-  return zip
-}
-
-async function main() {
-  const packsDir = path.resolve(process.cwd(), "packs")
-  const entries = await fs.readdir(packsDir, { withFileTypes: true })
-  const packFolders = entries.filter((entry) => entry.isDirectory())
-
-  for (const packFolder of packFolders) {
-    console.log(`📦 Packaging: ${packFolder.name}`)
-
-    const packPath = path.join(packsDir, packFolder.name)
-    const modrinthPath = path.join(packPath, "modrinth.json")
-
-    try {
-      await fs.access(modrinthPath)
-    } catch {
-      console.log(`⏭️ Skipping ${packFolder.name}: no modrinth.json`)
-      continue
-    }
-
-    const modrinth: Modrinth = await fs
-      .readFile(modrinthPath, "utf-8")
-      .then((content) => JSON.parse(content))
-      .then((data) => ({
-        project_id: data.project_id,
-        version_number: data.game_version
-          ? `${data.version_number}-mc${data.game_version}`
-          : data.version_number,
-        changelog: data.changelog,
-        game_versions: data.game_versions || [data.game_version],
-      }))
-
-    const versions = await getProjectVersions(modrinth.project_id).then((versions) =>
-      versions.map((version) => version.version_number),
-    )
-
-    if (versions.includes(modrinth.version_number)) {
-      console.log(`⚠️ Skipping version ${modrinth.version_number}`)
-      continue
-    }
-
-    console.log(`🚀 Releasing version ${modrinth.version_number}`)
-
-    const project = await getProject(modrinth.project_id)
-    const members = await getProjectMembers(modrinth.project_id)
-
-    const zipDatapack = await zipFolder(modrinth, packPath, "datapack")
-    const blobDatapack = await zipDatapack.generateAsync({
-      type: "blob",
-      mimeType: "application/zip",
-    })
+  if (needsDatapack) {
+    const buffer = await datapackZip!.generateAsync({ type: "nodebuffer" })
 
     await createProjectVersion({
-      project_id: modrinth.project_id,
-      name: `${project.title} v${modrinth.version_number}`,
-      version_number: modrinth.version_number,
-      changelog: modrinth.changelog,
-      game_versions: modrinth.game_versions,
+      project_id: metadata.project_id,
+      name: `${project.title} v${metadata.version_number}`,
+      version_number: datapackVersion,
+      changelog: metadata.changelog,
+      game_versions: metadata.game_versions,
       version_type: "release",
       loaders: ["datapack"],
       file: {
-        name: `${project.slug}-${modrinth.version_number}.zip`,
-        data: blobDatapack,
+        name: `${project.slug}-${metadata.version_number}.zip`,
+        data: bufferToBlob(buffer, "application/zip"),
       },
     })
 
-    const zipMod = await packageDatapack({
-      zip: zipDatapack,
+    console.log(`✅ Published datapack ${datapackVersion}`)
+  } else {
+    console.log(`⏭️ Datapack ${datapackVersion} already exists`)
+  }
+
+  if (needsMod) {
+    const members = await getProjectMembers(metadata.project_id)
+
+    const modZip = await packageDatapack({
+      zip: datapackZip!,
       project,
       members,
-      versionNumber: modrinth.version_number,
-      gameVersions: modrinth.game_versions,
+      versionNumber: metadata.version_number,
+      gameVersions: metadata.game_versions,
       loaders: ["fabric", "quilt", "forge", "neoforge"],
     })
-    const blobMod = await zipMod.generateAsync({
-      type: "blob",
-      mimeType: "application/java-archive",
-    })
+
+    const buffer = await modZip.generateAsync({ type: "nodebuffer" })
 
     await createProjectVersion({
-      project_id: modrinth.project_id,
-      name: `${project.title} v${modrinth.version_number}`,
-      version_number: `${modrinth.version_number}+mod`,
-      changelog: modrinth.changelog,
-      game_versions: modrinth.game_versions,
+      project_id: metadata.project_id,
+      name: `${project.title} v${metadata.version_number}`,
+      version_number: modVersion,
+      changelog: metadata.changelog,
+      game_versions: metadata.game_versions,
       version_type: "release",
       loaders: ["fabric", "quilt", "forge", "neoforge"],
       environment: "server_only",
       file: {
-        name: `${project.slug}-${modrinth.version_number}.jar`,
-        data: blobMod,
+        name: `${project.slug}-${metadata.version_number}.jar`,
+        data: bufferToBlob(buffer, "application/java-archive"),
       },
     })
+
+    console.log(`✅ Published mod ${modVersion}`)
+  } else {
+    console.log(`⏭️ Mod ${modVersion} already exists`)
+  }
+}
+const packsDir = path.resolve("packs")
+const entries = await fs.readdir(packsDir, { withFileTypes: true })
+const packFolders = entries.filter((entry) => entry.isDirectory())
+
+let failed = 0
+
+for (const folder of packFolders) {
+  const packPath = path.join(packsDir, folder.name)
+  const metadataPath = path.join(packPath, "modrinth.json")
+
+  try {
+    await fs.access(metadataPath)
+  } catch {
+    continue
+  }
+
+  try {
+    await releasePack(folder.name, packPath)
+  } catch (error) {
+    failed++
+    console.error(`❌ Failed to release ${folder.name}:`, error)
   }
 }
 
-main()
+if (failed > 0) {
+  throw new Error(`${failed} pack(s) failed to release`)
+}
+
+console.log("🚀 Release complete")
