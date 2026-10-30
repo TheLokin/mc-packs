@@ -22,7 +22,7 @@
     "jszip": "3.10.2"
   },
   "devDependencies": {
-    "@types/node": "26.6.5",
+    "@types/node": "26.6.6",
     "eslint": "10.13.0",
     "eslint-config-protocol": "1.0.0",
     "prettier": "3.9.10",
