@@ -1,6 +1,7 @@
 import type { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
+import { error, info, success, warn } from "./lib/console"
 import {
   createProjectVersion,
   getProject,
@@ -31,18 +32,18 @@ async function releasePack(packName: string, packPath: string) {
   const needsMod = !versionNumbers.has(modVersion)
 
   if (!needsDatapack && !needsMod) {
-    console.log(`⏭️ Skipping ${packName}: both versions already exist`)
+    warn(`⏭️ Skipping ${packName}: both versions already exist`)
     return
   }
 
   const project = await getProject(metadata.project_id)
 
-  console.log(`📦 Releasing ${packName} (${metadata.version_number})`)
+  info(`📦 Releasing ${packName} (${metadata.version_number})`)
 
   const datapackZip = await zipFolder(metadata, packPath, "datapack")
 
   if (needsDatapack) {
-    const buffer = await datapackZip!.generateAsync({ type: "nodebuffer" })
+    const buffer = await datapackZip.generateAsync({ type: "nodebuffer" })
 
     await createProjectVersion({
       project_id: metadata.project_id,
@@ -58,16 +59,16 @@ async function releasePack(packName: string, packPath: string) {
       },
     })
 
-    console.log(`✅ Published datapack ${datapackVersion}`)
+    success(`✅ Published datapack ${datapackVersion}`)
   } else {
-    console.log(`⏭️ Datapack ${datapackVersion} already exists`)
+    warn(`⏭️ Datapack ${datapackVersion} already exists`)
   }
 
   if (needsMod) {
     const members = await getProjectMembers(metadata.project_id)
 
     const modZip = await packageDatapack({
-      zip: datapackZip!,
+      zip: datapackZip,
       project,
       members,
       versionNumber: metadata.version_number,
@@ -92,11 +93,12 @@ async function releasePack(packName: string, packPath: string) {
       },
     })
 
-    console.log(`✅ Published mod ${modVersion}`)
+    success(`✅ Published mod ${modVersion}`)
   } else {
-    console.log(`⏭️ Mod ${modVersion} already exists`)
+    warn(`⏭️ Mod ${modVersion} already exists`)
   }
 }
+
 const packsDir = path.resolve("packs")
 const entries = await fs.readdir(packsDir, { withFileTypes: true })
 const packFolders = entries.filter((entry) => entry.isDirectory())
@@ -115,14 +117,14 @@ for (const folder of packFolders) {
 
   try {
     await releasePack(folder.name, packPath)
-  } catch (error) {
+  } catch (err) {
     failed++
-    console.error(`❌ Failed to release ${folder.name}:`, error)
+    warn(`❌ Failed to release ${folder.name}: ${err}`)
   }
 }
 
 if (failed > 0) {
-  throw new Error(`${failed} pack(s) failed to release`)
+  error(`❌ ${failed} pack(s) failed to release`)
 }
 
-console.log("🚀 Release complete")
+success("🚀 Release complete")

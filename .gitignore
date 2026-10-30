@@ -37,3 +37,6 @@ coverage/
 
 # OS
 .DS_Store
+
+# generated code
+packs/pack-formats.json

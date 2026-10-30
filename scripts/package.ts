@@ -1,70 +1,63 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 import process from "node:process"
-import { parseArgs } from "node:util"
+import { error, info, success } from "./lib/console"
 import { getProject, getProjectMembers } from "./lib/modrinth"
 import { readPackMetadata } from "./lib/utils"
 import { zipFolder } from "./packages/datapack"
 import { packageDatapack } from "./packages/mod"
 
-const { positionals, values } = parseArgs({
-  args: process.argv.slice(2),
-  allowPositionals: true,
-  strict: true,
-  options: {
-    mod: {
-      type: "boolean",
-      default: false,
-    },
-  },
-})
+const packName = process.argv[2]
 
-const packName = positionals[0]
-
-if (!packName || positionals.length !== 1) {
-  throw new Error("Missing pack name. Usage: pnpm package <pack-name> [--mod]")
+if (!packName || process.argv.length !== 3) {
+  error("❌ Missing pack name. Usage: pnpm package <pack-name>")
 }
 
-const packPath = path.resolve("packs", packName)
-
+const packPath = path.join("packs", packName!)
 const stat = await fs.stat(packPath).catch(() => null)
 
 if (!stat?.isDirectory()) {
-  throw new Error(`Pack not found: ${packName}`)
+  error(`❌ Pack not found: ${packName}`)
 }
 
 const metadata = await readPackMetadata(packPath)
 
+info("🧹 Cleaning dist directory...")
+
+await fs.rm("dist", { recursive: true, force: true })
 await fs.mkdir("dist", { recursive: true })
 
-console.log(`📦 Packaging ${packName} as ${values.mod ? "mod" : "datapack"}...`)
+info(`📦 Packaging ${packName}...`)
 
 const datapack = await zipFolder(metadata, packPath, "datapack")
+const datapackPath = path.join("dist", `${packName}.zip`)
+const datapackBuffer = await datapack.generateAsync({ type: "nodebuffer" })
 
-if (values.mod) {
-  const [project, members] = await Promise.all([
-    getProject(metadata.project_id),
-    getProjectMembers(metadata.project_id),
-  ])
+await fs.writeFile(datapackPath, datapackBuffer)
 
-  const mod = await packageDatapack({
-    zip: datapack,
-    project,
-    members,
-    versionNumber: metadata.version_number,
-    gameVersions: metadata.game_versions,
-    loaders: ["fabric", "quilt", "forge", "neoforge"],
-  })
+success(`✅ Created ${packName}.zip at dist`)
 
-  const outputPath = path.join("dist", `${packName}.jar`)
-  const buffer = await mod.generateAsync({ type: "nodebuffer" })
+info("⚙️ Packaging mod...")
 
-  await fs.writeFile(outputPath, buffer)
-  console.log(`✅ Created ${packName}.jar at ${path.relative(process.cwd(), outputPath)}`)
-} else {
-  const outputPath = path.join("dist", `${packName}.zip`)
-  const buffer = await datapack.generateAsync({ type: "nodebuffer" })
+const [project, members] = await Promise.all([
+  getProject(metadata.project_id),
+  getProjectMembers(metadata.project_id),
+])
 
-  await fs.writeFile(outputPath, buffer)
-  console.log(`✅ Created ${packName}.zip at ${path.relative(process.cwd(), outputPath)}`)
-}
+const mod = await packageDatapack({
+  zip: datapack,
+  project,
+  members,
+  versionNumber: metadata.version_number,
+  gameVersions: metadata.game_versions,
+  loaders: ["fabric", "quilt", "forge", "neoforge"],
+})
+
+const modPath = path.join("dist", `${packName}.jar`)
+const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
+
+await fs.writeFile(modPath, modBuffer)
+
+success(`✅ Created ${packName}.jar at dist`)
+
+success("🚀 Packaging complete")

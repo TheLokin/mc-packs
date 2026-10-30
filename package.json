@@ -8,8 +8,7 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "scrape": "tsx scripts/scrape.ts",
-    "package": "tsx scripts/package-local.ts",
+    "package": "tsx scripts/package.ts",
     "release": "tsx scripts/release.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --fix .",
