@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dead_tube_coral": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dead_tube_coral"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dead_tube_coral_fan": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dead_tube_coral_fan"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "craftable_coral_blocks:dead_tube_coral_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dead_tube_coral_fan",
+      "has_dead_tube_coral"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "craftable_coral_blocks:dead_tube_coral_block"
+    ]
+  }
+}
