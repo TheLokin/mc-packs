@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "minecraft:black_wool",
-  "result": {
-    "count": 4,
-    "id": "minecraft:black_carpet"
-  }
-}
