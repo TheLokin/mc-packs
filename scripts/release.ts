@@ -99,15 +99,14 @@ async function releasePack(packName: string, packPath: string) {
   }
 }
 
-const packsDir = path.resolve("packs")
-const entries = await fs.readdir(packsDir, { withFileTypes: true })
+const entries = await fs.readdir("packs", { withFileTypes: true })
 const packFolders = entries.filter((entry) => entry.isDirectory())
 
 let failed = 0
 
 for (const folder of packFolders) {
-  const packPath = path.join(packsDir, folder.name)
-  const metadataPath = path.join(packPath, "modrinth.json")
+  const packPath = path.join("packs", folder.name)
+  const metadataPath = path.join(packPath, "metadata.json")
 
   try {
     await fs.access(metadataPath)
