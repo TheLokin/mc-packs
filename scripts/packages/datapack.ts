@@ -1,10 +1,10 @@
 import type { PackMetadata } from "../lib/utils"
+import { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
 import JSZip from "jszip"
-import { PACK_FORMATS } from "../lib/utils"
+import { PACK_FORMATS, readPackMetadata } from "../lib/utils"
 
-const EXCLUDED_FILES = new Set(["pack.mcmeta", "metadata.json", "README.md"])
 const LEGACY_THRESHOLD = { datapack: 82, resourcepack: 65 }
 
 function parseOverlayRange(directory: string) {
@@ -91,25 +91,62 @@ export async function zipFolder(
   const mcmeta = await generateMcMeta(metadata, folderPath, type)
 
   zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
+  zip.file("pack.png", await fs.readFile(path.join(folderPath, "pack.png")))
 
-  async function collect(currentPath: string) {
-    const entries = await fs.readdir(currentPath, { withFileTypes: true })
+  const processedPacks = new Set<string>()
+  const targetNamespace = path.basename(folderPath).replace(/-/g, "_")
+  const packsDirectory = path.dirname(folderPath)
 
-    for (const entry of entries) {
-      const fullPath = path.join(currentPath, entry.name)
+  async function addPack(packPath: string) {
+    if (processedPacks.has(packPath)) return
+    processedPacks.add(packPath)
 
-      if (entry.isDirectory()) {
-        await collect(fullPath)
-      } else if (entry.isFile() && !EXCLUDED_FILES.has(entry.name)) {
-        zip.file(
-          path.relative(folderPath, fullPath).replace(/\\/g, "/"),
-          await fs.readFile(fullPath),
-        )
+    const packMetadata = await readPackMetadata(packPath)
+
+    for (const pack of packMetadata.include) {
+      await addPack(path.join(packsDirectory, pack))
+    }
+
+    const dataDirectory = path.join(packPath, "data")
+
+    async function collectFiles(directory: string) {
+      const entries = await fs.readdir(directory, { withFileTypes: true })
+
+      for (const entry of entries) {
+        const filePath = path.join(directory, entry.name)
+
+        if (entry.isDirectory()) {
+          await collectFiles(filePath)
+          continue
+        }
+
+        if (!entry.isFile()) continue
+
+        const relativePath = path.relative(dataDirectory, filePath)
+        const [originalNamespace, ...namespacePath] = relativePath.split(path.sep)
+
+        if (!originalNamespace) continue
+
+        const zipPath = path.posix.join("data", targetNamespace, ...namespacePath)
+
+        let fileContent = await fs.readFile(filePath)
+
+        if (/\.(?:json|mcfunction)$/i.test(entry.name)) {
+          fileContent = Buffer.from(
+            fileContent
+              .toString("utf-8")
+              .replace(new RegExp(`\\b${originalNamespace}:`, "g"), `${targetNamespace}:`),
+          )
+        }
+
+        zip.file(zipPath, fileContent)
       }
     }
+
+    await collectFiles(dataDirectory)
   }
 
-  await collect(folderPath)
+  await addPack(folderPath)
 
   return zip
 }
