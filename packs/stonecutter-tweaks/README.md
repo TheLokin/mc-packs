@@ -1,9 +1,3 @@
 # Stonecutter Tweaks
 
-Stonecutter Tweaks expands the Stonecutter's recipe selection with new recipes for a wider variety of blocks, making it possible to craft more building blocks directly through stonecutting.
-
-## Recipe Design
-
-The added recipes focus on straightforward block conversions and building variants, such as stairs, slabs and walls. They follow vanilla crafting logic, ensuring that stonecutting provides alternative ways to process materials without introducing recipes that bypass the usual crafting requirements.
-
-More refined items that require additional processing or materials remain exclusive to the crafting table. This includes fences, fence gates, doors, trapdoors, pressure plates, buttons or signs.
+Expands the Stonecutter's functionality with new recipes for building blocks that can not be processed through stonecutting in vanilla Minecraft. These additions allow you to obtain different block variants directly from their corresponding base materials, such as stairs, slabs and walls. Items that require additional processing or multiple materials are intentionally excluded, keeping fences, doors, trapdoors, buttons, signs and similar items exclusive to the crafting table.

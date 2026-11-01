@@ -1,7 +1,3 @@
 # Sulfur Oxidizes Copper
 
-Adds sulfur oxidation recipes for copper blocks using the Sulfur Spike, allowing you to advance copper oxidation stages without relying on in-game time.
-
-## How it works
-
-Combine any copper block with a Sulfur Spike in the crafting table to advance it one oxidation stage. Waxed variants are also accepted, the block will keep its wax while progressing through oxidation stages.
+Adds new crafting recipes that use Sulfur Spikes to advance copper oxidation stages without relying on in-game time. Any copper block or its variants can be combined with a Sulfur Spike in a crafting table to advance it by one oxidation stage. Waxed copper variants are also supported, preserving their wax coating throughout the process.

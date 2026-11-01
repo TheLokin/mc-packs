@@ -1,10 +1,3 @@
 # Uncraftable Ice
 
-A simple and lightweight quality of life addition that allows you to uncraft compacted Ice blocks back into their base forms, making it easier to store vast amounts of Ice as Packed Ice or Blue Ice without losing the ability to turn them back when needed.
-
-## Crafting Recipes
-
-This adds standard shapeless vanilla unpacking mechanics to the crafting table:
-
-- **1x Packed Ice** $\rightarrow$ **9x Ice**
-- **1x Blue Ice** $\rightarrow$ **9x Packed Ice**
+Adds shapeless crafting recipes that allow Packed Ice and Blue Ice to be converted back into their base materials. Packed Ice can be converted into 9 Ice, while Blue Ice can be converted into 9 Packed Ice, making it possible to recover the original materials whenever needed.

@@ -1,14 +1,12 @@
 # No Enchantment Exclusivity
 
-Remove enchantment exclusivity restrictions and combine enchantments that are normally incompatible, giving you more freedom to customize your gear.
+Removes enchantment exclusivity restrictions, allowing normally incompatible enchantments to be combined on the same equipment.
 
 ## What does it change?
 
 - **Armor:** Removes exclusivity restrictions between armor enchantments.
 - **Bows:** Allows Infinity and Mending to be used together.
 - **Crossbows:** Allows Multishot and Piercing to be used together.
-- **Damage enchantments:** Allows Sharpness, Smite and Bane of Arthropods to be combined with Impaling, Density and Breach.
+- **Damage enchantments:** Allows Sharpness, Smite and Bane of Arthropods to be combined with Impaling, Density and Breach, while the latter three remain mutually exclusive.
 
-## What stays the same?
-
-Impaling, Density and Breach remain mutually exclusive with one another. All enchantment effects and maximum levels remain unchanged.
+All enchantment effects and maximum levels remain unchanged.
