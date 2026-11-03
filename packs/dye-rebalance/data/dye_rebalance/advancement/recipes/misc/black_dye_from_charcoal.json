@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_coal": {
+    "has_charcoal": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:coal"
+            "items": "minecraft:charcoal"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:black_dye_from_coal"
+        "recipes": "dye_rebalance:black_dye_from_charcoal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_coal"
+      "has_charcoal"
     ]
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:black_dye_from_coal"
+      "dye_rebalance:black_dye_from_charcoal"
     ]
   }
 }

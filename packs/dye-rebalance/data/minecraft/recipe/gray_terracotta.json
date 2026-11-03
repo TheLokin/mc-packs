@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_terracotta",
+  "ingredients": [
+    "minecraft:gray_dye",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta",
+    "minecraft:terracotta"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:gray_terracotta"
+  }
+}

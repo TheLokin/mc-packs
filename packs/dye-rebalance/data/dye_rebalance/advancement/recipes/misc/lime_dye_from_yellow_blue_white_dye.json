@@ -1,21 +1,31 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sandstone": {
+    "has_yellow_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:sandstone"
+            "items": "minecraft:yellow_dye"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_red_dye": {
+    "has_blue_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:red_dye"
+            "items": "minecraft:blue_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_white_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:white_dye"
           }
         ]
       },
@@ -23,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:red_sandstone"
+        "recipes": "dye_rebalance:lime_dye_from_yellow_blue_white_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +41,14 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_dye",
-      "has_sandstone"
+      "has_white_dye",
+      "has_blue_dye",
+      "has_yellow_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:red_sandstone"
+      "dye_rebalance:lime_dye_from_yellow_blue_white_dye"
     ]
   }
 }

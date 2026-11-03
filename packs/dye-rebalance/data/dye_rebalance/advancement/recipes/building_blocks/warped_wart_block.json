@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:warped_wart_block"
+        "recipes": "dye_rebalance:warped_wart_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:warped_wart_block"
+      "dye_rebalance:warped_wart_block"
     ]
   }
 }

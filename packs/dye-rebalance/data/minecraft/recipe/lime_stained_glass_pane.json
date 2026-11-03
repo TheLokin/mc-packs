@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stained_glass_pane",
+  "ingredients": [
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:lime_stained_glass"
+  ],
+  "result": {
+    "count": 16,
+    "id": "minecraft:lime_stained_glass_pane"
+  }
+}
