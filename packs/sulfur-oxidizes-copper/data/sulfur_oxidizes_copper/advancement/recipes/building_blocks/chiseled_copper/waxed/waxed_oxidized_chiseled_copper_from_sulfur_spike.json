@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sulfur_oxidizes_copper:chiseled_copper/waxed/waxed_oxidized_chiseled_copper_from_sulfur_spike"
+        "recipes": "sulfur_oxidizes_copper:chiseled_copper/waxed/waxed_oxidized_chiseled_copper_from_sulfur_spike"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

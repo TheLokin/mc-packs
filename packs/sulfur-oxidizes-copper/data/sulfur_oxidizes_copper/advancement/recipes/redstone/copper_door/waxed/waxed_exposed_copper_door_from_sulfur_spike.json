@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sulfur_oxidizes_copper:copper_door/waxed/waxed_exposed_copper_door_from_sulfur_spike"
+        "recipes": "sulfur_oxidizes_copper:copper_door/waxed/waxed_exposed_copper_door_from_sulfur_spike"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
