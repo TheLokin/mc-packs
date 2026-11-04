@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "sulfur_oxidizes_copper:copper_bars/waxed/waxed_weathered_copper_bars_from_sulfur_spike"
+        "recipe": "sulfur_oxidizes_copper:copper_bars/waxed/waxed_weathered_copper_bars_from_sulfur_spike"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

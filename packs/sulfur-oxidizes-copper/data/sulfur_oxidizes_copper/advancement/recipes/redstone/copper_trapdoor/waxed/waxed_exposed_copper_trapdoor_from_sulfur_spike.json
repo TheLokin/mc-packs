@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "sulfur_oxidizes_copper:copper_trapdoor/waxed/waxed_exposed_copper_trapdoor_from_sulfur_spike"
+        "recipe": "sulfur_oxidizes_copper:copper_trapdoor/waxed/waxed_exposed_copper_trapdoor_from_sulfur_spike"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
