@@ -1,0 +1,16 @@
+{
+  "project_id": "XpL53u9s",
+  "version_number": "1.0",
+  "game_version": "26.3",
+  "changelog": "Initial release",
+  "include": [
+    "uncraftable-ice",
+    "uncraftable-honeycomb",
+    "craftable-coral-blocks",
+    "sulfur-oxidizes-copper",
+    "stonecutter-tweaks",
+    "dye-rebalance",
+    "cheaper-shulker-boxes",
+    "cheaper-armor-trims"
+  ]
+}
