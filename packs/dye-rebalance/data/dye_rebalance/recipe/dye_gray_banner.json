@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_transmute",
+  "group": "banner",
+  "input": [
+    "minecraft:white_banner",
+    "minecraft:orange_banner",
+    "minecraft:magenta_banner",
+    "minecraft:light_blue_banner",
+    "minecraft:yellow_banner",
+    "minecraft:lime_banner",
+    "minecraft:pink_banner",
+    "minecraft:light_gray_banner",
+    "minecraft:cyan_banner",
+    "minecraft:purple_banner",
+    "minecraft:blue_banner",
+    "minecraft:brown_banner",
+    "minecraft:green_banner",
+    "minecraft:red_banner",
+    "minecraft:black_banner"
+  ],
+  "material": "minecraft:gray_dye",
+  "result": {
+    "id": "minecraft:gray_banner"
+  }
+}
