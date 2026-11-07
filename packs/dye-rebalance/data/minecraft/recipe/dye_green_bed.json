@@ -2,7 +2,6 @@
   "type": "minecraft:crafting_shapeless",
   "group": "bed",
   "ingredients": [
-    "minecraft:green_dye",
     [
       "minecraft:white_bed",
       "minecraft:orange_bed",
@@ -19,7 +18,8 @@
       "minecraft:brown_bed",
       "minecraft:red_bed",
       "minecraft:black_bed"
-    ]
+    ],
+    "minecraft:green_dye"
   ],
   "result": {
     "id": "minecraft:green_bed"
