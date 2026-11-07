@@ -2,7 +2,6 @@
   "type": "minecraft:crafting_shapeless",
   "group": "candle",
   "ingredients": [
-    "minecraft:cyan_dye",
     [
       "minecraft:candle",
       "minecraft:white_candle",
@@ -20,7 +19,8 @@
       "minecraft:green_candle",
       "minecraft:red_candle",
       "minecraft:black_candle"
-    ]
+    ],
+    "minecraft:cyan_dye"
   ],
   "result": {
     "id": "minecraft:cyan_candle"
