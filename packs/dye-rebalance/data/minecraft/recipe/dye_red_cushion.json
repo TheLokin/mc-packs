@@ -2,7 +2,6 @@
   "type": "minecraft:crafting_shapeless",
   "group": "cushion",
   "ingredients": [
-    "minecraft:red_dye",
     [
       "minecraft:white_cushion",
       "minecraft:orange_cushion",
@@ -19,7 +18,8 @@
       "minecraft:brown_cushion",
       "minecraft:green_cushion",
       "minecraft:black_cushion"
-    ]
+    ],
+    "minecraft:red_dye"
   ],
   "result": {
     "id": "minecraft:red_cushion"
