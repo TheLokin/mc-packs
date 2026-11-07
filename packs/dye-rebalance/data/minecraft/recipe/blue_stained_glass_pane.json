@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "stained_glass_pane",
+  "group": "glass_pane",
   "ingredients": [
     "minecraft:blue_stained_glass",
     "minecraft:blue_stained_glass",
