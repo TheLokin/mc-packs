@@ -98,12 +98,11 @@ export async function zipFolder(
   const packsDirectory = path.dirname(folderPath)
 
   async function addPack(packPath: string) {
-    const resolvedPackPath = path.resolve(packPath)
-
-    if (processedPacks.has(resolvedPackPath)) return
-    processedPacks.add(resolvedPackPath)
+    if (processedPacks.has(packPath)) return
+    processedPacks.add(packPath)
 
     const packMetadata = await readPackMetadata(packPath)
+    const originalPackNamespace = path.basename(packPath).replace(/-/g, "_")
 
     for (const includedPack of packMetadata.include) {
       await addPack(path.join(packsDirectory, includedPack))
@@ -136,11 +135,11 @@ export async function zipFolder(
 
         let fileContent = await fs.readFile(filePath)
 
-        if (!isMinecraftNamespace && /\.json$/i.test(entry.name)) {
+        if (/\.json$/i.test(entry.name)) {
           fileContent = Buffer.from(
             fileContent
               .toString("utf-8")
-              .replaceAll(`${originalNamespace}:`, `${targetNamespace}:`),
+              .replaceAll(`${originalPackNamespace}:`, `${targetNamespace}:`),
           )
         }
 

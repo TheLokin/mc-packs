@@ -37,7 +37,7 @@ await fs.writeFile(datapackPath, datapackBuffer)
 
 success(`✅ Created ${packName}.zip at dist`)
 
-info("⚙️ Packaging mod...")
+info("⚙️ Packaging as mod...")
 
 const [project, members] = await Promise.all([
   getProject(metadata.project_id),
