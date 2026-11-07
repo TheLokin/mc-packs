@@ -3,7 +3,6 @@
   "category": "equipment",
   "group": "harness",
   "ingredients": [
-    "minecraft:white_dye",
     [
       "minecraft:orange_harness",
       "minecraft:magenta_harness",
@@ -20,7 +19,8 @@
       "minecraft:green_harness",
       "minecraft:red_harness",
       "minecraft:black_harness"
-    ]
+    ],
+    "minecraft:white_dye"
   ],
   "result": {
     "id": "minecraft:white_harness"
