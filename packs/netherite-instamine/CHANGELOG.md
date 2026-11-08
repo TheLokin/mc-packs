@@ -1,0 +1,3 @@
+**🗒️ Changelog**
+
+- Updated to Minecraft 26.3.

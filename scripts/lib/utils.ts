@@ -1,12 +1,13 @@
 import fs from "node:fs/promises"
 import path from "node:path"
-import { error } from "./console"
 import { getGameVersions } from "./modrinth"
 import { generatePackFormats } from "./scrape"
 
 export interface PackMetadata {
   project_id: string
+  type: "datapack" | "resourcepack"
   version_number: string
+  version_type: "release" | "beta" | "alpha"
   changelog: string
   game_versions: string[]
   include: Set<string>
@@ -17,25 +18,19 @@ export async function readPackMetadata(packPath: string) {
     .readFile(path.join(packPath, "metadata.json"), "utf-8")
     .then((content) => JSON.parse(content))
 
-  const include = new Set<string>(data.include || [])
-  const packsPath = path.dirname(packPath)
-
-  for (const pack of include) {
-    const stat = await fs.stat(path.join(packsPath, pack)).catch(() => null)
-
-    if (!stat?.isDirectory()) {
-      error(`❌ Included pack not found: ${pack}`)
-    }
-  }
+  const isAlpha = data.version_number.includes("-alpha")
+  const isBeta = data.version_number.includes("-beta")
 
   return {
     project_id: data.project_id,
+    type: data.type,
     version_number: data.game_version
       ? `${data.version_number}-mc${data.game_version}`
       : data.version_number,
-    changelog: data.changelog,
+    version_type: isAlpha ? "alpha" : isBeta ? "beta" : "release",
+    changelog: await fs.readFile(path.join(packPath, "CHANGELOG.md"), "utf-8"),
     game_versions: data.game_versions || [data.game_version],
-    include,
+    include: new Set<string>(data.include || []),
   } as PackMetadata
 }
 

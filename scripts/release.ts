@@ -9,8 +9,8 @@ import {
   getProjectVersions,
 } from "./lib/modrinth"
 import { readPackMetadata } from "./lib/utils"
-import { zipFolder } from "./packages/datapack"
-import { packageDatapack } from "./packages/mod"
+import { bundleMod } from "./packages/mod"
+import { zipFolder } from "./packages/zip"
 
 function bufferToBlob(buffer: Buffer, mimeType: string) {
   const bytes = new Uint8Array(buffer.byteLength)
@@ -21,18 +21,17 @@ function bufferToBlob(buffer: Buffer, mimeType: string) {
 
 async function releasePack(packName: string, packPath: string) {
   const metadata = await readPackMetadata(packPath)
+  const versions = await getProjectVersions(metadata.project_id).then((project_versions) =>
+    project_versions.map((project_version) => project_version.version_number),
+  )
 
-  const existingVersions = await getProjectVersions(metadata.project_id)
-  const versionNumbers = new Set(existingVersions.map((version) => version.version_number))
-
-  const datapackVersion = metadata.version_number
   const modVersion = `${metadata.version_number}+mod`
 
-  const needsDatapack = !versionNumbers.has(datapackVersion)
-  const needsMod = !versionNumbers.has(modVersion)
+  const needsZip = !versions.includes(metadata.version_number)
+  const needsMod = metadata.type === "datapack" && !versions.includes(modVersion)
 
-  if (!needsDatapack && !needsMod) {
-    warn(`⏭️ Skipping ${packName}: both versions already exist`)
+  if (!needsZip && !needsMod) {
+    warn(`⏭️ Skipping ${packName}: all versions already exist`)
     return
   }
 
@@ -40,43 +39,44 @@ async function releasePack(packName: string, packPath: string) {
 
   info(`📦 Releasing ${packName} (${metadata.version_number})`)
 
-  const datapackZip = await zipFolder(metadata, packPath, "datapack")
+  const zip = await zipFolder(metadata, packPath)
 
-  if (needsDatapack) {
-    const buffer = await datapackZip.generateAsync({ type: "nodebuffer" })
+  if (needsZip) {
+    const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
 
     await createProjectVersion({
       project_id: metadata.project_id,
       name: `${project.title} v${metadata.version_number}`,
-      version_number: datapackVersion,
+      version_number: metadata.version_number,
       changelog: metadata.changelog,
       game_versions: metadata.game_versions,
-      version_type: "release",
-      loaders: ["datapack"],
+      version_type: metadata.version_type,
+      loaders: metadata.type === "datapack" ? ["datapack"] : ["minecraft"],
       file: {
         name: `${project.slug}-${metadata.version_number}.zip`,
-        data: bufferToBlob(buffer, "application/zip"),
+        data: bufferToBlob(zipBuffer, "application/zip"),
       },
     })
 
-    success(`✅ Published datapack ${datapackVersion}`)
+    success(`✅ Published ${metadata.type} ${metadata.version_number}`)
   } else {
-    warn(`⏭️ Datapack ${datapackVersion} already exists`)
+    const capitalizedType = metadata.type.charAt(0).toUpperCase() + metadata.type.slice(1)
+
+    warn(`⏭️ ${capitalizedType} ${metadata.version_number} already exists`)
   }
 
   if (needsMod) {
     const members = await getProjectMembers(metadata.project_id)
 
-    const modZip = await packageDatapack({
-      zip: datapackZip,
+    const mod = await bundleMod({
+      zip,
       project,
       members,
       versionNumber: metadata.version_number,
       gameVersions: metadata.game_versions,
       loaders: ["fabric", "quilt", "forge", "neoforge"],
     })
-
-    const buffer = await modZip.generateAsync({ type: "nodebuffer" })
+    const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
 
     await createProjectVersion({
       project_id: metadata.project_id,
@@ -84,28 +84,26 @@ async function releasePack(packName: string, packPath: string) {
       version_number: modVersion,
       changelog: metadata.changelog,
       game_versions: metadata.game_versions,
-      version_type: "release",
+      version_type: metadata.version_type,
       loaders: ["fabric", "quilt", "forge", "neoforge"],
       environment: "server_only",
       file: {
         name: `${project.slug}-${metadata.version_number}.jar`,
-        data: bufferToBlob(buffer, "application/java-archive"),
+        data: bufferToBlob(modBuffer, "application/java-archive"),
       },
     })
 
     success(`✅ Published mod ${modVersion}`)
-  } else {
+  } else if (metadata.type === "datapack") {
     warn(`⏭️ Mod ${modVersion} already exists`)
   }
 }
 
-const entries = await fs.readdir("packs", { withFileTypes: true })
-const packFolders = entries.filter((entry) => entry.isDirectory())
+const packEntries = await fs.readdir("packs", { withFileTypes: true })
+const packFolders = packEntries.filter((packEntry) => packEntry.isDirectory())
 
-let failed = 0
-
-for (const folder of packFolders) {
-  const packPath = path.join("packs", folder.name)
+for (const packFolder of packFolders) {
+  const packPath = path.join("packs", packFolder.name)
   const metadataPath = path.join(packPath, "metadata.json")
 
   try {
@@ -115,15 +113,10 @@ for (const folder of packFolders) {
   }
 
   try {
-    await releasePack(folder.name, packPath)
+    await releasePack(packFolder.name, packPath)
   } catch (err) {
-    failed++
-    warn(`❌ Failed to release ${folder.name}: ${err}`)
+    error(`❌ Failed to release ${packFolder.name}: ${err}`)
   }
-}
-
-if (failed > 0) {
-  error(`❌ ${failed} pack(s) failed to release`)
 }
 
 success("🚀 Release complete")

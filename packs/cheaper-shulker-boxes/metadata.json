@@ -1,5 +1,6 @@
 {
   "project_id": "G8h6VEMz",
+  "type": "datapack",
   "version_number": "1.2.0",
   "game_versions": [
     "26.3",
@@ -23,6 +24,5 @@
     "1.20.5",
     "1.20.4",
     "1.20.3"
-  ],
-  "changelog": "Update to 26.3"
+  ]
 }

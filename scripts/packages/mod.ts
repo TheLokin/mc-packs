@@ -3,7 +3,7 @@ import type { Project, ProjectMember } from "../lib/modrinth"
 import TOML from "@ltd/j-toml"
 import { ALL_GAME_VERSIONS } from "../lib/utils"
 
-export async function packageDatapack({
+export async function bundleMod({
   zip,
   project,
   members,

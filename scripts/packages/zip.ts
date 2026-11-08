@@ -20,16 +20,12 @@ function parseOverlayRange(directory: string) {
   return { min, max }
 }
 
-async function generateMcMeta(
-  metadata: PackMetadata,
-  folderPath: string,
-  type: "datapack" | "resourcepack",
-) {
+async function generateMcMeta(metadata: PackMetadata, folderPath: string) {
   const minVersion = metadata.game_versions.at(-1)!
   const maxVersion = metadata.game_versions[0]!
 
-  const minFormat = PACK_FORMATS[minVersion]![type]!
-  const maxFormat = PACK_FORMATS[maxVersion]![type]!
+  const minFormat = PACK_FORMATS[minVersion]![metadata.type]!
+  const maxFormat = PACK_FORMATS[maxVersion]![metadata.type]!
 
   const mcmeta = await fs
     .readFile(path.join(folderPath, "pack.mcmeta"), "utf-8")
@@ -39,7 +35,7 @@ async function generateMcMeta(
     description: mcmeta.pack.description,
   }
 
-  if (minFormat < LEGACY_THRESHOLD[type]) {
+  if (minFormat < LEGACY_THRESHOLD[metadata.type]) {
     pack.pack_format = minFormat
     pack.min_format = minFormat
     pack.max_format = maxFormat
@@ -67,7 +63,7 @@ async function generateMcMeta(
           max_format: max,
         }
 
-        if (min < LEGACY_THRESHOLD[type]) {
+        if (min < LEGACY_THRESHOLD[metadata.type]) {
           resolved.formats = {
             min_inclusive: min,
             max_inclusive: max,
@@ -82,13 +78,9 @@ async function generateMcMeta(
   return result
 }
 
-export async function zipFolder(
-  metadata: PackMetadata,
-  folderPath: string,
-  type: "datapack" | "resourcepack",
-) {
+export async function zipFolder(metadata: PackMetadata, folderPath: string) {
   const zip = new JSZip()
-  const mcmeta = await generateMcMeta(metadata, folderPath, type)
+  const mcmeta = await generateMcMeta(metadata, folderPath)
 
   zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
   zip.file("pack.png", await fs.readFile(path.join(folderPath, "pack.png")))
@@ -108,46 +100,59 @@ export async function zipFolder(
       await addPack(path.join(packsDirectory, includedPack))
     }
 
-    const dataDirectory = path.join(packPath, "data")
+    for (const contentDirectory of ["data", "assets"]) {
+      const contentPath = path.join(packPath, contentDirectory)
+      const stat = await fs.stat(contentPath).catch(() => null)
 
-    async function collectFiles(directory: string) {
-      const entries = await fs.readdir(directory, { withFileTypes: true })
+      if (!stat?.isDirectory()) continue
 
-      for (const entry of entries) {
-        const filePath = path.join(directory, entry.name)
+      async function collectFiles(directory: string) {
+        const entries = await fs.readdir(directory, { withFileTypes: true })
 
-        if (entry.isDirectory()) {
-          await collectFiles(filePath)
-          continue
-        }
+        for (const entry of entries) {
+          const filePath = path.join(directory, entry.name)
 
-        if (!entry.isFile()) continue
+          if (entry.isDirectory()) {
+            await collectFiles(filePath)
+            continue
+          }
 
-        const relativePath = path.relative(dataDirectory, filePath)
-        const [originalNamespace, ...namespacePath] = relativePath.split(path.sep)
+          if (!entry.isFile()) continue
 
-        if (!originalNamespace) continue
+          const relativePath = path.relative(contentPath, filePath)
+          const [originalNamespace, ...namespacePath] = relativePath.split(path.sep)
 
-        const isMinecraftNamespace = originalNamespace === "minecraft"
-        const targetFileNamespace = isMinecraftNamespace ? originalNamespace : targetNamespace
+          if (!originalNamespace) continue
 
-        const zipPath = path.posix.join("data", targetFileNamespace, ...namespacePath)
+          let targetFileNamespace = originalNamespace
+          let fileContent = await fs.readFile(filePath)
 
-        let fileContent = await fs.readFile(filePath)
+          if (metadata.type === "datapack" && contentDirectory === "data") {
+            const isMinecraftNamespace = originalNamespace === "minecraft"
 
-        if (/\.json$/i.test(entry.name)) {
-          fileContent = Buffer.from(
-            fileContent
-              .toString("utf-8")
-              .replaceAll(`${originalPackNamespace}:`, `${targetNamespace}:`),
+            targetFileNamespace = isMinecraftNamespace ? originalNamespace : targetNamespace
+
+            if (/\.json$/i.test(entry.name)) {
+              fileContent = Buffer.from(
+                fileContent
+                  .toString("utf-8")
+                  .replaceAll(`${originalPackNamespace}:`, `${targetNamespace}:`),
+              )
+            }
+          }
+
+          const zipFilePath = path.posix.join(
+            contentDirectory,
+            targetFileNamespace,
+            ...namespacePath,
           )
+
+          zip.file(zipFilePath, fileContent)
         }
-
-        zip.file(zipPath, fileContent)
       }
-    }
 
-    await collectFiles(dataDirectory)
+      await collectFiles(contentPath)
+    }
   }
 
   await addPack(folderPath)

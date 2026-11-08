@@ -1,6 +1,6 @@
 {
   "project_id": "ScmlvYHN",
+  "type": "datapack",
   "version_number": "1.1",
-  "game_version": "26.3",
-  "changelog": "Fixed a bug with incorrectly configured recipes"
+  "game_version": "26.3"
 }

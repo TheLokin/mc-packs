@@ -4,8 +4,8 @@ import process from "node:process"
 import { error, info, success } from "./lib/console"
 import { getProject, getProjectMembers } from "./lib/modrinth"
 import { readPackMetadata } from "./lib/utils"
-import { zipFolder } from "./packages/datapack"
-import { packageDatapack } from "./packages/mod"
+import { bundleMod } from "./packages/mod"
+import { zipFolder } from "./packages/zip"
 
 const packName = process.argv[2]
 
@@ -29,35 +29,36 @@ await fs.mkdir("dist", { recursive: true })
 
 info(`📦 Packaging ${packName}...`)
 
-const datapack = await zipFolder(metadata, packPath, "datapack")
-const datapackPath = path.join("dist", `${packName}.zip`)
-const datapackBuffer = await datapack.generateAsync({ type: "nodebuffer" })
+const zip = await zipFolder(metadata, packPath)
+const zipPath = path.join("dist", `${packName}.zip`)
+const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
 
-await fs.writeFile(datapackPath, datapackBuffer)
+await fs.writeFile(zipPath, zipBuffer)
 
 success(`✅ Created ${packName}.zip at dist`)
 
-info("⚙️ Packaging as mod...")
+if (metadata.type === "datapack") {
+  info("⚙️ Packaging as mod...")
 
-const [project, members] = await Promise.all([
-  getProject(metadata.project_id),
-  getProjectMembers(metadata.project_id),
-])
+  const [project, members] = await Promise.all([
+    getProject(metadata.project_id),
+    getProjectMembers(metadata.project_id),
+  ])
 
-const mod = await packageDatapack({
-  zip: datapack,
-  project,
-  members,
-  versionNumber: metadata.version_number,
-  gameVersions: metadata.game_versions,
-  loaders: ["fabric", "quilt", "forge", "neoforge"],
-})
+  const mod = await bundleMod({
+    zip,
+    project,
+    members,
+    versionNumber: metadata.version_number,
+    gameVersions: metadata.game_versions,
+    loaders: ["fabric", "quilt", "forge", "neoforge"],
+  })
+  const modPath = path.join("dist", `${packName}.jar`)
+  const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
 
-const modPath = path.join("dist", `${packName}.jar`)
-const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
+  await fs.writeFile(modPath, modBuffer)
 
-await fs.writeFile(modPath, modBuffer)
-
-success(`✅ Created ${packName}.jar at dist`)
+  success(`✅ Created ${packName}.jar at dist`)
+}
 
 success("🚀 Packaging complete")
