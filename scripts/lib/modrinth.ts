@@ -78,28 +78,21 @@ export const createProjectVersion = async (versionData: {
     changelog: versionData.changelog,
     dependencies: versionData.dependencies || [],
     game_versions: versionData.game_versions,
-    loaders: versionData.loaders,
     version_type: versionData.version_type,
+    loaders: versionData.loaders,
     featured: versionData?.featured || false,
     file_parts: [versionData.file.name],
     primary_file: versionData.file.name,
+    environment: versionData.environment,
   })
 
   formData.append("data", payload)
   formData.append(versionData.file.name, versionData.file.data, versionData.file.name)
 
-  const version = await modrinthFetch<{ id: string }>("/v2/version", {
+  await modrinthFetch<{ id: string }>("/v2/version", {
     method: "POST",
     body: formData,
   })
-
-  if (versionData.environment) {
-    await modrinthFetch<void>(`/v3/version/${version.id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ environment: versionData.environment }),
-    })
-  }
 }
 
 // https://docs.modrinth.com/api/operations/getprojectteammembers
