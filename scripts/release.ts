@@ -1,6 +1,7 @@
 import type { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
+import process from "node:process"
 import { error, info, success, warn } from "./lib/console"
 import {
   createProjectVersion,
@@ -99,11 +100,23 @@ async function releasePack(packName: string, packPath: string) {
   }
 }
 
-const packEntries = await fs.readdir("packs", { withFileTypes: true })
-const packFolders = packEntries.filter((packEntry) => packEntry.isDirectory())
+const packName = process.argv[2]
 
-for (const packFolder of packFolders) {
-  const packPath = path.join("packs", packFolder.name)
+if (process.argv.length > 3) {
+  error("❌ Too many arguments. Usage: pnpm release [pack-name]")
+}
+
+const packEntries = await fs.readdir("packs", { withFileTypes: true })
+const packFolders = packEntries.filter((entry) => entry.isDirectory())
+
+const packs = packName ? packFolders.filter((folder) => folder.name === packName) : packFolders
+
+if (packName && packs.length === 0) {
+  error(`❌ Pack not found: ${packName}`)
+}
+
+for (const pack of packs) {
+  const packPath = path.join("packs", pack.name)
   const metadataPath = path.join(packPath, "metadata.json")
 
   try {
@@ -113,9 +126,9 @@ for (const packFolder of packFolders) {
   }
 
   try {
-    await releasePack(packFolder.name, packPath)
+    await releasePack(pack.name, packPath)
   } catch (err) {
-    error(`❌ Failed to release ${packFolder.name}: ${err}`)
+    error(`❌ Failed to release ${pack.name}: ${err}`)
   }
 }
 
