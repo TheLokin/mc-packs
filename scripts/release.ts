@@ -53,6 +53,7 @@ async function releasePack(packName: string, packPath: string) {
       game_versions: metadata.game_versions,
       version_type: metadata.version_type,
       loaders: metadata.type === "datapack" ? ["datapack"] : ["minecraft"],
+      environment: "server_only",
       file: {
         name: `${project.slug}-${metadata.version_number}.zip`,
         data: bufferToBlob(zipBuffer, "application/zip"),
