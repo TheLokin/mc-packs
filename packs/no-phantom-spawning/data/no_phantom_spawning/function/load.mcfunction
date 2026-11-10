@@ -1,1 +1,0 @@
-gamerule spawn_phantoms false
