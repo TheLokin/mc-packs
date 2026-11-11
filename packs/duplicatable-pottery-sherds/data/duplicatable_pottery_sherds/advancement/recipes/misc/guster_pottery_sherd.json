@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_guster_pottery_sherd": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:guster_pottery_sherd"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "duplicatable_pottery_sherds:guster_pottery_sherd"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_guster_pottery_sherd"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "duplicatable_pottery_sherds:guster_pottery_sherd"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_danger_pottery_sherd": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:danger_pottery_sherd"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "duplicatable_pottery_sherds:danger_pottery_sherd"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_danger_pottery_sherd"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "duplicatable_pottery_sherds:danger_pottery_sherd"
+    ]
+  }
+}
