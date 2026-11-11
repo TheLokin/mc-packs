@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "duplicatable_pottery_sherds:howl_pottery_sherd"
+        "recipes": "duplicate_pottery_sherds:howl_pottery_sherd"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "duplicatable_pottery_sherds:howl_pottery_sherd"
+      "duplicate_pottery_sherds:howl_pottery_sherd"
     ]
   }
 }

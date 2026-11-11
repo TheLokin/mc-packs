@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_brewer_pottery_sherd": {
+    "has_skull_pottery_sherd": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:brewer_pottery_sherd"
+            "items": "minecraft:skull_pottery_sherd"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "duplicatable_pottery_sherds:brewer_pottery_sherd"
+        "recipes": "duplicate_pottery_sherds:skull_pottery_sherd"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_brewer_pottery_sherd"
+      "has_skull_pottery_sherd"
     ]
   ],
   "rewards": {
     "recipes": [
-      "duplicatable_pottery_sherds:brewer_pottery_sherd"
+      "duplicate_pottery_sherds:skull_pottery_sherd"
     ]
   }
 }

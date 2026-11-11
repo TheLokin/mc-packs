@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mourner_pottery_sherd": {
+    "has_shelter_pottery_sherd": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:mourner_pottery_sherd"
+            "items": "minecraft:shelter_pottery_sherd"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "duplicatable_pottery_sherds:mourner_pottery_sherd"
+        "recipes": "duplicate_pottery_sherds:shelter_pottery_sherd"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mourner_pottery_sherd"
+      "has_shelter_pottery_sherd"
     ]
   ],
   "rewards": {
     "recipes": [
-      "duplicatable_pottery_sherds:mourner_pottery_sherd"
+      "duplicate_pottery_sherds:shelter_pottery_sherd"
     ]
   }
 }
