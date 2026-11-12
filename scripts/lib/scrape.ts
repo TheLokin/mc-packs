@@ -1,6 +1,7 @@
 import type { PackFormat } from "./utils"
 import fs from "node:fs/promises"
 import * as cheerio from "cheerio"
+import { error } from "./console"
 import { ALL_GAME_VERSIONS } from "./utils"
 
 const BASE_URL = "https://minecraft.wiki"
@@ -14,7 +15,7 @@ async function minecraftWikiFetch(path: string) {
   })
 
   if (!response.ok) {
-    throw new Error(`Minecraft Wiki error: ${response.status}`)
+    error(`Minecraft Wiki error: ${response.status}`)
   }
 
   return response.text()
@@ -73,7 +74,7 @@ function parsePackFormats(html: string) {
     .first()
 
   if (!table.length) {
-    throw new Error("Could not find the pack formats table in the Minecraft Wiki page")
+    error("Could not find the pack formats table in the Minecraft Wiki page")
   }
 
   const grid: string[][] = []

@@ -1,5 +1,6 @@
 import process from "node:process"
 import dotenv from "dotenv"
+import { error } from "./console"
 
 dotenv.config({ quiet: true })
 
@@ -15,7 +16,7 @@ async function modrinthFetch<T>(path: string, options: RequestInit = {}) {
   const response = await fetch(`${BASE_URL}${path}`, { ...options, headers })
 
   if (!response.ok) {
-    throw new Error(`Modrinth API error ${response.status}: ${await response.text()}`)
+    error(`Modrinth API error ${response.status}: ${await response.text()}`)
   }
 
   if (response.status === 204) {

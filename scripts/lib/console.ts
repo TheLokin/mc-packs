@@ -20,7 +20,7 @@ export function warn(message: string) {
   console.log(`${colors.yellow}${message}${colors.reset}`)
 }
 
-export function error(message: string) {
+export function error(message: string): never {
   console.error(`${colors.red}${message}${colors.reset}`)
   process.exit(0)
 }

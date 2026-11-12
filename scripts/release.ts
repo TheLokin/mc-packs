@@ -40,7 +40,7 @@ async function releasePack(packName: string, packPath: string) {
 
   info(`📦 Releasing ${packName} (${metadata.version_number})`)
 
-  const zip = await zipFolder(metadata, packPath)
+  const zip = await zipFolder(packPath)
 
   if (needsZip) {
     const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })

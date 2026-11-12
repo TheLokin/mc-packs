@@ -29,7 +29,7 @@ await fs.mkdir("dist", { recursive: true })
 
 info(`📦 Packaging ${packName}...`)
 
-const zip = await zipFolder(metadata, packPath)
+const zip = await zipFolder(packPath)
 const zipPath = path.join("dist", `${packName}.zip`)
 const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
 

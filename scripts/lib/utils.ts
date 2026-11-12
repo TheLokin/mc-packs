@@ -3,16 +3,6 @@ import path from "node:path"
 import { getGameVersions } from "./modrinth"
 import { generatePackFormats } from "./scrape"
 
-export interface PackMetadata {
-  project_id: string
-  type: "datapack" | "resourcepack"
-  version_number: string
-  version_type: "release" | "beta" | "alpha"
-  changelog: string
-  game_versions: string[]
-  include: Set<string>
-}
-
 export async function readPackMetadata(packPath: string) {
   const data = await fs
     .readFile(path.join(packPath, "metadata.json"), "utf-8")
@@ -22,16 +12,16 @@ export async function readPackMetadata(packPath: string) {
   const isBeta = data.version_number.includes("-beta")
 
   return {
-    project_id: data.project_id,
-    type: data.type,
+    project_id: data.project_id as string,
+    type: data.type as "datapack" | "resourcepack",
     version_number: data.game_version
       ? `${data.version_number}-mc${data.game_version}`
-      : data.version_number,
-    version_type: isAlpha ? "alpha" : isBeta ? "beta" : "release",
+      : (data.version_number as string),
+    version_type: isAlpha ? ("alpha" as const) : isBeta ? ("beta" as const) : ("release" as const),
     changelog: await fs.readFile(path.join(packPath, "CHANGELOG.md"), "utf-8"),
-    game_versions: data.game_versions || [data.game_version],
+    game_versions: (data.game_versions || [data.game_version]) as string[],
     include: new Set<string>(data.include || []),
-  } as PackMetadata
+  }
 }
 
 export const ALL_GAME_VERSIONS = await getGameVersions().then((gameVersions) =>
@@ -52,10 +42,10 @@ export interface PackFormat {
 }
 
 export const PACK_FORMATS: Record<string, PackFormat> = await fs
-  .readFile("packs/pack-formats.json", "utf-8")
+  .readFile(path.join("packs", "pack-formats.json"), "utf-8")
   .then((content) => JSON.parse(content))
   .catch(() =>
     generatePackFormats()
-      .then(() => fs.readFile("packs/pack-formats.json", "utf-8"))
+      .then(() => fs.readFile(path.join("packs", "pack-formats.json"), "utf-8"))
       .then((content) => JSON.parse(content)),
   )
