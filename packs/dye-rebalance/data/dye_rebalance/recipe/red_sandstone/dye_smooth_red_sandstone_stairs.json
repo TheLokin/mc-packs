@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "smooth_red_sandstone_stairs",
+  "ingredients": [
+    "minecraft:smooth_sandstone_stairs",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "id": "minecraft:smooth_red_sandstone_stairs"
+  }
+}

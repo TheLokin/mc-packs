@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cut_red_sandstone",
+  "ingredients": [
+    "minecraft:cut_sandstone",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "id": "minecraft:cut_red_sandstone"
+  }
+}

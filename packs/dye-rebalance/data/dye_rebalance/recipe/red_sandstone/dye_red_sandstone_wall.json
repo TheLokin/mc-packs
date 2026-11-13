@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "red_sandstone_wall",
+  "ingredients": [
+    "minecraft:sandstone_wall",
+    "minecraft:red_dye"
+  ],
+  "result": {
+    "id": "minecraft:red_sandstone_wall"
+  }
+}

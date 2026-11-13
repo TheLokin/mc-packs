@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "chiseled_red_sandstone",
+  "key": {
+    "#": "minecraft:red_sandstone_slab"
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "id": "minecraft:chiseled_red_sandstone"
+  }
+}
