@@ -21,7 +21,7 @@
     "@types/node": "26.6.6",
     "eslint": "10.14.0",
     "eslint-config-protocol": "1.0.0",
-    "prettier": "3.9.10",
+    "prettier": "3.10.1",
     "prettier-plugin-multiline-arrays": "4.1.11",
     "tsx": "4.23.15",
     "typescript": "6.0.3"
