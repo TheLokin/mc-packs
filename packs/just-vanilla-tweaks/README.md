@@ -6,6 +6,7 @@ A bundle of vanilla-friendly tweaks that combines the features of several indivi
 
 - **Stone variants:** Adds recipes for Calcite (Diorite + Dripstone Block), Tuff (Andesite + Diorite) and Cinnabar (Sulfur + Netherrack). Granite is now made from Cinnabar + Diorite and Diorite uses a shapeless Cobblestone + Quartz recipe.
 - **Uncrafting:** Amethyst Blocks, Clay Blocks, Glowstone, Melons, Packed Ice, Blue Ice and Honeycomb Blocks can be converted back into 4 Amethyst Shards, 4 Clay Balls, 4 Glowstone Dust, 9 Melon Slices, 9 Ice, 9 Packed Ice and 4 Honeycomb respectively.
+- **Snow:** Two Snow Blocks in a row can be crafted into 3 Snow, following the same pattern as Carpet.
 - **Tool compatibility:** Glass, Stained Glass and Stained Glass Panes, Tinted Glass, Glowstone, Sea Lanterns, Beacons, Redstone Lamps, Frosted Ice and mob heads can now be mined faster with a pickaxe. Honeycomb Blocks and Froglights can now be mined faster with an axe.
 - **Coral blocks:** Coral Blocks can be crafted from 4 of their corresponding Coral or Coral Fan, including all Dead Coral variants.
 - **Copper oxidation:** Any Copper block or variant can be combined with a Sulfur Spike to advance it by one oxidation stage. Waxed variants are supported and keep their wax coating.
