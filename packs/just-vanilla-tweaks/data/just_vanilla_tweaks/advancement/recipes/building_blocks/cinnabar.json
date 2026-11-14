@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:cinnabar"
+        "recipes": "just_vanilla_tweaks:cinnabar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:cinnabar"
+      "just_vanilla_tweaks:cinnabar"
     ]
   }
 }

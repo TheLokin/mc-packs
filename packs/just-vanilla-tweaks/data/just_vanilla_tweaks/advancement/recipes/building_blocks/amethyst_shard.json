@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_clay": {
+    "has_amethyst_block": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:clay"
+            "items": "minecraft:amethyst_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:clay_ball"
+        "recipes": "just_vanilla_tweaks:amethyst_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_clay"
+      "has_amethyst_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:clay_ball"
+      "just_vanilla_tweaks:amethyst_shard"
     ]
   }
 }

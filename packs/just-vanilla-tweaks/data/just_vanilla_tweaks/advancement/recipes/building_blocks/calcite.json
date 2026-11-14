@@ -1,16 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_andesite": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:andesite"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_diorite": {
       "conditions": {
         "items": [
@@ -21,9 +11,19 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_dripstone_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dripstone_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "better_recipes:tuff"
+        "recipes": "just_vanilla_tweaks:calcite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diorite",
-      "has_andesite"
+      "has_dripstone_block",
+      "has_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "better_recipes:tuff"
+      "just_vanilla_tweaks:calcite"
     ]
   }
 }
