@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    "minecraft:diorite",
-    "minecraft:red_sand"
+    "minecraft:cinnabar",
+    "minecraft:diorite"
   ],
   "result": {
     "count": 2,
