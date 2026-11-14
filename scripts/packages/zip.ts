@@ -3,7 +3,7 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import JSZip from "jszip"
 import { error } from "../lib/console"
-import { PACK_FORMATS, readPackMetadata } from "../lib/utils"
+import { getPackFormat, readPackMetadata } from "../lib/utils"
 
 const LEGACY_THRESHOLD = { datapack: 82, resourcepack: 65 }
 const FLATTEN_CONTENT_TYPES = new Set(["advancement", "recipe"])
@@ -25,8 +25,8 @@ async function generateMcMeta(packPath: string) {
   const minVersion = metadata.game_versions.at(-1)!
   const maxVersion = metadata.game_versions[0]!
 
-  const minFormat = PACK_FORMATS[minVersion]![metadata.type]!
-  const maxFormat = PACK_FORMATS[maxVersion]![metadata.type]!
+  const minFormat = await getPackFormat(minVersion).then((format) => format[metadata.type]!)
+  const maxFormat = await getPackFormat(maxVersion).then((format) => format[metadata.type]!)
 
   const mcmeta = await fs
     .readFile(path.join(packPath, "pack.mcmeta"), "utf-8")
