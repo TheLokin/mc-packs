@@ -114,6 +114,11 @@ export async function zipFolder(folderPath: string) {
   zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
   zip.file("pack.png", await fs.readFile(path.join(folderPath, "pack.png")))
 
+  const creditsPath = path.join(folderPath, "credits.txt")
+  if (await fs.stat(creditsPath).catch(() => null)) {
+    zip.file("credits.txt", await fs.readFile(creditsPath))
+  }
+
   const processedPacks = new Set<string>()
   const collectedFiles: {
     path: string
