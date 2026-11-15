@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Updated to Minecraft 1.20.3.
+- Updated to Minecraft 1.20.4.
