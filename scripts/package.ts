@@ -10,8 +10,10 @@ import { zipFolder } from "./packages/zip"
 async function copyToDirectory(sourcePath: string, directory: string | undefined) {
   if (!directory) return
 
-  if (await fs.access(directory).catch(() => null)) {
-    warn(`⚠️ Directory does not exist: ${directory}`)
+  const stat = await fs.stat(directory).catch(() => null)
+
+  if (!stat?.isDirectory()) {
+    warn(`⚠️ Directory not found: ${directory}`)
     return
   }
 

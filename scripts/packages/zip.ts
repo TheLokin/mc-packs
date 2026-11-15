@@ -115,7 +115,9 @@ export async function zipFolder(folderPath: string) {
   zip.file("pack.png", await fs.readFile(path.join(folderPath, "pack.png")))
 
   const creditsPath = path.join(folderPath, "credits.txt")
-  if (await fs.stat(creditsPath).catch(() => null)) {
+  const creditsStat = await fs.stat(creditsPath).catch(() => null)
+
+  if (creditsStat?.isFile()) {
     zip.file("credits.txt", await fs.readFile(creditsPath))
   }
 
