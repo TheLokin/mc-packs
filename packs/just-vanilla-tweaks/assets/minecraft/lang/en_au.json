@@ -22,5 +22,8 @@
   "block.minecraft.waxed_exposed_copper": "Waxed Exposed Copper Block",
   "block.minecraft.waxed_oxidized_copper": "Waxed Oxidised Copper Block",
   "block.minecraft.waxed_weathered_copper": "Waxed Weathered Copper Block",
-  "block.minecraft.weathered_copper": "Weathered Copper Block"
+  "block.minecraft.weathered_copper": "Weathered Copper Block",
+  "item.minecraft.blue_egg": "Blue Chicken Egg",
+  "item.minecraft.brown_egg": "Brown Chicken Egg",
+  "item.minecraft.egg": "White Chicken Egg"
 }

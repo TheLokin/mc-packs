@@ -14,6 +14,7 @@ A bundle of vanilla-friendly tweaks that combines the features of several indivi
 - **Dye rebalance:** Colored blocks and items can be re-dyed from any other color instead of only being craftable from their undyed or white variant. Whole blocks are re-dyed in batches of 8, while other items and variants are re-dyed individually.
 - **Dye recipes:** Adds dye-based recipes for Red Sand, Red Sandstone, Smooth Red Sandstone, Red Nether Bricks, Nether Wart Blocks and Warped Wart Blocks, replacing the vanilla Red Nether Bricks and Nether Wart Block recipes. It also adds new ways to obtain Brown, Green, Lime and Black Dye, and makes Azure Bluet, Oxeye Daisy and White Tulip produce White Dye.
 - **Cheaper recipes:** Shulker Boxes require 1 Shulker Shell and 1 Chest. Armor Trim duplication uses 1 primary material instead of 7 Diamonds. Pottery Sherds can be duplicated with 4 Bricks and the original Sherd to yield 2 copies.
+- **Name tweaks:** Some items and blocks are renamed so their names are clearer and more consistent with the rest of the game.
 
 ## Included packs
 
