@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Initial release.
+- Updated to Minecraft 1.14.1.
