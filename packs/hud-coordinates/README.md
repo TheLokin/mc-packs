@@ -13,4 +13,4 @@ Based on **Coordinates HUD** by [Vanilla Tweaks](https://vanillatweaks.net), wit
 - It is enabled by default, with no in-game toggle.
 - It does not add a tab to the Advancements screen.
 
-All credit for the original concept and implementation goes to Vanilla Tweaks.
+All credit for the original concept and implementation goes to them.
