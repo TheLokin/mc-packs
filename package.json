@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@12.18.0",
+  "packageManager": "pnpm@12.21.0",
   "scripts": {
     "package": "tsx scripts/package.ts",
     "release": "tsx scripts/release.ts",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "26.6.6",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "eslint-config-protocol": "1.0.0",
     "prettier": "3.10.1",
     "prettier-plugin-multiline-arrays": "4.1.11",
