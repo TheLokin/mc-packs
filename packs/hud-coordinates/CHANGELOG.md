@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Updated to Minecraft 26.3.
+- Updated to Minecraft ${game_version}.

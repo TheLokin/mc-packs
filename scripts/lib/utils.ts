@@ -24,6 +24,14 @@ export async function readPackMetadata(packPath: string) {
   const isAlpha = data.version_number.includes("-alpha")
   const isBeta = data.version_number.includes("-beta")
 
+  const changelog = await fs
+    .readFile(path.join(packPath, "CHANGELOG.md"), "utf-8")
+    .then((content) =>
+      content.replace(/\$\{(\w+)\}/g, (_, key) =>
+        data[key] != null ? String(data[key]) : `\${${key}}`,
+      ),
+    )
+
   return {
     project_id: data.project_id as string,
     type: data.type as "datapack" | "resourcepack",
@@ -31,7 +39,7 @@ export async function readPackMetadata(packPath: string) {
       ? `${data.version_number}-mc${data.game_version}`
       : (data.version_number as string),
     version_type: isAlpha ? ("alpha" as const) : isBeta ? ("beta" as const) : ("release" as const),
-    changelog: await fs.readFile(path.join(packPath, "CHANGELOG.md"), "utf-8"),
+    changelog,
     game_versions: (data.game_versions || [data.game_version]) as string[],
     include: new Set<string>(data.include || []),
   }

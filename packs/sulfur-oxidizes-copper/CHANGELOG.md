@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Fixed an issue with incorrectly configured recipes.
+- Updated to Minecraft ${game_version}.
