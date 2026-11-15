@@ -1,4 +1,4 @@
-execute store result score #ch_daytime ch_daytime run time query daytime
+execute store result score #ch_daytime ch_daytime run time of minecraft:overworld query minecraft:day
 
 scoreboard players operation #ch_allHours ch_allHours = #ch_daytime ch_daytime
 scoreboard players operation #ch_allHours ch_allHours /= #5 ch_constant
