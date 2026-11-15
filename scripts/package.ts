@@ -1,11 +1,24 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 import process from "node:process"
-import { error, info, success } from "./lib/console"
+import { error, info, success, warn } from "./lib/console"
 import { getProject, getProjectMembers } from "./lib/modrinth"
 import { readPackMetadata } from "./lib/utils"
 import { bundleMod } from "./packages/mod"
 import { zipFolder } from "./packages/zip"
+
+async function copyToDirectory(sourcePath: string, directory: string | undefined) {
+  if (!directory) return
+
+  if (await fs.access(directory).catch(() => null)) {
+    warn(`⚠️ Directory does not exist: ${directory}`)
+    return
+  }
+
+  await fs.copyFile(sourcePath, path.join(directory, path.basename(sourcePath)))
+
+  info(`📁 Copied to ${directory}`)
+}
 
 const packName = process.argv[2]
 
@@ -37,6 +50,8 @@ await fs.writeFile(zipPath, zipBuffer)
 
 success(`✅ Created ${packName}.zip at dist`)
 
+await copyToDirectory(zipPath, process.env.PACK_ZIP_DIR)
+
 if (metadata.type === "datapack") {
   info("⚙️ Packaging as mod...")
 
@@ -59,6 +74,8 @@ if (metadata.type === "datapack") {
   await fs.writeFile(modPath, modBuffer)
 
   success(`✅ Created ${packName}.jar at dist`)
+
+  await copyToDirectory(modPath, process.env.PACK_JAR_DIR)
 }
 
 success("🚀 Packaging complete")
