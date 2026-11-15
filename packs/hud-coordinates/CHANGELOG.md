@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Updated to Minecraft 26.2.
+- Updated to Minecraft 26.3.
