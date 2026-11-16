@@ -10,9 +10,9 @@ import { zipFolder } from "./packages/zip"
 async function copyToDirectory(sourcePath: string, directory: string | undefined) {
   if (!directory) return
 
-  const stat = await fs.stat(directory).catch(() => null)
+  const dirStat = await fs.stat(directory).catch(() => null)
 
-  if (!stat?.isDirectory()) {
+  if (!dirStat?.isDirectory()) {
     warn(`⚠️ Directory not found: ${directory}`)
     return
   }
@@ -29,9 +29,9 @@ if (!packName || process.argv.length !== 3) {
 }
 
 const packPath = path.join("packs", packName!)
-const stat = await fs.stat(packPath).catch(() => null)
+const packStat = await fs.stat(packPath).catch(() => null)
 
-if (!stat?.isDirectory()) {
+if (!packStat?.isDirectory()) {
   error(`❌ Pack not found: ${packName}`)
 }
 
@@ -44,7 +44,7 @@ await fs.mkdir("dist", { recursive: true })
 
 info(`📦 Packaging ${packName}...`)
 
-const zip = await zipFolder(packPath)
+const zip = await bundleZip(packPath)
 const zipPath = path.join("dist", `${packName}.zip`)
 const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
 
@@ -54,7 +54,7 @@ success(`✅ Created ${packName}.zip at dist`)
 
 await copyToDirectory(zipPath, process.env.PACK_ZIP_DIR)
 
-if (metadata.type === "datapack") {
+if (metadata.type === "datapack" && supportsMod(metadata.game_versions)) {
   info("⚙️ Packaging as mod...")
 
   const [project, members] = await Promise.all([

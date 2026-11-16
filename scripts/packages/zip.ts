@@ -1,6 +1,7 @@
 import { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
+import { pathToFileURL } from "node:url"
 import JSZip from "jszip"
 import { error } from "../lib/console"
 import { getPackFormat, readPackMetadata } from "../lib/utils"
@@ -107,14 +108,14 @@ function flattenNamespacePath(namespacePath: string[]) {
   return [contentType, category, categoryPath.at(-1)!]
 }
 
-export async function zipFolder(folderPath: string) {
+export async function bundleZip(packPath: string) {
   const zip = new JSZip()
-  const mcmeta = await generateMcMeta(folderPath)
+  const mcmeta = await generateMcMeta(packPath)
 
   zip.file("pack.mcmeta", `${JSON.stringify(mcmeta, null, 2)}\n`)
-  zip.file("pack.png", await fs.readFile(path.join(folderPath, "pack.png")))
+  zip.file("pack.png", await fs.readFile(path.join(packPath, "pack.png")))
 
-  const creditsPath = path.join(folderPath, "credits.txt")
+  const creditsPath = path.join(packPath, "credits.txt")
   const creditsStat = await fs.stat(creditsPath).catch(() => null)
 
   if (creditsStat?.isFile()) {
@@ -129,8 +130,8 @@ export async function zipFolder(folderPath: string) {
     replacements: Array<[string, string]>
   }[] = []
   const idMappings = new Map<string, string>()
-  const targetNamespace = path.basename(folderPath).replace(/-/g, "_")
-  const packsDirectory = path.dirname(folderPath)
+  const targetNamespace = path.basename(packPath).replace(/-/g, "_")
+  const packsDirectory = path.dirname(packPath)
 
   async function addPack(packPath: string) {
     if (processedPacks.has(packPath)) return
@@ -227,9 +228,18 @@ export async function zipFolder(folderPath: string) {
 
       await collectFiles(contentPath)
     }
+
+    const buildPath = path.join(packPath, "build.ts")
+    const buildStat = await fs.stat(buildPath).catch(() => null)
+
+    if (buildStat?.isFile()) {
+      const { default: build } = await import(pathToFileURL(buildPath).href)
+
+      await build(zip)
+    }
   }
 
-  await addPack(folderPath)
+  await addPack(packPath)
 
   for (const file of collectedFiles) {
     if (file.isJson) {

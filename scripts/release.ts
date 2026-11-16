@@ -11,7 +11,7 @@ import {
 } from "./lib/modrinth"
 import { readPackMetadata } from "./lib/utils"
 import { bundleMod } from "./packages/mod"
-import { zipFolder } from "./packages/zip"
+import { bundleZip } from "./packages/zip"
 
 function bufferToBlob(buffer: Buffer, mimeType: string) {
   const bytes = new Uint8Array(buffer.byteLength)
@@ -40,7 +40,7 @@ async function releasePack(packName: string, packPath: string) {
 
   info(`📦 Releasing ${packName} (${metadata.version_number})`)
 
-  const zip = await zipFolder(packPath)
+  const zip = await bundleZip(packPath)
 
   if (needsZip) {
     const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })

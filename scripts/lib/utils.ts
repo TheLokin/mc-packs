@@ -50,7 +50,7 @@ export interface PackFormat {
   resourcepack: number | null
 }
 
-export async function getPackFormat(version: string): Promise<PackFormat> {
+export async function getPackFormat(version: string) {
   const readFormats = () =>
     fs
       .readFile(path.join("packs", "pack-formats.json"), "utf-8")
