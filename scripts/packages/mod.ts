@@ -1,7 +1,7 @@
 import type JSZip from "jszip"
 import type { Project, ProjectMember } from "../lib/modrinth"
 import TOML from "@ltd/j-toml"
-import { ALL_GAME_VERSIONS } from "../lib/utils"
+import { RELEASE_GAME_VERSIONS } from "../lib/scrape"
 
 export async function bundleMod({
   zip,
@@ -19,8 +19,8 @@ export async function bundleMod({
   loaders: ("fabric" | "quilt" | "forge" | "neoforge")[]
 }) {
   const newVersionNumber = /^\d/.test(versionNumber) ? versionNumber : `1-${versionNumber}`
-  const newSlug = project.slug.replace("-", "_").replace(/\W/g, "").substring(0, 63)
-  const iconPath = `${project.slug}_pack.png`
+  const newSlug = project.slug.replaceAll("-", "_").replace(/\W/g, "").substring(0, 63)
+  const iconPath = `${newSlug}_pack.png`
 
   const fabricModJson = {
     schemaVersion: 1,
@@ -76,11 +76,11 @@ export async function bundleMod({
     },
   }
 
-  const cutoffIndex = ALL_GAME_VERSIONS.indexOf("1.18.2")
+  const cutoffIndex = RELEASE_GAME_VERSIONS.indexOf("1.18.2")
 
   let maximumIndex = Number.MIN_VALUE
   for (const gameVersion of gameVersions) {
-    const index = ALL_GAME_VERSIONS.indexOf(gameVersion)
+    const index = RELEASE_GAME_VERSIONS.indexOf(gameVersion)
     if (index > maximumIndex) {
       maximumIndex = index
     }
@@ -120,16 +120,28 @@ export async function bundleMod({
   }
 
   if (loaders.includes("fabric")) {
-    zip.file("fabric.mod.json", JSON.stringify(fabricModJson, null, 2))
+    zip.file("fabric.mod.json", `${JSON.stringify(fabricModJson, null, 2)}\n`)
   }
   if (loaders.includes("quilt")) {
-    zip.file("quilt.mod.json", JSON.stringify(quiltModJson, null, 2))
+    zip.file("quilt.mod.json", `${JSON.stringify(quiltModJson, null, 2)}\n`)
   }
   if (loaders.includes("forge")) {
-    zip.file("META-INF/mods.toml", TOML.stringify(forgeModsToml, { newline: "\n" }))
+    zip.file(
+      "META-INF/mods.toml",
+      TOML.stringify(forgeModsToml, {
+        newline: "\n",
+        indent: 2,
+      }).trimStart(),
+    )
   }
   if (loaders.includes("neoforge")) {
-    zip.file("META-INF/neoforge.mods.toml", TOML.stringify(neoModsToml, { newline: "\n" }))
+    zip.file(
+      "META-INF/neoforge.mods.toml",
+      TOML.stringify(neoModsToml, {
+        newline: "\n",
+        indent: 2,
+      }).trimStart(),
+    )
   }
 
   if (!newForge && loaders.includes("forge")) {

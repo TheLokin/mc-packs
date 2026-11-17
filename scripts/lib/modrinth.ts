@@ -48,6 +48,17 @@ export interface ProjectVersion {
 export const getProjectVersions = (id: string) =>
   modrinthFetch<ProjectVersion[]>(`/v2/project/${id}/version`)
 
+// https://docs.modrinth.com/api/operations/getprojectteammembers
+export interface ProjectMember {
+  role: string
+  user: {
+    username: string
+  }
+}
+
+export const getProjectMembers = (id: string) =>
+  modrinthFetch<ProjectMember[]>(`/v2/project/${id}/members`)
+
 // https://docs.modrinth.com/api/operations/createversion
 export const createProjectVersion = async (versionData: {
   project_id: string
@@ -95,22 +106,3 @@ export const createProjectVersion = async (versionData: {
     body: formData,
   })
 }
-
-// https://docs.modrinth.com/api/operations/getprojectteammembers
-export interface ProjectMember {
-  role: string
-  user: {
-    username: string
-  }
-}
-
-export const getProjectMembers = (id: string) =>
-  modrinthFetch<ProjectMember[]>(`/v2/project/${id}/members`)
-
-// https://docs.modrinth.com/api/operations/versionlist
-export interface GameVersion {
-  version: string
-  version_type: "release" | "snapshot" | "alpha" | "beta"
-}
-
-export const getGameVersions = () => modrinthFetch<GameVersion[]>("/v2/tag/game_version")

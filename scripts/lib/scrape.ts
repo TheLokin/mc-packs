@@ -1,18 +1,19 @@
-import type { PackFormat } from "./utils"
 import fs from "node:fs/promises"
+import path from "node:path"
 import * as cheerio from "cheerio"
 import { error } from "./console"
-import { ALL_GAME_VERSIONS } from "./utils"
 
 const BASE_URL = "https://minecraft.wiki"
 const USER_AGENT = "mc-packs/1.0 (https://github.com/TheLokin/mc-packs)"
 
+interface PackFormat {
+  type: "release" | "snapshot"
+  datapack: number | null
+  resourcepack: number | null
+}
+
 async function minecraftWikiFetch(path: string) {
-  const response = await fetch(`${BASE_URL}${path}`, {
-    headers: {
-      "User-Agent": USER_AGENT,
-    },
-  })
+  const response = await fetch(`${BASE_URL}${path}`, { headers: { "User-Agent": USER_AGENT } })
 
   if (!response.ok) {
     error(`Minecraft Wiki error: ${response.status}`)
@@ -21,15 +22,27 @@ async function minecraftWikiFetch(path: string) {
   return response.text()
 }
 
+function getGameVersionType(version: string) {
+  if (/^\d+(?:\.\d+){0,2}$/.test(version)) {
+    return "release"
+  }
+
+  if (
+    /^\d{2}w\d{2}[a-z]$/i.test(version) ||
+    /^\d{2}\.\d+(?:\.\d+)?-(?:snapshot|pre|rc)-\d+$/i.test(version) ||
+    /^\d+(?:\.\d+){0,2}-(?:pre|rc)\d+$/i.test(version)
+  ) {
+    return "snapshot"
+  }
+
+  return null
+}
+
 function getGameVersion(label: string) {
   const version = label
     .replace(/^Java Edition\s+/i, "")
     .replace(/\[[^\]]*\]/g, "")
     .trim()
-
-  if (/^\d{2}w\d{2}[a-z]$/i.test(version)) {
-    return version
-  }
 
   const oldSnapshot = version.match(/^Snapshot\s+(\d{2}w\d{2}[a-z])$/i)
 
@@ -55,7 +68,7 @@ function getGameVersion(label: string) {
     return `${rc[1]}-rc-${rc[2]}`
   }
 
-  return ALL_GAME_VERSIONS.includes(version) ? version : null
+  return getGameVersionType(version) ? version : null
 }
 
 function parsePackFormats(html: string) {
@@ -110,22 +123,62 @@ function parsePackFormats(html: string) {
 
     if (!version) continue
 
+    const type = getGameVersionType(version)
+
+    if (!type) continue
+
     formats[version] = {
-      resourcepack: Number(row[1]),
-      datapack: Number(row[2]),
+      type,
+      datapack: Number(row[2]) || null,
+      resourcepack: Number(row[1]) || null,
     }
   }
 
   return formats
 }
 
-export async function generatePackFormats() {
+async function generatePackFormats() {
   const html = await minecraftWikiFetch("/w/Pack_format")
   const packFormats = parsePackFormats(html)
 
   await fs.writeFile(
-    "packs/pack-formats.json",
+    path.join("packs", "pack-formats.json"),
     `${JSON.stringify(packFormats, null, 2)}\n`,
     "utf-8",
   )
+}
+
+async function readPackFormats() {
+  const content = await fs.readFile(path.join("packs", "pack-formats.json"), "utf-8")
+
+  return JSON.parse(content) as Record<string, PackFormat>
+}
+
+export async function loadPackFormats() {
+  try {
+    return await readPackFormats()
+  } catch {
+    await generatePackFormats()
+    return readPackFormats()
+  }
+}
+
+export const RELEASE_GAME_VERSIONS = Object.entries(await loadPackFormats())
+  .filter(([, format]) => format.type === "release")
+  .map(([version]) => version)
+
+export async function refreshPackFormats() {
+  await generatePackFormats()
+
+  const packFormats = await readPackFormats()
+
+  RELEASE_GAME_VERSIONS.splice(
+    0,
+    RELEASE_GAME_VERSIONS.length,
+    ...Object.entries(packFormats)
+      .filter(([, format]) => format.type === "release")
+      .map(([version]) => version),
+  )
+
+  return packFormats
 }
