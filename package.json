@@ -6,7 +6,7 @@
   "packageManager": "pnpm@12.21.0",
   "scripts": {
     "package": "tsx scripts/package.ts",
-    "release": "tsx scripts/release.ts",
+    "release": "tsx scripts/package.ts --release",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --fix .",
     "format": "prettier --write ."
