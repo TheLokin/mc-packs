@@ -1,7 +1,7 @@
 import type JSZip from "jszip"
 import type { Project, ProjectMember } from "../lib/modrinth"
 import TOML from "@ltd/j-toml"
-import { RELEASE_GAME_VERSIONS } from "../lib/scrape"
+import { GAME_VERSIONS } from "../lib/scrape"
 
 export async function bundleMod({
   zip,
@@ -76,11 +76,11 @@ export async function bundleMod({
     },
   }
 
-  const cutoffIndex = RELEASE_GAME_VERSIONS.indexOf("1.18.2")
+  const cutoffIndex = GAME_VERSIONS.indexOf("1.18.2")
 
   let maximumIndex = Number.MIN_VALUE
   for (const gameVersion of gameVersions) {
-    const index = RELEASE_GAME_VERSIONS.indexOf(gameVersion)
+    const index = GAME_VERSIONS.indexOf(gameVersion)
     if (index > maximumIndex) {
       maximumIndex = index
     }
