@@ -13,7 +13,9 @@ interface PackFormat {
 }
 
 async function minecraftWikiFetch(path: string) {
-  const response = await fetch(`${BASE_URL}${path}`, { headers: { "User-Agent": USER_AGENT } })
+  const response = await fetch(`${BASE_URL}${path}`, {
+    headers: { "User-Agent": USER_AGENT },
+  })
 
   if (!response.ok) {
     error(`Minecraft Wiki error: ${response.status}`)
@@ -146,6 +148,8 @@ async function generatePackFormats() {
     `${JSON.stringify(packFormats, null, 2)}\n`,
     "utf-8",
   )
+
+  return packFormats
 }
 
 async function readPackFormats() {
@@ -158,27 +162,42 @@ export async function loadPackFormats() {
   try {
     return await readPackFormats()
   } catch {
-    await generatePackFormats()
-    return readPackFormats()
+    return await generatePackFormats()
   }
 }
 
-export const RELEASE_GAME_VERSIONS = Object.entries(await loadPackFormats())
-  .filter(([, format]) => format.type === "release")
-  .map(([version]) => version)
+let packFormats = await loadPackFormats()
+let releaseOnly = false
 
-export async function refreshPackFormats() {
-  await generatePackFormats()
+export const GAME_VERSIONS: string[] = []
 
-  const packFormats = await readPackFormats()
-
-  RELEASE_GAME_VERSIONS.splice(
+function updateGameVersions() {
+  GAME_VERSIONS.splice(
     0,
-    RELEASE_GAME_VERSIONS.length,
+    GAME_VERSIONS.length,
     ...Object.entries(packFormats)
-      .filter(([, format]) => format.type === "release")
+      .filter(([, format]) => !releaseOnly || format.type === "release")
       .map(([version]) => version),
   )
+}
+
+updateGameVersions()
+
+export function setGameVersionMode(release: boolean) {
+  releaseOnly = release
+  updateGameVersions()
+}
+
+export function getGameVersions(type?: PackFormat["type"]) {
+  return Object.entries(packFormats)
+    .filter(([, format]) => !type || format.type === type)
+    .map(([version]) => version)
+}
+
+export async function refreshPackFormats() {
+  packFormats = await generatePackFormats()
+
+  updateGameVersions()
 
   return packFormats
 }

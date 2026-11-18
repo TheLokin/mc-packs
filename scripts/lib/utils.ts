@@ -1,7 +1,7 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 import { error } from "./console"
-import { loadPackFormats, refreshPackFormats, RELEASE_GAME_VERSIONS } from "./scrape"
+import { GAME_VERSIONS, loadPackFormats, refreshPackFormats } from "./scrape"
 
 function parseGameVersionRange(gameVersion: string) {
   const gameVersions: string[] = []
@@ -26,8 +26,8 @@ function parseGameVersionRange(gameVersion: string) {
 
     const [start, end] = range.map((gameVersion) => gameVersion.trim())
 
-    const startIndex = RELEASE_GAME_VERSIONS.indexOf(start!)
-    const endIndex = RELEASE_GAME_VERSIONS.indexOf(end!)
+    const startIndex = GAME_VERSIONS.indexOf(start!)
+    const endIndex = GAME_VERSIONS.indexOf(end!)
 
     if (startIndex === -1 || endIndex === -1) {
       gameVersions.push(start!, end!)
@@ -35,10 +35,7 @@ function parseGameVersionRange(gameVersion: string) {
     }
 
     gameVersions.push(
-      ...RELEASE_GAME_VERSIONS.slice(
-        Math.min(startIndex, endIndex),
-        Math.max(startIndex, endIndex) + 1,
-      ),
+      ...GAME_VERSIONS.slice(Math.min(startIndex, endIndex), Math.max(startIndex, endIndex) + 1),
     )
   }
 
@@ -48,12 +45,12 @@ function parseGameVersionRange(gameVersion: string) {
 async function getGameVersionRange(gameVersion: string) {
   let gameVersions = parseGameVersionRange(gameVersion)
 
-  if (gameVersions.some((version) => !RELEASE_GAME_VERSIONS.includes(version))) {
+  if (gameVersions.some((version) => !GAME_VERSIONS.includes(version))) {
     await refreshPackFormats()
     gameVersions = parseGameVersionRange(gameVersion)
   }
 
-  const missing = gameVersions.filter((version) => !RELEASE_GAME_VERSIONS.includes(version))
+  const missing = gameVersions.filter((version) => !GAME_VERSIONS.includes(version))
 
   if (missing.length) {
     error(`Unknown Minecraft version${missing.length > 1 ? "s" : ""}: ${missing.join(", ")}`)
@@ -62,9 +59,9 @@ async function getGameVersionRange(gameVersion: string) {
   return gameVersions
 }
 
-const REQUIRED_VERSIONS = {
+const MINIMUM_GAME_VERSIONS = {
   neoforge: "1.20.1",
-  quilt: "1.14.4",
+  quilt: "1.14",
   fabric: "1.14",
   forge: "1.14",
   datapack: "1.13",
@@ -73,12 +70,12 @@ const REQUIRED_VERSIONS = {
 
 export function supportsGameVersions(
   gameVersions: string[],
-  loader: keyof typeof REQUIRED_VERSIONS,
+  type: keyof typeof MINIMUM_GAME_VERSIONS,
 ) {
-  const index = RELEASE_GAME_VERSIONS.indexOf(REQUIRED_VERSIONS[loader])
+  const index = GAME_VERSIONS.indexOf(MINIMUM_GAME_VERSIONS[type])
 
   return gameVersions.some((gameVersion) => {
-    const cutoffIndex = RELEASE_GAME_VERSIONS.indexOf(gameVersion)
+    const cutoffIndex = GAME_VERSIONS.indexOf(gameVersion)
 
     return cutoffIndex !== -1 && cutoffIndex <= index
   })

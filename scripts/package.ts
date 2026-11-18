@@ -9,18 +9,18 @@ import {
   getProjectMembers,
   getProjectVersions,
 } from "./lib/modrinth"
+import { setGameVersionMode } from "./lib/scrape"
 import { capitalize, readPackMetadata, supportsGameVersions } from "./lib/utils"
 import { bundleMod } from "./packages/mod"
 import { bundleZip } from "./packages/zip"
 
-function bufferToBlob(buffer: Buffer, mimeType: string) {
-  const bytes = new Uint8Array(buffer.byteLength)
-  bytes.set(buffer)
+async function saveArtifact(filename: string, buffer: Buffer, directory: string | undefined) {
+  const filePath = path.join("dist", filename)
 
-  return new Blob([bytes.buffer], { type: mimeType })
-}
+  await fs.writeFile(filePath, buffer)
 
-async function copyToDirectory(sourcePath: string, directory: string | undefined) {
+  success(`✅ Created ${filename} at dist`)
+
   if (!directory) return
 
   const dirStat = await fs.stat(directory).catch(() => null)
@@ -30,13 +30,16 @@ async function copyToDirectory(sourcePath: string, directory: string | undefined
     return
   }
 
-  await fs.copyFile(sourcePath, path.join(directory, path.basename(sourcePath)))
+  await fs.copyFile(filePath, path.join(directory, path.basename(filePath)))
 
   info(`📁 Copied to ${directory}`)
 }
 
 const args = process.argv.slice(2)
 const release = args.includes("--release")
+
+setGameVersionMode(release)
+
 const packNames = args.filter((arg) => arg !== "--release")
 
 if (packNames.length > 1) {
@@ -114,19 +117,13 @@ for (const pack of packs) {
           environment: "server_only",
           file: {
             name: `${project!.slug}-${metadata.version_number}.zip`,
-            data: bufferToBlob(zipBuffer, "application/zip"),
+            data: new Blob([new Uint8Array(zipBuffer)], { type: "application/zip" }),
           },
         })
 
         success(`✅ Published ${metadata.type} ${metadata.version_number}`)
       } else {
-        const zipPath = path.join("dist", `${pack.name}.zip`)
-
-        await fs.writeFile(zipPath, zipBuffer)
-
-        success(`✅ Created ${pack.name}.zip at dist`)
-
-        await copyToDirectory(zipPath, process.env.PACK_ZIP_DIR)
+        await saveArtifact(`${pack.name}.zip`, zipBuffer, process.env.PACK_ZIP_DIR)
       }
     } else if (release && supportsZip) {
       warn(`⏭️ ${capitalize(metadata.type)} ${metadata.version_number} already exists`)
@@ -158,19 +155,13 @@ for (const pack of packs) {
           environment: "server_only",
           file: {
             name: `${project!.slug}-${metadata.version_number}.jar`,
-            data: bufferToBlob(modBuffer, "application/java-archive"),
+            data: new Blob([new Uint8Array(modBuffer)], { type: "application/java-archive" }),
           },
         })
 
         success(`✅ Published mod ${modVersion}`)
       } else {
-        const modPath = path.join("dist", `${pack.name}.jar`)
-
-        await fs.writeFile(modPath, modBuffer)
-
-        success(`✅ Created ${pack.name}.jar at dist`)
-
-        await copyToDirectory(modPath, process.env.PACK_JAR_DIR)
+        await saveArtifact(`${pack.name}.jar`, modBuffer, process.env.PACK_JAR_DIR)
       }
     } else if (release && supportsMod) {
       warn(`⏭️ Mod ${modVersion} already exists`)
