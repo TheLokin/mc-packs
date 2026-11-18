@@ -63,7 +63,7 @@ const MINIMUM_GAME_VERSIONS = {
   neoforge: "1.20.2",
   quilt: "1.14",
   fabric: "1.14",
-  forge: "1.13.2",
+  forge: "1.14",
   datapack: "1.13",
   resourcepack: "1.7",
 } as const
