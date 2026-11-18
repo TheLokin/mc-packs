@@ -60,10 +60,10 @@ async function getGameVersionRange(gameVersion: string) {
 }
 
 const MINIMUM_GAME_VERSIONS = {
-  neoforge: "1.20.1",
+  neoforge: "1.20.2",
   quilt: "1.14",
   fabric: "1.14",
-  forge: "1.14",
+  forge: "1.13.2",
   datapack: "1.13",
   resourcepack: "1.7",
 } as const
