@@ -1,21 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_andesite": {
+    "has_clay": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:andesite"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_diorite": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:diorite"
+            "items": "minecraft:clay"
           }
         ]
       },
@@ -23,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:tuff"
+        "recipes": "vanilla_cohesion:clay_ball"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diorite",
-      "has_andesite"
+      "has_clay"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:tuff"
+      "vanilla_cohesion:clay_ball"
     ]
   }
 }

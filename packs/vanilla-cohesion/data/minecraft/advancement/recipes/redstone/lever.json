@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_melon": {
+    "has_cobblestone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:melon"
+            "items": "#minecraft:stone_crafting_materials"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:melon_slice"
+        "recipes": "minecraft:lever"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_melon"
+      "has_cobblestone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:melon_slice"
+      "minecraft:lever"
     ]
   }
 }

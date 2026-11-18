@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diorite": {
+    "has_sulfur": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diorite"
+            "items": "minecraft:sulfur"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dripstone_block": {
+    "has_netherrack": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:dripstone_block"
+            "items": "minecraft:netherrack"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:calcite"
+        "recipes": "vanilla_cohesion:cinnabar"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dripstone_block",
-      "has_diorite"
+      "has_netherrack",
+      "has_sulfur"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:calcite"
+      "vanilla_cohesion:cinnabar"
     ]
   }
 }

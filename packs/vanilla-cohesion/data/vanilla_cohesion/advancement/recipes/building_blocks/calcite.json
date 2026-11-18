@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_clay": {
+    "has_diorite": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:clay"
+            "items": "minecraft:diorite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dripstone_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dripstone_block"
           }
         ]
       },
@@ -13,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:clay_ball"
+        "recipes": "vanilla_cohesion:calcite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_clay"
+      "has_dripstone_block",
+      "has_diorite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:clay_ball"
+      "vanilla_cohesion:calcite"
     ]
   }
 }

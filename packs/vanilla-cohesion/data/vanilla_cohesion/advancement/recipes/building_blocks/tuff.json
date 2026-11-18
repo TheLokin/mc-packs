@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_snow_block": {
+    "has_andesite": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:snow_block"
+            "items": "minecraft:andesite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_diorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diorite"
           }
         ]
       },
@@ -13,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:snow"
+        "recipes": "vanilla_cohesion:tuff"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_snow_block"
+      "has_diorite",
+      "has_andesite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:snow"
+      "vanilla_cohesion:tuff"
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glowstone": {
+    "has_snow_block": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:glowstone"
+            "items": "minecraft:snow_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:glowstone_dust"
+        "recipes": "vanilla_cohesion:snow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_glowstone"
+      "has_snow_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:glowstone_dust"
+      "vanilla_cohesion:snow"
     ]
   }
 }

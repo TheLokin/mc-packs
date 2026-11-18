@@ -1,21 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sulfur": {
+    "has_melon": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:sulfur"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_netherrack": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:netherrack"
+            "items": "minecraft:melon"
           }
         ]
       },
@@ -23,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipes": "just_vanilla_tweaks:cinnabar"
+        "recipes": "vanilla_cohesion:melon_slice"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherrack",
-      "has_sulfur"
+      "has_melon"
     ]
   ],
   "rewards": {
     "recipes": [
-      "just_vanilla_tweaks:cinnabar"
+      "vanilla_cohesion:melon_slice"
     ]
   }
 }
