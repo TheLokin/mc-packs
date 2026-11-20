@@ -1,5 +1,6 @@
 import type JSZip from "jszip"
 import type { Project, ProjectMember } from "../lib/modrinth"
+import path from "node:path"
 import TOML from "@ltd/j-toml"
 import { GAME_VERSIONS } from "../lib/scrape"
 
@@ -127,7 +128,7 @@ export async function bundleMod({
   }
   if (loaders.includes("forge")) {
     zip.file(
-      "META-INF/mods.toml",
+      path.posix.join("META-INF", "mods.toml"),
       TOML.stringify(forgeModsToml, {
         newline: "\n",
         indent: 2,
@@ -136,7 +137,7 @@ export async function bundleMod({
   }
   if (loaders.includes("neoforge")) {
     zip.file(
-      "META-INF/neoforge.mods.toml",
+      path.posix.join("META-INF", "neoforge.mods.toml"),
       TOML.stringify(neoModsToml, {
         newline: "\n",
         indent: 2,
@@ -175,7 +176,10 @@ export async function bundleMod({
       newArray.push(binary.charCodeAt(i))
     }
 
-    zip.file(`com/modrinth/${sanitizedId}/ModrinthWrapper.class`, new Uint8Array(newArray))
+    zip.file(
+      path.posix.join("com", "modrinth", sanitizedId, "ModrinthWrapper.class"),
+      new Uint8Array(newArray),
+    )
   }
 
   const iconFile = zip.file("pack.png")
