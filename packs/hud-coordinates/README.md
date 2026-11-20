@@ -8,9 +8,13 @@ A function runs every tick to read each player's position and the current world 
 
 ## Credits
 
-Based on **Coordinates HUD** by [Vanilla Tweaks](https://vanillatweaks.net), with two changes:
+Based on **Coordinates HUD** by [Vanilla Tweaks](https://vanillatweaks.net/).
 
-- It is enabled by default, with no in-game toggle.
-- It does not add a tab to the Advancements screen.
+This project is a modified derivative of the original datapack and is distributed in accordance with the [Vanilla Tweaks Terms and Conditions](https://vanillatweaks.net/terms), which permit the modification and redistribution of their packs under the conditions specified therein.
 
-All credit for the original concept and implementation goes to them.
+The following changes have been made:
+
+- The HUD is enabled by default, with no activation command required.
+- The custom Advancements screen has been removed, retaining only the HUD functionality.
+
+All credit for the original concept and implementation goes to Vanilla Tweaks.
