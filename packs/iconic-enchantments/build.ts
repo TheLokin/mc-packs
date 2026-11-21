@@ -1,5 +1,6 @@
 import type JSZip from "jszip"
 import { Buffer } from "node:buffer"
+import fs from "node:fs/promises"
 import path from "node:path"
 import sharp from "sharp"
 
@@ -65,12 +66,15 @@ const IMPORTANT_ENCHANTMENTS = new Set<Enchantment>([
   "vanishing_curse",
 ])
 
+const LANG_TEMPLATE_DIR = path.join(import.meta.dirname, "templates", "lang")
 const BOOKS_TEMPLATE_DIR = path.join(import.meta.dirname, "templates", "books")
 const ENCHANTMENTS_TEMPLATE_DIR = path.join(import.meta.dirname, "templates", "enchantments")
 
+const MINECRAFT_FONT_DIR = path.posix.join("assets", "minecraft", "font")
+const MINECRAFT_LANG_DIR = path.posix.join("assets", "minecraft", "lang")
 const MINECRAFT_ITEMS_DIR = path.posix.join("assets", "minecraft", "items")
-const MINECRAFT_MODELS_DIR = path.posix.join("assets", "minecraft", "models", "item")
-const MINECRAFT_TEXTURES_DIR = path.posix.join("assets", "minecraft", "textures", "item")
+const MINECRAFT_MODELS_DIR = path.posix.join("assets", "minecraft", "models")
+const MINECRAFT_TEXTURES_DIR = path.posix.join("assets", "minecraft", "textures")
 
 class Image {
   readonly data: Buffer
@@ -185,6 +189,64 @@ class Image {
   }
 }
 
+async function addEnchantmentTooltips(zip: JSZip) {
+  const enchantments = ENCHANTMENTS.map((enchantment, index) => ({
+    enchantment,
+    character: String.fromCodePoint(0xe000 + index),
+    key: `enchantment.minecraft.${enchantment}`,
+  }))
+
+  for (const filename of await fs.readdir(LANG_TEMPLATE_DIR)) {
+    const translations = await fs
+      .readFile(path.join(LANG_TEMPLATE_DIR, filename), "utf8")
+      .then((content) => JSON.parse(content))
+
+    const enchantmentTranslations = Object.fromEntries(
+      enchantments.map(({ key, character }) => [
+        key,
+        `\u00A7f${character}\u00A7r ${translations[key]}`,
+      ]),
+    )
+
+    zip.file(
+      path.posix.join(MINECRAFT_LANG_DIR, filename),
+      `${JSON.stringify(enchantmentTranslations, null, 2)}\n`,
+    )
+  }
+
+  const providers = []
+
+  for (const { enchantment, character } of enchantments) {
+    const defaultPath = path.join(ENCHANTMENTS_TEMPLATE_DIR, `${enchantment}.png`)
+    const altPath = path.join(ENCHANTMENTS_TEMPLATE_DIR, "alt", `${enchantment}.png`)
+
+    const imagePath = await fs
+      .access(altPath)
+      .then(() => altPath)
+      .catch(() => defaultPath)
+
+    const image = await Image.fromFile(imagePath)
+
+    providers.push({
+      type: "bitmap",
+      file: `minecraft:font/${enchantment}.png`,
+      ascent: image.height,
+      height: image.height,
+      chars: [character],
+    })
+
+    zip.file(
+      path.posix.join(MINECRAFT_TEXTURES_DIR, "font", `${enchantment}.png`),
+      await image.toPng(),
+    )
+  }
+
+  zip.file(
+    path.posix.join(MINECRAFT_FONT_DIR, "default.json"),
+    `${JSON.stringify({ providers }, null, 2)}\n`,
+  )
+}
+
 async function addBookTextures(
   zip: JSZip,
   enchantment: Enchantment,
@@ -198,6 +260,7 @@ async function addBookTextures(
       template: `base_level_${templateSuffix}.png`,
       destination: path.posix.join(
         MINECRAFT_TEXTURES_DIR,
+        "item",
         `enchantment_book_${enchantment}_${outputSuffix}.png`,
       ),
     },
@@ -205,6 +268,7 @@ async function addBookTextures(
       template: `base_thick_level_${templateSuffix}.png`,
       destination: path.posix.join(
         MINECRAFT_TEXTURES_DIR,
+        "item",
         `enchantment_book_${enchantment}_thick_${outputSuffix}.png`,
       ),
     },
@@ -231,8 +295,6 @@ function addBookModels(zip: JSZip, enchantment: Enchantment, suffix: string) {
   ]
 
   for (const bookVariant of bookVariants) {
-    const destination = path.posix.join(MINECRAFT_MODELS_DIR, `${bookVariant}.json`)
-
     const model = {
       parent: "minecraft:item/generated",
       textures: {
@@ -240,7 +302,10 @@ function addBookModels(zip: JSZip, enchantment: Enchantment, suffix: string) {
       },
     }
 
-    zip.file(destination, `${JSON.stringify(model, null, 2)}\n`)
+    zip.file(
+      path.posix.join(MINECRAFT_MODELS_DIR, "item", `${bookVariant}.json`),
+      `${JSON.stringify(model, null, 2)}\n`,
+    )
   }
 }
 
@@ -340,16 +405,16 @@ function addEnchantmentBookStates(zip: JSZip) {
   )
 }
 
-export default async function build(zip: JSZip) {
+async function addEnchantmentBooks(zip: JSZip) {
   for (const [enchantment, maxLevel] of Object.entries(ENCHANTMENT_MAX_LEVELS) as [
     Enchantment,
     number,
   ][]) {
-    const enchantmentPath = path.join(ENCHANTMENTS_TEMPLATE_DIR, `${enchantment}.png`)
+    const imagePath = path.join(ENCHANTMENTS_TEMPLATE_DIR, `${enchantment}.png`)
 
-    const enchantmentImage = await Image.fromFile(enchantmentPath)
-    const shadowImage = enchantmentImage.tint("#312104")
-    const iconImage = enchantmentImage.tint({
+    const image = await Image.fromFile(imagePath)
+    const shadowImage = image.tint("#312104")
+    const iconImage = image.tint({
       "#999999": "#c1ab5a",
       "#6b6b6b": "#957f2d",
       "#585858": "#522e10",
@@ -370,4 +435,9 @@ export default async function build(zip: JSZip) {
   }
 
   addEnchantmentBookStates(zip)
+}
+
+export default async function build(zip: JSZip) {
+  await addEnchantmentTooltips(zip)
+  await addEnchantmentBooks(zip)
 }
