@@ -2,7 +2,7 @@
   "project_id": "Z0v4j904",
   "type": "resourcepack",
   "version_number": "1.0",
-  "game_version": "1.21.11..26.3",
+  "game_version": "26.3",
   "builds": {
     "nt": "No Tooltips",
     "t": "Tooltips"
