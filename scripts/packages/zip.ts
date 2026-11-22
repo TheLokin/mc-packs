@@ -161,8 +161,6 @@ export async function bundleZip(packPath: string) {
     processedPacks.add(packName)
 
     const packPath = path.join("packs", packName)
-    const metadata = await readPackMetadata(packPath)
-
     const dataPath = path.join(packPath, "data")
     const dataStat = await fs.stat(dataPath).catch(() => null)
 
@@ -207,7 +205,7 @@ export async function bundleZip(packPath: string) {
           let flattenedNamespacePath = namespacePath
           let isJson = false
 
-          if (metadata.type === "datapack" && contentDirectory === "data") {
+          if (contentDirectory === "data") {
             targetFileNamespace =
               originalNamespace === "minecraft" ? originalNamespace : targetNamespace
             flattenedNamespacePath = flattenNamespacePath(namespacePath)
