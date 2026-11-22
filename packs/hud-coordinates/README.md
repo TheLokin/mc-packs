@@ -10,7 +10,7 @@ A function runs every tick to read each player's position and the current world 
 
 Based on **Coordinates HUD** by [Vanilla Tweaks](https://vanillatweaks.net/).
 
-This project is a modified derivative of the original datapack and is distributed in accordance with the [Vanilla Tweaks Terms and Conditions](https://vanillatweaks.net/terms), which permit the modification and redistribution of their packs under the conditions specified therein.
+This project is a modified derivative of the original data pack and is distributed in accordance with the [Vanilla Tweaks Terms and Conditions](https://vanillatweaks.net/terms), which permit the modification and redistribution of their packs under the conditions specified therein.
 
 The following changes have been made:
 
