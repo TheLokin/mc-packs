@@ -1,4 +1,4 @@
-import type JSZip from "jszip"
+import type { PackBuilder } from "../../scripts/lib/builder"
 import { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
@@ -189,7 +189,7 @@ class Image {
   }
 }
 
-async function addEnchantmentTooltips(zip: JSZip) {
+async function addEnchantmentTooltips(builder: PackBuilder) {
   const enchantments = ENCHANTMENTS.map((enchantment, index) => ({
     enchantment,
     character: String.fromCodePoint(0xe000 + index),
@@ -208,7 +208,7 @@ async function addEnchantmentTooltips(zip: JSZip) {
       ]),
     )
 
-    zip.file(
+    builder.file(
       path.posix.join(MINECRAFT_LANG_DIR, filename),
       `${JSON.stringify(enchantmentTranslations, null, 2)}\n`,
     )
@@ -235,20 +235,20 @@ async function addEnchantmentTooltips(zip: JSZip) {
       chars: [character],
     })
 
-    zip.file(
+    builder.file(
       path.posix.join(MINECRAFT_TEXTURES_DIR, "font", `${enchantment}.png`),
       await image.toPng(),
     )
   }
 
-  zip.file(
+  builder.file(
     path.posix.join(MINECRAFT_FONT_DIR, "default.json"),
     `${JSON.stringify({ providers }, null, 2)}\n`,
   )
 }
 
 async function addBookTextures(
-  zip: JSZip,
+  builder: PackBuilder,
   enchantment: Enchantment,
   templateSuffix: string,
   outputSuffix: string,
@@ -283,12 +283,12 @@ async function addBookTextures(
         .then((image) => image.composite(iconImage, 8, 0))
         .then((image) => image.toPng())
 
-      zip.file(destination, buffer)
+      builder.file(destination, buffer)
     }),
   )
 }
 
-function addBookModels(zip: JSZip, enchantment: Enchantment, suffix: string) {
+function addBookModels(builder: PackBuilder, enchantment: Enchantment, suffix: string) {
   const bookVariants = [
     `enchantment_book_${enchantment}_${suffix}`,
     `enchantment_book_${enchantment}_thick_${suffix}`,
@@ -302,7 +302,7 @@ function addBookModels(zip: JSZip, enchantment: Enchantment, suffix: string) {
       },
     }
 
-    zip.file(
+    builder.file(
       path.posix.join(MINECRAFT_MODELS_DIR, "item", `${bookVariant}.json`),
       `${JSON.stringify(model, null, 2)}\n`,
     )
@@ -338,7 +338,7 @@ function getEnchantmentCases() {
   return [...importantCases, ...remainingCases]
 }
 
-function addEnchantmentBookStates(zip: JSZip) {
+function addEnchantmentBookStates(builder: PackBuilder) {
   const itemDefinition = {
     model: {},
   }
@@ -399,13 +399,13 @@ function addEnchantmentBookStates(zip: JSZip) {
     model: "minecraft:item/enchanted_book",
   })
 
-  zip.file(
+  builder.file(
     path.posix.join(MINECRAFT_ITEMS_DIR, "enchanted_book.json"),
     `${JSON.stringify(itemDefinition, null, 2)}\n`,
   )
 }
 
-async function addEnchantmentBooks(zip: JSZip) {
+async function addEnchantmentBooks(builder: PackBuilder) {
   for (const [enchantment, maxLevel] of Object.entries(ENCHANTMENT_MAX_LEVELS) as [
     Enchantment,
     number,
@@ -424,20 +424,27 @@ async function addEnchantmentBooks(zip: JSZip) {
       const templateSuffix = level === maxLevel ? "max" : level.toString()
       const outputSuffix = level.toString()
 
-      await addBookTextures(zip, enchantment, templateSuffix, outputSuffix, shadowImage, iconImage)
+      await addBookTextures(
+        builder,
+        enchantment,
+        templateSuffix,
+        outputSuffix,
+        shadowImage,
+        iconImage,
+      )
 
-      addBookModels(zip, enchantment, outputSuffix)
+      addBookModels(builder, enchantment, outputSuffix)
     }
 
-    await addBookTextures(zip, enchantment, "impossible", "impossible", shadowImage, iconImage)
+    await addBookTextures(builder, enchantment, "impossible", "impossible", shadowImage, iconImage)
 
-    addBookModels(zip, enchantment, "impossible")
+    addBookModels(builder, enchantment, "impossible")
   }
 
-  addEnchantmentBookStates(zip)
+  addEnchantmentBookStates(builder)
 }
 
-export default async function build(zip: JSZip) {
-  await addEnchantmentTooltips(zip)
-  await addEnchantmentBooks(zip)
+export default async function build(builder: PackBuilder) {
+  await addEnchantmentTooltips(builder)
+  await addEnchantmentBooks(builder)
 }

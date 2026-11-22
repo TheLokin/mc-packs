@@ -109,7 +109,6 @@ export async function readPackMetadata(packPath: string) {
     loaders: (["fabric", "forge", "neoforge", "quilt"] as const).filter((loader) =>
       supportsGameVersions(gameVersions, loader),
     ),
-    include: new Set<string>(metadata.include || []),
   }
 }
 

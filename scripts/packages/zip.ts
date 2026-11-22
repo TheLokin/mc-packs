@@ -1,3 +1,4 @@
+import type { PackBuilder } from "../lib/builder"
 import { Buffer } from "node:buffer"
 import fs from "node:fs/promises"
 import path from "node:path"
@@ -108,6 +109,28 @@ function flattenNamespacePath(namespacePath: string[]) {
   return [contentType, category, categoryPath.at(-1)!]
 }
 
+function replaceJsonReferences(
+  content: Buffer,
+  replacements: Array<[string, string]>,
+  mappings: Map<string, string>,
+) {
+  let text = content.toString("utf-8")
+
+  for (const [from, to] of replacements) {
+    const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+
+    text = text.replace(new RegExp(`(?<![a-zA-Z0-9_./-])${escaped}`, "g"), to)
+  }
+
+  for (const [from, to] of mappings) {
+    const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+
+    text = text.replace(new RegExp(`(?<![a-zA-Z0-9_./-])${escaped}(?![a-zA-Z0-9_./-])`, "g"), to)
+  }
+
+  return Buffer.from(text)
+}
+
 export async function bundleZip(packPath: string) {
   const zip = new JSZip()
   const mcmeta = await generateMcMeta(packPath)
@@ -122,6 +145,8 @@ export async function bundleZip(packPath: string) {
     zip.file("credits.txt", await fs.readFile(creditsPath))
   }
 
+  const packName = path.basename(packPath)
+  const targetNamespace = packName.replace(/-/g, "_")
   const processedPacks = new Set<string>()
   const collectedFiles: {
     path: string
@@ -129,35 +154,31 @@ export async function bundleZip(packPath: string) {
     isJson: boolean
     replacements: Array<[string, string]>
   }[] = []
-  const idMappings = new Map<string, string>()
-  const targetNamespace = path.basename(packPath).replace(/-/g, "_")
-  const packsDirectory = path.dirname(packPath)
+  const mappings = new Map<string, string>()
 
-  async function addPack(packPath: string) {
-    if (processedPacks.has(packPath)) return
-    processedPacks.add(packPath)
+  async function addPack(packName: string) {
+    if (processedPacks.has(packName)) return
+    processedPacks.add(packName)
 
+    const packPath = path.join("packs", packName)
     const metadata = await readPackMetadata(packPath)
-
-    for (const nestedPack of metadata.include) {
-      await addPack(path.join(packsDirectory, nestedPack))
-    }
 
     const dataPath = path.join(packPath, "data")
     const dataStat = await fs.stat(dataPath).catch(() => null)
-    const namespaces = new Set<string>()
+
+    const namespaces: string[] = []
 
     if (dataStat?.isDirectory()) {
       for (const entry of await fs.readdir(dataPath, { withFileTypes: true })) {
         if (entry.isDirectory()) {
-          namespaces.add(entry.name)
+          namespaces.push(entry.name)
         }
       }
     }
 
-    const namespaceReplacements: Array<[string, string]> = [...namespaces]
+    const namespaceReplacements: Array<[string, string]> = namespaces
       .filter((namespace) => namespace !== "minecraft" && namespace !== targetNamespace)
-      .map((namespace): [string, string] => [`${namespace}:`, `${targetNamespace}:`])
+      .map((namespace) => [`${namespace}:`, `${targetNamespace}:`])
 
     for (const contentDirectory of ["data", "assets"]) {
       const contentPath = path.join(packPath, contentDirectory)
@@ -165,14 +186,12 @@ export async function bundleZip(packPath: string) {
 
       if (!contentStat?.isDirectory()) continue
 
-      async function collectFiles(directory: string) {
-        const entries = await fs.readdir(directory, { withFileTypes: true })
-
-        for (const entry of entries) {
+      async function collectFile(directory: string) {
+        for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
           const filePath = path.join(directory, entry.name)
 
           if (entry.isDirectory()) {
-            await collectFiles(filePath)
+            await collectFile(filePath)
             continue
           }
 
@@ -198,6 +217,7 @@ export async function bundleZip(packPath: string) {
               .slice(1)
               .join("/")
               .replace(/\.json$/i, "")
+
             const flattenedIdPath = flattenedNamespacePath
               .slice(1)
               .join("/")
@@ -206,19 +226,13 @@ export async function bundleZip(packPath: string) {
             if (isJson && originalIdPath !== flattenedIdPath) {
               const newId = `${targetFileNamespace}:${flattenedIdPath}`
 
-              idMappings.set(`${originalNamespace}:${originalIdPath}`, newId)
-              idMappings.set(`${targetFileNamespace}:${originalIdPath}`, newId)
+              mappings.set(`${originalNamespace}:${originalIdPath}`, newId)
+              mappings.set(`${targetFileNamespace}:${originalIdPath}`, newId)
             }
           }
 
-          const zipFilePath = path.posix.join(
-            contentDirectory,
-            targetFileNamespace,
-            ...flattenedNamespacePath,
-          )
-
           collectedFiles.push({
-            path: zipFilePath,
+            path: path.posix.join(contentDirectory, targetFileNamespace, ...flattenedNamespacePath),
             content: await fs.readFile(filePath),
             isJson,
             replacements: namespaceReplacements,
@@ -226,7 +240,7 @@ export async function bundleZip(packPath: string) {
         }
       }
 
-      await collectFiles(contentPath)
+      await collectFile(contentPath)
     }
 
     const buildPath = path.join(packPath, "build.ts")
@@ -235,32 +249,29 @@ export async function bundleZip(packPath: string) {
     if (buildStat?.isFile()) {
       const { default: build } = await import(pathToFileURL(buildPath).href)
 
-      await build(zip)
+      const builder: PackBuilder = {
+        file(filePath, content) {
+          const normalizedPath = path.posix.normalize(filePath.replace(/\\/g, "/"))
+
+          collectedFiles.push({
+            path: normalizedPath,
+            content: Buffer.isBuffer(content) ? content : Buffer.from(content),
+            isJson: /^data\/.*\.json$/i.test(normalizedPath),
+            replacements: namespaceReplacements,
+          })
+        },
+        pack: addPack,
+      }
+
+      await build(builder)
     }
   }
 
-  await addPack(packPath)
+  await addPack(packName)
 
   for (const file of collectedFiles) {
     if (file.isJson) {
-      let text = file.content.toString("utf-8")
-
-      for (const [from, to] of file.replacements) {
-        const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-
-        text = text.replace(new RegExp(`(?<![a-zA-Z0-9_./-])${escaped}`, "g"), to)
-      }
-
-      for (const [from, to] of idMappings) {
-        const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-
-        text = text.replace(
-          new RegExp(`(?<![a-zA-Z0-9_./-])${escaped}(?![a-zA-Z0-9_./-])`, "g"),
-          to,
-        )
-      }
-
-      file.content = Buffer.from(text)
+      file.content = replaceJsonReferences(file.content, file.replacements, mappings)
     }
 
     zip.file(file.path, file.content)

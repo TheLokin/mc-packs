@@ -2,16 +2,5 @@
   "project_id": "XpL53u9s",
   "type": "datapack",
   "version_number": "1.0",
-  "game_version": "26.3",
-  "include": [
-    "uncraftable-ice",
-    "uncraftable-honeycomb",
-    "craftable-coral-blocks",
-    "sulfur-oxidizes-copper",
-    "stonecutter-tweaks",
-    "dye-rebalance",
-    "cheaper-shulker-boxes",
-    "cheaper-armor-trims",
-    "duplicate-pottery-sherds"
-  ]
+  "game_version": "26.3"
 }
