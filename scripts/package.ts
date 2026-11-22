@@ -82,7 +82,7 @@ for (const pack of packs) {
 
     const builds = metadata.builds.map((build) => {
       const zipVersion = build.id
-        ? metadata.version_number.replace("-mc", `[${build.id}]-mc`)
+        ? metadata.version_number.replace("-mc", `.${build.id}-mc`)
         : metadata.version_number
       const modVersion = `${zipVersion}+mod`
 

@@ -5,6 +5,6 @@
   "game_version": "1.21.11..26.3",
   "builds": {
     "nt": "No Tooltips",
-    "tt": "Tooltips"
+    "t": "Tooltips"
   }
 }
