@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/node": "26.6.6",
     "eslint": "10.15.0",
-    "eslint-config-protocol": "1.0.0",
+    "eslint-config-protocol": "1.1.0",
     "prettier": "3.10.1",
     "prettier-plugin-multiline-arrays": "4.1.11",
     "tsx": "4.23.15",
