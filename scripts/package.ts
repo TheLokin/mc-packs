@@ -18,7 +18,6 @@ async function saveArtifact(filename: string, buffer: Buffer, directory: string 
   const filePath = path.join("dist", filename)
 
   await fs.writeFile(filePath, buffer)
-
   success(`✅ Created ${filename} at dist`)
 
   if (!directory) return
@@ -30,21 +29,19 @@ async function saveArtifact(filename: string, buffer: Buffer, directory: string 
     return
   }
 
-  await fs.copyFile(filePath, path.join(directory, path.basename(filePath)))
-
+  await fs.copyFile(filePath, path.join(directory, filename))
   info(`📁 Copied to ${directory}`)
 }
 
 const args = process.argv.slice(2)
 const release = args.includes("--release")
-
-setGameVersionMode(release)
-
 const packNames = args.filter((arg) => arg !== "--release")
 
 if (packNames.length > 1) {
   error("❌ Too many arguments. Usage: pnpm package [pack-name] [--release]")
 }
+
+setGameVersionMode(release)
 
 const packName = packNames[0]
 
@@ -83,96 +80,123 @@ for (const pack of packs) {
         )
       : []
 
-    const modVersion = `${metadata.version_number}+mod`
+    const builds = metadata.builds.map((build) => {
+      const zipVersion = [metadata.version_number, build.id].filter(Boolean).join("+")
+      const modVersion = `${zipVersion}+mod`
 
-    const needsZip = supportsZip && (!release || !versions.includes(metadata.version_number))
-    const needsMod = supportsMod && (!release || !versions.includes(modVersion))
+      return {
+        ...build,
+        zipVersion,
+        modVersion,
+        needsZip: supportsZip && (!release || !versions.includes(zipVersion)),
+        needsMod: supportsMod && (!release || !versions.includes(modVersion)),
+      }
+    })
 
-    if (!needsZip && !needsMod) {
+    const buildsToProcess = builds.filter((build) => build.needsZip || build.needsMod)
+
+    if (buildsToProcess.length === 0) {
       warn(`⏭️ Skipping ${pack.name}: all versions already exist`)
       continue
     }
 
-    info(`${release ? "🚀 Releasing" : "📦 Packaging"} ${pack.name} (${metadata.version_number})`)
+    const needsMod = buildsToProcess.some((build) => build.needsMod)
 
     const [project, members] = await Promise.all([
       release || needsMod ? getProject(metadata.project_id) : undefined,
       needsMod ? getProjectMembers(metadata.project_id) : undefined,
     ])
 
-    const zip = await bundleZip(packPath)
+    info(`${release ? "🚀 Releasing" : "📦 Packaging"} ${pack.name} (${metadata.version_number})`)
 
-    if (needsZip) {
-      const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
+    for (const build of builds) {
+      if (!build.needsZip && !build.needsMod) {
+        if (release) {
+          if (supportsZip) {
+            warn(`⏭️ ${capitalize(metadata.type)} ${build.zipVersion} already exists`)
+          }
 
-      if (release) {
-        await createProjectVersion({
-          project_id: metadata.project_id,
-          name: `${project!.title} v${metadata.version_number}`,
-          version_number: metadata.version_number,
-          changelog: metadata.changelog,
-          game_versions: metadata.game_versions,
-          version_type: metadata.version_type,
-          loaders: metadata.type === "datapack" ? ["datapack"] : ["minecraft"],
-          environment: "server_only",
-          file: {
-            name: `${pack.name}-${metadata.version_number}.zip`,
-            data: new Blob([new Uint8Array(zipBuffer)], { type: "application/zip" }),
-          },
-        })
+          if (supportsMod) {
+            warn(`⏭️ Mod ${build.modVersion} already exists`)
+          }
+        }
 
-        success(`✅ Published ${metadata.type} ${metadata.version_number}`)
-      } else {
-        await saveArtifact(
-          `${pack.name}.zip`,
-          zipBuffer,
-          metadata.type === "resourcepack"
-            ? process.env.RESOURCEPACK_DIR
-            : process.env.DATAPACK_DIR,
-        )
+        continue
       }
-    } else if (release && supportsZip) {
-      warn(`⏭️ ${capitalize(metadata.type)} ${metadata.version_number} already exists`)
-    } else if (!supportsZip) {
-      warn(`⏭️ ${capitalize(metadata.type)} does not support the specified Minecraft versions`)
-    }
 
-    if (needsMod) {
-      const mod = await bundleMod({
-        zip,
-        project: project!,
-        members: members!,
-        versionNumber: metadata.version_number,
-        gameVersions: metadata.game_versions,
-        loaders: metadata.loaders,
-      })
+      const zip = await bundleZip(packPath, build.id)
 
-      const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
+      if (build.needsZip) {
+        const zipFilename = build.id
+          ? `${pack.name}-${build.id}-${metadata.version_number}.zip`
+          : `${pack.name}-${metadata.version_number}.zip`
 
-      if (release) {
-        await createProjectVersion({
-          project_id: metadata.project_id,
-          name: `${project!.title} v${metadata.version_number}`,
-          version_number: modVersion,
-          changelog: metadata.changelog,
-          game_versions: metadata.game_versions,
-          version_type: metadata.version_type,
+        const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
+
+        if (release) {
+          await createProjectVersion({
+            project_id: metadata.project_id,
+            name: `${[project!.title, build.name].filter(Boolean).join(" ")} v${metadata.version_number}`,
+            version_number: build.zipVersion,
+            changelog: metadata.changelog,
+            game_versions: metadata.game_versions,
+            version_type: metadata.version_type,
+            loaders: metadata.type === "datapack" ? ["datapack"] : ["minecraft"],
+            environment: "server_only",
+            file: {
+              name: zipFilename,
+              data: new Blob([new Uint8Array(zipBuffer)], { type: "application/zip" }),
+            },
+          })
+
+          success(`✅ Published ${metadata.type} ${build.zipVersion}`)
+        } else {
+          const dir =
+            metadata.type === "resourcepack"
+              ? process.env.RESOURCEPACK_DIR
+              : process.env.DATAPACK_DIR
+
+          await saveArtifact(zipFilename, zipBuffer, dir)
+        }
+      }
+
+      if (build.needsMod) {
+        const mod = await bundleMod({
+          zip,
+          project: project!,
+          members: members!,
+          versionNumber: metadata.version_number,
+          gameVersions: metadata.game_versions,
           loaders: metadata.loaders,
-          environment: "server_only",
-          file: {
-            name: `${pack.name}-${metadata.version_number}.jar`,
-            data: new Blob([new Uint8Array(modBuffer)], { type: "application/java-archive" }),
-          },
         })
 
-        success(`✅ Published mod ${modVersion}`)
-      } else {
-        await saveArtifact(`${pack.name}.jar`, modBuffer, process.env.MOD_DIR)
+        const modFilename = build.id
+          ? `${pack.name}-${build.id}-${metadata.version_number}.jar`
+          : `${pack.name}-${metadata.version_number}.jar`
+
+        const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
+
+        if (release) {
+          await createProjectVersion({
+            project_id: metadata.project_id,
+            name: `${[project!.title, build.name].filter(Boolean).join(" ")} v${metadata.version_number}`,
+            version_number: build.modVersion,
+            changelog: metadata.changelog,
+            game_versions: metadata.game_versions,
+            version_type: metadata.version_type,
+            loaders: metadata.loaders,
+            environment: "server_only",
+            file: {
+              name: modFilename,
+              data: new Blob([new Uint8Array(modBuffer)], { type: "application/java-archive" }),
+            },
+          })
+
+          success(`✅ Published mod ${build.modVersion}`)
+        } else {
+          await saveArtifact(modFilename, modBuffer, process.env.MOD_DIR)
+        }
       }
-    } else if (release && supportsMod) {
-      warn(`⏭️ Mod ${modVersion} already exists`)
-    } else if (metadata.type === "datapack" && !supportsMod) {
-      warn("⏭️ Mod does not support the specified Minecraft versions")
     }
   } catch (err) {
     error(`❌ Failed to process ${pack.name}: ${err}`)

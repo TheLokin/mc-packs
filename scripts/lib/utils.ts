@@ -99,6 +99,21 @@ export async function readPackMetadata(packPath: string) {
 
   const gameVersions = await getGameVersionRange(metadata.game_version)
 
+  const loaders = (["fabric", "forge", "neoforge", "quilt"] as const).filter((loader) =>
+    supportsGameVersions(gameVersions, loader),
+  )
+
+  const builds = [
+    {
+      id: undefined,
+      name: undefined,
+    },
+    ...Object.entries(metadata.builds ?? {}).map(([id, name]) => ({
+      id,
+      name: name as string,
+    })),
+  ]
+
   return {
     project_id: metadata.project_id as string,
     type: metadata.type as "datapack" | "resourcepack",
@@ -106,9 +121,8 @@ export async function readPackMetadata(packPath: string) {
     version_type: isAlpha ? ("alpha" as const) : isBeta ? ("beta" as const) : ("release" as const),
     changelog,
     game_versions: gameVersions,
-    loaders: (["fabric", "forge", "neoforge", "quilt"] as const).filter((loader) =>
-      supportsGameVersions(gameVersions, loader),
-    ),
+    loaders,
+    builds,
   }
 }
 

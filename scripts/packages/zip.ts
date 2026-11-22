@@ -131,7 +131,7 @@ function replaceJsonReferences(
   return Buffer.from(text)
 }
 
-export async function bundleZip(packPath: string) {
+export async function bundleZip(packPath: string, buildId?: string) {
   const zip = new JSZip()
   const mcmeta = await generateMcMeta(packPath)
 
@@ -261,7 +261,7 @@ export async function bundleZip(packPath: string) {
         pack: addPack,
       }
 
-      await build(builder)
+      await build(builder, buildId)
     }
   }
 
