@@ -116,7 +116,7 @@ for (const pack of packs) {
           loaders: metadata.type === "datapack" ? ["datapack"] : ["minecraft"],
           environment: "server_only",
           file: {
-            name: `${project!.slug}-${metadata.version_number}.zip`,
+            name: `${pack.name}-${metadata.version_number}.zip`,
             data: new Blob([new Uint8Array(zipBuffer)], { type: "application/zip" }),
           },
         })
@@ -160,7 +160,7 @@ for (const pack of packs) {
           loaders: metadata.loaders,
           environment: "server_only",
           file: {
-            name: `${project!.slug}-${metadata.version_number}.jar`,
+            name: `${pack.name}-${metadata.version_number}.jar`,
             data: new Blob([new Uint8Array(modBuffer)], { type: "application/java-archive" }),
           },
         })
