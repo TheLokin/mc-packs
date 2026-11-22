@@ -81,7 +81,9 @@ for (const pack of packs) {
       : []
 
     const builds = metadata.builds.map((build) => {
-      const zipVersion = [metadata.version_number, build.id].filter(Boolean).join("+")
+      const zipVersion = build.id
+        ? metadata.version_number.replace("-mc", `[${build.id}]-mc`)
+        : metadata.version_number
       const modVersion = `${zipVersion}+mod`
 
       return {
@@ -127,10 +129,7 @@ for (const pack of packs) {
       const zip = await bundleZip(packPath, build.id)
 
       if (build.needsZip) {
-        const zipFilename = build.id
-          ? `${pack.name}-${build.id}-${metadata.version_number}.zip`
-          : `${pack.name}-${metadata.version_number}.zip`
-
+        const zipFilename = `${pack.name}-${build.zipVersion}.zip`
         const zipBuffer = await zip.generateAsync({ type: "nodebuffer" })
 
         if (release) {
@@ -170,10 +169,7 @@ for (const pack of packs) {
           loaders: metadata.loaders,
         })
 
-        const modFilename = build.id
-          ? `${pack.name}-${build.id}-${metadata.version_number}.jar`
-          : `${pack.name}-${metadata.version_number}.jar`
-
+        const modFilename = `${pack.name}-${build.modVersion}.jar`
         const modBuffer = await mod.generateAsync({ type: "nodebuffer" })
 
         if (release) {

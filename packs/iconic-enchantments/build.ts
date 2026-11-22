@@ -445,10 +445,10 @@ async function addEnchantmentBooks(builder: PackBuilder) {
 }
 
 export default async function build(builder: PackBuilder, buildId?: string) {
-  if (buildId !== "no-tooltips") {
+  if (buildId !== "nt") {
     await addEnchantmentTooltips(builder)
   }
-  if (buildId !== "tooltips") {
+  if (buildId !== "tt") {
     await addEnchantmentBooks(builder)
   }
 }
