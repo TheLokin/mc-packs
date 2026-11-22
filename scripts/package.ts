@@ -123,7 +123,13 @@ for (const pack of packs) {
 
         success(`✅ Published ${metadata.type} ${metadata.version_number}`)
       } else {
-        await saveArtifact(`${pack.name}.zip`, zipBuffer, process.env.PACK_ZIP_DIR)
+        await saveArtifact(
+          `${pack.name}.zip`,
+          zipBuffer,
+          metadata.type === "resourcepack"
+            ? process.env.RESOURCEPACK_DIR
+            : process.env.DATAPACK_DIR,
+        )
       }
     } else if (release && supportsZip) {
       warn(`⏭️ ${capitalize(metadata.type)} ${metadata.version_number} already exists`)
@@ -161,7 +167,7 @@ for (const pack of packs) {
 
         success(`✅ Published mod ${modVersion}`)
       } else {
-        await saveArtifact(`${pack.name}.jar`, modBuffer, process.env.PACK_JAR_DIR)
+        await saveArtifact(`${pack.name}.jar`, modBuffer, process.env.MOD_DIR)
       }
     } else if (release && supportsMod) {
       warn(`⏭️ Mod ${modVersion} already exists`)
