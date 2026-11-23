@@ -29,11 +29,11 @@ Choose from three variants depending on your preferences:
 
 ## Credits
 
-Based on [Iconic Enchantments 3D](https://modrinth.com/resourcepack/iconic-enchantments-3d) by **GrakePch**.
+Based on [Iconic Enchantments 3D](https://modrinth.com/resourcepack/iconic-enchantments-3d) by **GrakePCH**.
 
 This project retains the original resource pack's core features and visual design, with the following modifications:
 
 - Enchanted books retain their vanilla 2D appearance instead of using 3D models.
 - Enchantment icons support all Minecraft languages.
 
-All original artwork, concepts and implementations are credited to **GrakePch**.
+All original artwork, concepts and implementations are credited to **GrakePCH**.
