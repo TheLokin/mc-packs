@@ -146,11 +146,9 @@ export async function bundleMod({
   }
 
   if (!newForge && loaders.includes("forge")) {
-    const classFile = new Uint8Array(
-      await (
-        await fetch("https://cdn.modrinth.com/wrapper/ModrinthWrapperRestiched.class")
-      ).arrayBuffer(),
-    )
+    const classFile = await fetch("https://cdn.modrinth.com/wrapper/ModrinthWrapperRestiched.class")
+      .then((response) => response.arrayBuffer())
+      .then((buffer) => new Uint8Array(buffer))
 
     let binary = ""
     for (let i = 0; i < classFile.byteLength; i++) {
