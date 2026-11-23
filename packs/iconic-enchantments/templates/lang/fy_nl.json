@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Ferdjer fan de lidpoatigen",
   "enchantment.minecraft.binding_curse": "Flok fan bining",
   "enchantment.minecraft.blast_protection": "Eksploazjebeskerming",
+  "enchantment.minecraft.breach": "Trochbraak",
   "enchantment.minecraft.channeling": "Superlieding",
   "enchantment.minecraft.cleaving": "Splitsing",
+  "enchantment.minecraft.density": "Tichtens",
   "enchantment.minecraft.depth_strider": "Djipteswalker",
   "enchantment.minecraft.efficiency": "Effisjinsje",
   "enchantment.minecraft.feather_falling": "Fearsêft falle",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plondering",
   "enchantment.minecraft.loyalty": "Loyaliteit",
   "enchantment.minecraft.luck_of_the_sea": "Gelok fan 'e see",
+  "enchantment.minecraft.lunge": "Stjit",
   "enchantment.minecraft.lure": "Lokies",
   "enchantment.minecraft.mending": "Oplaapje",
   "enchantment.minecraft.multishot": "Multyskot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Toarnen",
   "enchantment.minecraft.unbreaking": "Duorsumheid",
   "enchantment.minecraft.vanishing_curse": "Flok fan ferdwining",
-  "enchantment.minecraft.density": "Tichtens",
-  "enchantment.minecraft.breach": "Trochbraak",
-  "enchantment.minecraft.wind_burst": "Wynstjit",
-  "enchantment.minecraft.lunge": "Stjit"
+  "enchantment.minecraft.wind_burst": "Wynstjit"
 }

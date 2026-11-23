@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Velea artrópoda",
   "enchantment.minecraft.binding_curse": "Maldición d'atadura",
   "enchantment.minecraft.blast_protection": "Antiespañíos",
+  "enchantment.minecraft.breach": "Perforación",
   "enchantment.minecraft.channeling": "Canalización",
   "enchantment.minecraft.cleaving": "Fendimientu",
+  "enchantment.minecraft.density": "Densidá",
   "enchantment.minecraft.depth_strider": "Axilidá acuático",
   "enchantment.minecraft.efficiency": "Eficiencia",
   "enchantment.minecraft.feather_falling": "Lliviandá",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saquéu",
   "enchantment.minecraft.loyalty": "Llealtá",
   "enchantment.minecraft.luck_of_the_sea": "Suerte de la mar",
+  "enchantment.minecraft.lunge": "Estocada",
   "enchantment.minecraft.lure": "Cebu",
   "enchantment.minecraft.mending": "Igua",
   "enchantment.minecraft.multishot": "Multitiru",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Escayos",
   "enchantment.minecraft.unbreaking": "Durabilidá",
   "enchantment.minecraft.vanishing_curse": "Maldición de desapaición",
-  "enchantment.minecraft.density": "Densidá",
-  "enchantment.minecraft.breach": "Perforación",
-  "enchantment.minecraft.wind_burst": "Españíu de vientu",
-  "enchantment.minecraft.lunge": "Estocada"
+  "enchantment.minecraft.wind_burst": "Españíu de vientu"
 }

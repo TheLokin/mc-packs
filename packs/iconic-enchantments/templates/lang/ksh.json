@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Spenneflooch",
   "enchantment.minecraft.binding_curse": "Floch vum Klävve",
   "enchantment.minecraft.blast_protection": "Eksplosijonsschotz",
+  "enchantment.minecraft.breach": "Durchbruch",
   "enchantment.minecraft.channeling": "Entladong",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Dichte",
   "enchantment.minecraft.depth_strider": "Wasserschon",
   "enchantment.minecraft.efficiency": "Flöck",
   "enchantment.minecraft.feather_falling": "Fädderfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Afluchse",
   "enchantment.minecraft.loyalty": "Treue",
   "enchantment.minecraft.luck_of_the_sea": "Meerjlück",
+  "enchantment.minecraft.lunge": "Ausfallschritt",
   "enchantment.minecraft.lure": "Köder",
   "enchantment.minecraft.mending": "Flecke",
   "enchantment.minecraft.multishot": "Miehfachschoß",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Döner",
   "enchantment.minecraft.unbreaking": "Unkapottbar",
   "enchantment.minecraft.vanishing_curse": "Floch vum Verleere",
-  "enchantment.minecraft.density": "Dichte",
-  "enchantment.minecraft.breach": "Durchbruch",
-  "enchantment.minecraft.wind_burst": "Windstoß",
-  "enchantment.minecraft.lunge": "Ausfallschritt"
+  "enchantment.minecraft.wind_burst": "Windstoß"
 }

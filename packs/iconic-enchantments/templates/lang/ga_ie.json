@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Milleadh na nArtrapód",
   "enchantment.minecraft.binding_curse": "Mallacht an Ghreama",
   "enchantment.minecraft.blast_protection": "Cosaint ar Phléasc",
+  "enchantment.minecraft.breach": "Briseadh",
   "enchantment.minecraft.channeling": "Tintreach",
   "enchantment.minecraft.cleaving": "Scoilteadh",
+  "enchantment.minecraft.density": "Dlús",
   "enchantment.minecraft.depth_strider": "Rinceoir Tóna",
   "enchantment.minecraft.efficiency": "Éifeachtúlacht",
   "enchantment.minecraft.feather_falling": "Titim mar Chleite",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Creachadóireacht",
   "enchantment.minecraft.loyalty": "Dílseacht",
   "enchantment.minecraft.luck_of_the_sea": "Ádh na Mara",
+  "enchantment.minecraft.lunge": "Fogha",
   "enchantment.minecraft.lure": "Baoite",
   "enchantment.minecraft.mending": "Deisiúchán",
   "enchantment.minecraft.multishot": "Ilurchar",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dealga",
   "enchantment.minecraft.unbreaking": "Dobhristeacht",
   "enchantment.minecraft.vanishing_curse": "Mallacht na Neamhbhuaine",
-  "enchantment.minecraft.density": "Dlús",
-  "enchantment.minecraft.breach": "Briseadh",
-  "enchantment.minecraft.wind_burst": "Racht Gaoithe",
-  "enchantment.minecraft.lunge": "Fogha"
+  "enchantment.minecraft.wind_burst": "Racht Gaoithe"
 }

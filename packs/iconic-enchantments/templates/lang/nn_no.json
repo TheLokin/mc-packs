@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Leddyrsbane",
   "enchantment.minecraft.binding_curse": "Bindingstrolldom",
   "enchantment.minecraft.blast_protection": "Sprengingssvern",
+  "enchantment.minecraft.breach": "Gjennombrudd",
   "enchantment.minecraft.channeling": "Lynleiar",
   "enchantment.minecraft.cleaving": "Klyving",
+  "enchantment.minecraft.density": "Tettleik",
   "enchantment.minecraft.depth_strider": "Dyptegangar",
   "enchantment.minecraft.efficiency": "Dugleik",
   "enchantment.minecraft.feather_falling": "Fjørfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plundring",
   "enchantment.minecraft.loyalty": "Trufast",
   "enchantment.minecraft.luck_of_the_sea": "Fiskelukke",
+  "enchantment.minecraft.lunge": "Støyt",
   "enchantment.minecraft.lure": "Agn",
   "enchantment.minecraft.mending": "Vøling",
   "enchantment.minecraft.multishot": "Mangskot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tornar",
   "enchantment.minecraft.unbreaking": "Herda",
   "enchantment.minecraft.vanishing_curse": "Kvervingstrolldom",
-  "enchantment.minecraft.density": "Tettleik",
-  "enchantment.minecraft.breach": "Gjennombrudd",
-  "enchantment.minecraft.wind_burst": "Vindstøyt",
-  "enchantment.minecraft.lunge": "Støyt"
+  "enchantment.minecraft.wind_burst": "Vindstøyt"
 }

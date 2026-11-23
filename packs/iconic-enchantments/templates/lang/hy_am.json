@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Միջատների կործանում",
   "enchantment.minecraft.binding_curse": "Չհանվելու անեծք",
   "enchantment.minecraft.blast_protection": "Պայթեցման Պաշտպանություն",
+  "enchantment.minecraft.breach": "Ճեղքում",
   "enchantment.minecraft.channeling": "Շանթարձակ",
   "enchantment.minecraft.cleaving": "Ճեղքում",
+  "enchantment.minecraft.density": "Խտություն",
   "enchantment.minecraft.depth_strider": "Ստորջրյա Քայլք",
   "enchantment.minecraft.efficiency": "Ազդեցություն",
   "enchantment.minecraft.feather_falling": "Փետուրի Անկում",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ավարում",
   "enchantment.minecraft.loyalty": "Հավատարմություն",
   "enchantment.minecraft.luck_of_the_sea": "Ծովի Բախտը",
+  "enchantment.minecraft.lunge": "Լանջ",
   "enchantment.minecraft.lure": "Խայծ",
   "enchantment.minecraft.mending": "Վերանորոգում",
   "enchantment.minecraft.multishot": "Եռակի կրակոց",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Փշեր",
   "enchantment.minecraft.unbreaking": "Անկոտրելիություն",
   "enchantment.minecraft.vanishing_curse": "Կորստի անեծք",
-  "enchantment.minecraft.density": "Խտություն",
-  "enchantment.minecraft.breach": "Ճեղքում",
-  "enchantment.minecraft.wind_burst": "Քամու Պոռթկում",
-  "enchantment.minecraft.lunge": "Լանջ"
+  "enchantment.minecraft.wind_burst": "Քամու Պոռթկում"
 }

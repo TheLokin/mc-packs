@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Arthropodejeëer",
   "enchantment.minecraft.binding_curse": "Fluch vun der Bindung",
   "enchantment.minecraft.blast_protection": "Explosiounschutz",
+  "enchantment.minecraft.breach": "Duerchbroch",
   "enchantment.minecraft.channeling": "Kanalisatioun",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Dichte",
   "enchantment.minecraft.depth_strider": "Waasserleefer",
   "enchantment.minecraft.efficiency": "Efficacitéit",
   "enchantment.minecraft.feather_falling": "Fiederfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plëmmen",
   "enchantment.minecraft.loyalty": "Loyalitéit",
   "enchantment.minecraft.luck_of_the_sea": "Mieresgléck",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Köder",
   "enchantment.minecraft.mending": "Reparatur",
   "enchantment.minecraft.multishot": "Multischoss",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dären",
   "enchantment.minecraft.unbreaking": "Halbarkeet",
   "enchantment.minecraft.vanishing_curse": "Fluch vum Verschwannen",
-  "enchantment.minecraft.density": "Dichte",
-  "enchantment.minecraft.breach": "Duerchbroch",
-  "enchantment.minecraft.wind_burst": "Wandstouss",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wandstouss"
 }

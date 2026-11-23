@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Пай ураллисен шарӗ",
   "enchantment.minecraft.binding_curse": "Хывусӑрлӑх ылханӗ",
   "enchantment.minecraft.blast_protection": "Сирпӗнӳрен хӳтĕлев",
+  "enchantment.minecraft.breach": "Ҫӗмӗрӳ",
   "enchantment.minecraft.channeling": "Ҫиҫӗмлев",
   "enchantment.minecraft.cleaving": "Ҫурӑлни",
+  "enchantment.minecraft.density": "Ҫӑтӑлӑх",
   "enchantment.minecraft.depth_strider": "Шыв айӗнче утни",
   "enchantment.minecraft.efficiency": "Тухӑҫлӑх",
   "enchantment.minecraft.feather_falling": "Йывӑрӑшсӑрлӑх",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Тупӑш",
   "enchantment.minecraft.loyalty": "Парӑну",
   "enchantment.minecraft.luck_of_the_sea": "Тинӗс ӑнӑҫӑвӗ",
+  "enchantment.minecraft.lunge": "Карт туртӑнни",
   "enchantment.minecraft.lure": "Илӗртӳ",
   "enchantment.minecraft.mending": "Юсав",
   "enchantment.minecraft.multishot": "Нумайлӑ перӳ",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Чӗме",
   "enchantment.minecraft.unbreaking": "Ҫирĕплĕх",
   "enchantment.minecraft.vanishing_curse": "Ҫухату ылханӗ",
-  "enchantment.minecraft.density": "Ҫӑтӑлӑх",
-  "enchantment.minecraft.breach": "Ҫӗмӗрӳ",
-  "enchantment.minecraft.wind_burst": "Ҫил авӑкӗ",
-  "enchantment.minecraft.lunge": "Карт туртӑнни"
+  "enchantment.minecraft.wind_burst": "Ҫил авӑкӗ"
 }

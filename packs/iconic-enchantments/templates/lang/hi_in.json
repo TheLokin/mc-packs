@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "मकड़े के बने",
   "enchantment.minecraft.binding_curse": "बाइंडिंग का अभिशाप",
   "enchantment.minecraft.blast_protection": "विस्फोट से संरक्षण",
+  "enchantment.minecraft.breach": "दरार",
   "enchantment.minecraft.channeling": "जोड़ना",
   "enchantment.minecraft.cleaving": "विच्छेदन",
+  "enchantment.minecraft.density": "सघनत्व",
   "enchantment.minecraft.depth_strider": "गहराई घुमक्कड़",
   "enchantment.minecraft.efficiency": "दक्षता",
   "enchantment.minecraft.feather_falling": "पंख गिरने",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "लूटपाट",
   "enchantment.minecraft.loyalty": "निष्ठा",
   "enchantment.minecraft.luck_of_the_sea": "समुद्र की शुभकामनाएँ",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "प्रलोभन",
   "enchantment.minecraft.mending": "मरम्मत",
   "enchantment.minecraft.multishot": "मल्टी शॉट",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "काँटे",
   "enchantment.minecraft.unbreaking": "स्थायित्व",
   "enchantment.minecraft.vanishing_curse": "लुप्त होने का अभिशाप",
-  "enchantment.minecraft.density": "सघनत्व",
-  "enchantment.minecraft.breach": "दरार",
-  "enchantment.minecraft.wind_burst": "हवा विस्फोट",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "हवा विस्फोट"
 }

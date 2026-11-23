@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Mora chrobokōw",
   "enchantment.minecraft.binding_curse": "Fluch prziwiōnzanio",
   "enchantment.minecraft.blast_protection": "Ôchrōna przed wybuchym",
+  "enchantment.minecraft.breach": "Przedrzynie",
   "enchantment.minecraft.channeling": "Sztrōm",
   "enchantment.minecraft.cleaving": "Rozszczepianie",
+  "enchantment.minecraft.density": "Tyngość",
   "enchantment.minecraft.depth_strider": "Głymbinowy wandrus",
   "enchantment.minecraft.efficiency": "Skutność",
   "enchantment.minecraft.feather_falling": "Łagodne spadowanie",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Raub",
   "enchantment.minecraft.loyalty": "Wiyrność",
   "enchantment.minecraft.luck_of_the_sea": "Morske szczyńście",
+  "enchantment.minecraft.lunge": "Pchnycie",
   "enchantment.minecraft.lure": "Kyjder",
   "enchantment.minecraft.mending": "Sprowōnek",
   "enchantment.minecraft.multishot": "Mockastrzał",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Sztachle",
   "enchantment.minecraft.unbreaking": "Niyzniszczalność",
   "enchantment.minecraft.vanishing_curse": "Fluch podzianio",
-  "enchantment.minecraft.density": "Tyngość",
-  "enchantment.minecraft.breach": "Przedrzynie",
-  "enchantment.minecraft.wind_burst": "Wicher",
-  "enchantment.minecraft.lunge": "Pchnycie"
+  "enchantment.minecraft.wind_burst": "Wicher"
 }

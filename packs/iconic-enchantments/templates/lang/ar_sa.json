@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "هلاك المفصليات",
   "enchantment.minecraft.binding_curse": "لعنة التشبث",
   "enchantment.minecraft.blast_protection": "حماية من الانفجار",
+  "enchantment.minecraft.breach": "خرق",
   "enchantment.minecraft.channeling": "التوجيه",
   "enchantment.minecraft.cleaving": "الشق",
+  "enchantment.minecraft.density": "كثافة",
   "enchantment.minecraft.depth_strider": "السرعة تحت الماء",
   "enchantment.minecraft.efficiency": "كفاءة",
   "enchantment.minecraft.feather_falling": "سقوط الريشة",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "النهب",
   "enchantment.minecraft.loyalty": "الولاء",
   "enchantment.minecraft.luck_of_the_sea": "حظ البحر",
+  "enchantment.minecraft.lunge": "اندفاع",
   "enchantment.minecraft.lure": "إغراء",
   "enchantment.minecraft.mending": "الإصلاح",
   "enchantment.minecraft.multishot": "طلقات متعددة",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "أشواك",
   "enchantment.minecraft.unbreaking": "حماية من الكسر",
   "enchantment.minecraft.vanishing_curse": "لعنة التلاشي",
-  "enchantment.minecraft.density": "كثافة",
-  "enchantment.minecraft.breach": "خرق",
-  "enchantment.minecraft.wind_burst": "انفجار الرياح",
-  "enchantment.minecraft.lunge": "اندفاع"
+  "enchantment.minecraft.wind_burst": "انفجار الرياح"
 }

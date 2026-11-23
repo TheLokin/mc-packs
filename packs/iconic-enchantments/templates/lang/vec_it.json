@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Flazel d'i artròpodi",
   "enchantment.minecraft.binding_curse": "Małedision de'l łigame",
   "enchantment.minecraft.blast_protection": "Protesion da i sciopi",
+  "enchantment.minecraft.breach": "Fissidura",
   "enchantment.minecraft.channeling": "Condutività",
   "enchantment.minecraft.cleaving": "Scission",
+  "enchantment.minecraft.density": "Densità",
   "enchantment.minecraft.depth_strider": "Paso d'i fondałi",
   "enchantment.minecraft.efficiency": "Eficiensa",
   "enchantment.minecraft.feather_falling": "Cascada łenta",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Sachezo",
   "enchantment.minecraft.loyalty": "Łealtà",
   "enchantment.minecraft.luck_of_the_sea": "Fortuna de'l mar",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Lesca",
   "enchantment.minecraft.mending": "Reprìstino",
   "enchantment.minecraft.multishot": "Multiprojètiłe",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spini",
   "enchantment.minecraft.unbreaking": "Indestrutìbiłità",
   "enchantment.minecraft.vanishing_curse": "Małedision de sparision",
-  "enchantment.minecraft.density": "Densità",
-  "enchantment.minecraft.breach": "Fissidura",
-  "enchantment.minecraft.wind_burst": "Stravento",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Stravento"
 }

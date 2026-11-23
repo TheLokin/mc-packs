@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "ພິດແຫ່ງອາຣ໌ໂທຣພອດ",
   "enchantment.minecraft.binding_curse": "ຄຳສາບແຫ່ງການຜູກມັດ",
   "enchantment.minecraft.blast_protection": "ທົນແຮງລະເບີດ",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "ສາຍຟ້າພິຄາດ",
   "enchantment.minecraft.cleaving": "ການຜ່າ",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "ຄ່ອງແຄ່ວກ້ອງນ້ຳ",
   "enchantment.minecraft.efficiency": "ປະສິດທິພາບ",
   "enchantment.minecraft.feather_falling": "ເບົາດັ່ງຂົນນົກ",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "ປຸ້ນຊິງ",
   "enchantment.minecraft.loyalty": "ສັດຊື່",
   "enchantment.minecraft.luck_of_the_sea": "ໂຊກແຫ່ງທະເລ",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "ເຫຍື່ອລໍ້",
   "enchantment.minecraft.mending": "ສ້ອມແປງ",
   "enchantment.minecraft.multishot": "ຍິງຫຼາຍດອກ",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "ສະທ້ອນ",
   "enchantment.minecraft.unbreaking": "ຄົງທົນ",
   "enchantment.minecraft.vanishing_curse": "ຄຳສາບແຫ່ງການດັບສູນ",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

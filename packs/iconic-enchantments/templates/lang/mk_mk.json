@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Проклетство на членконогите",
   "enchantment.minecraft.binding_curse": "Клетва на поврзување",
   "enchantment.minecraft.blast_protection": "Заштита од експлозија",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Канализирање",
   "enchantment.minecraft.cleaving": "Расцепување",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Подводно движење",
   "enchantment.minecraft.efficiency": "Ефикасност",
   "enchantment.minecraft.feather_falling": "Лесно паѓање",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ограбување",
   "enchantment.minecraft.loyalty": "Лојалност",
   "enchantment.minecraft.luck_of_the_sea": "Среќа на морето",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Мамец",
   "enchantment.minecraft.mending": "Поправање",
   "enchantment.minecraft.multishot": "Троен истрел",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Трње",
   "enchantment.minecraft.unbreaking": "Некршливост",
   "enchantment.minecraft.vanishing_curse": "Клетва на исчезнување",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

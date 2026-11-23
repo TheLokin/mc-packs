@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Проклятието на Членестоногите",
   "enchantment.minecraft.binding_curse": "Проклятие на привързването",
   "enchantment.minecraft.blast_protection": "Взривна защита",
+  "enchantment.minecraft.breach": "Пробив",
   "enchantment.minecraft.channeling": "Гръмовержец",
   "enchantment.minecraft.cleaving": "Разцепване",
+  "enchantment.minecraft.density": "Плътност",
   "enchantment.minecraft.depth_strider": "Дълбочинно бягане",
   "enchantment.minecraft.efficiency": "Ефективност",
   "enchantment.minecraft.feather_falling": "Плавно падане",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Плячкосване",
   "enchantment.minecraft.loyalty": "Лоялност",
   "enchantment.minecraft.luck_of_the_sea": "Късмет на морето",
+  "enchantment.minecraft.lunge": "Нахвърляне",
   "enchantment.minecraft.lure": "Примамка",
   "enchantment.minecraft.mending": "Възстановяване",
   "enchantment.minecraft.multishot": "Троен изстрел",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Тръни",
   "enchantment.minecraft.unbreaking": "Нечупливост",
   "enchantment.minecraft.vanishing_curse": "Проклятие на изчезването",
-  "enchantment.minecraft.density": "Плътност",
-  "enchantment.minecraft.breach": "Пробив",
-  "enchantment.minecraft.wind_burst": "Порив на вятъра",
-  "enchantment.minecraft.lunge": "Нахвърляне"
+  "enchantment.minecraft.wind_burst": "Порив на вятъра"
 }

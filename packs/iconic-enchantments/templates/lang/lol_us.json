@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Spidey killey thingy",
   "enchantment.minecraft.binding_curse": "cant taek dis off",
   "enchantment.minecraft.blast_protection": "Blast Protecshun",
+  "enchantment.minecraft.breach": "Bleach",
   "enchantment.minecraft.channeling": "Being thor",
   "enchantment.minecraft.cleaving": "Cleavin",
+  "enchantment.minecraft.density": "Thiccnez",
   "enchantment.minecraft.depth_strider": "Fuzt Watur Wullken",
   "enchantment.minecraft.efficiency": "Effishincy",
   "enchantment.minecraft.feather_falling": "Fall on your feet",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Luting",
   "enchantment.minecraft.loyalty": "BFF",
   "enchantment.minecraft.luck_of_the_sea": "Luk ov tha See",
+  "enchantment.minecraft.lunge": "Propelur",
   "enchantment.minecraft.lure": "Luer",
   "enchantment.minecraft.mending": "Mendin",
   "enchantment.minecraft.multishot": "Manysot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spiky",
   "enchantment.minecraft.unbreaking": "Unbraking",
   "enchantment.minecraft.vanishing_curse": "wen u getrekt its gon",
-  "enchantment.minecraft.density": "Thiccnez",
-  "enchantment.minecraft.breach": "Bleach",
-  "enchantment.minecraft.wind_burst": "Wind Booom",
-  "enchantment.minecraft.lunge": "Propelur"
+  "enchantment.minecraft.wind_burst": "Wind Booom"
 }

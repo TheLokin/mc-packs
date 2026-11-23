@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Біч членістаногіх",
   "enchantment.minecraft.binding_curse": "Праклён няздымнасці",
   "enchantment.minecraft.blast_protection": "Ахова ад выбухаў",
+  "enchantment.minecraft.breach": "Пралом",
   "enchantment.minecraft.channeling": "Грамабой",
   "enchantment.minecraft.cleaving": "Рассяканне",
+  "enchantment.minecraft.density": "Шчыльнасць",
   "enchantment.minecraft.depth_strider": "Падводнік",
   "enchantment.minecraft.efficiency": "Эфектыўнасць",
   "enchantment.minecraft.feather_falling": "Бязважкасць",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Марадзёрства",
   "enchantment.minecraft.loyalty": "Вернасць",
   "enchantment.minecraft.luck_of_the_sea": "Марская ўдача",
+  "enchantment.minecraft.lunge": "Рывок",
   "enchantment.minecraft.lure": "Прынада",
   "enchantment.minecraft.mending": "Рамонт",
   "enchantment.minecraft.multishot": "Залп",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Калючкі",
   "enchantment.minecraft.unbreaking": "Мацунак",
   "enchantment.minecraft.vanishing_curse": "Праклён знікнення",
-  "enchantment.minecraft.density": "Шчыльнасць",
-  "enchantment.minecraft.breach": "Пралом",
-  "enchantment.minecraft.wind_burst": "Парыў ветру",
-  "enchantment.minecraft.lunge": "Рывок"
+  "enchantment.minecraft.wind_burst": "Парыў ветру"
 }

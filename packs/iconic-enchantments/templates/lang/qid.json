@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Penoempas Kaki Sendi",
   "enchantment.minecraft.binding_curse": "Koetoekan Pengikat",
   "enchantment.minecraft.blast_protection": "Perlindoengan Ledakan",
+  "enchantment.minecraft.breach": "Penerobosan",
   "enchantment.minecraft.channeling": "Penjaloeran",
   "enchantment.minecraft.cleaving": "Membelah",
+  "enchantment.minecraft.density": "Kepadatan",
   "enchantment.minecraft.depth_strider": "Pengaroeng Dasar",
   "enchantment.minecraft.efficiency": "Kesangkilan",
   "enchantment.minecraft.feather_falling": "Peredaän Djatoeh",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Pendjarahan",
   "enchantment.minecraft.loyalty": "Kesetiaän",
   "enchantment.minecraft.luck_of_the_sea": "Keberoentoengan Laoet",
+  "enchantment.minecraft.lunge": "Penjergapan",
   "enchantment.minecraft.lure": "Oempan",
   "enchantment.minecraft.mending": "Pemoelihan",
   "enchantment.minecraft.multishot": "Tembakan Berganda",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Doeri",
   "enchantment.minecraft.unbreaking": "Ta' Hantjoer",
   "enchantment.minecraft.vanishing_curse": "Koetoekan Sirna",
-  "enchantment.minecraft.density": "Kepadatan",
-  "enchantment.minecraft.breach": "Penerobosan",
-  "enchantment.minecraft.wind_burst": "Emboesan Angin",
-  "enchantment.minecraft.lunge": "Penjergapan"
+  "enchantment.minecraft.wind_burst": "Emboesan Angin"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Fénacion des artorpodes",
   "enchantment.minecraft.binding_curse": "Fénerei de nâcherie",
   "enchantment.minecraft.blast_protection": "Garde-vrao",
+  "enchantment.minecraft.breach": "Braiche",
   "enchantment.minecraft.channeling": "Menerie de foudr",
   "enchantment.minecraft.cleaving": "Fendage",
+  "enchantment.minecraft.density": "Lourdou",
   "enchantment.minecraft.depth_strider": "Ézibl den l'iao",
   "enchantment.minecraft.efficiency": "Minerie avanjeûze",
   "enchantment.minecraft.feather_falling": "Chaete de pllume",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Magocerie",
   "enchantment.minecraft.loyalty": "Dreture",
   "enchantment.minecraft.luck_of_the_sea": "Chance de la mè",
+  "enchantment.minecraft.lunge": "Ebrive",
   "enchantment.minecraft.lure": "Bouette",
   "enchantment.minecraft.mending": "Dabonerie",
   "enchantment.minecraft.multishot": "Tir purië",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Piqhants",
   "enchantment.minecraft.unbreaking": "Solidetë",
   "enchantment.minecraft.vanishing_curse": "Fénerie de mougherie",
-  "enchantment.minecraft.density": "Lourdou",
-  "enchantment.minecraft.breach": "Braiche",
-  "enchantment.minecraft.wind_burst": "Ventée",
-  "enchantment.minecraft.lunge": "Ebrive"
+  "enchantment.minecraft.wind_burst": "Ventée"
 }

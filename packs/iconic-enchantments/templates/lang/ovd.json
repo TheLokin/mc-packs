@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Djįpt",
   "enchantment.minecraft.binding_curse": "Ugsningg um bindningg",
   "enchantment.minecraft.blast_protection": "Stjydd muot eksplosiuon",
+  "enchantment.minecraft.breach": "Genombrytning",
   "enchantment.minecraft.channeling": "Djärå rennur",
   "enchantment.minecraft.cleaving": "Klyvning",
+  "enchantment.minecraft.density": "Densitet",
   "enchantment.minecraft.depth_strider": "Djuoptjuoger",
   "enchantment.minecraft.efficiency": "Effektivitiet",
   "enchantment.minecraft.feather_falling": "Follend fjäðer",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plundringg",
   "enchantment.minecraft.loyalty": "Truogeniet",
   "enchantment.minecraft.luck_of_the_sea": "Fistjelukk",
+  "enchantment.minecraft.lunge": "Utfall",
   "enchantment.minecraft.lure": "Biete",
   "enchantment.minecraft.mending": "Lagningg",
   "enchantment.minecraft.multishot": "Flieru skuott",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tagg",
   "enchantment.minecraft.unbreaking": "Far it sund",
   "enchantment.minecraft.vanishing_curse": "Ugsningg för te förswinna",
-  "enchantment.minecraft.density": "Densitet",
-  "enchantment.minecraft.breach": "Genombrytning",
-  "enchantment.minecraft.wind_burst": "Vindexplosion",
-  "enchantment.minecraft.lunge": "Utfall"
+  "enchantment.minecraft.wind_burst": "Vindexplosion"
 }

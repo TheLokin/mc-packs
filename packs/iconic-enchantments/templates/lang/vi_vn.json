@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Diệt chân đốt",
   "enchantment.minecraft.binding_curse": "Lời nguyền ràng buộc",
   "enchantment.minecraft.blast_protection": "Bảo vệ khỏi vụ nổ",
+  "enchantment.minecraft.breach": "Phá giáp",
   "enchantment.minecraft.channeling": "Chớp điện",
   "enchantment.minecraft.cleaving": "Chẻ",
+  "enchantment.minecraft.density": "Tỉ trọng",
   "enchantment.minecraft.depth_strider": "Sải bước dưới nước",
   "enchantment.minecraft.efficiency": "Hiệu suất",
   "enchantment.minecraft.feather_falling": "Bảo vệ khỏi sát thương rơi",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Nhặt",
   "enchantment.minecraft.loyalty": "Trung thành",
   "enchantment.minecraft.luck_of_the_sea": "May mắn của biển cả",
+  "enchantment.minecraft.lunge": "Lao tới",
   "enchantment.minecraft.lure": "Nhử",
   "enchantment.minecraft.mending": "Tu sửa",
   "enchantment.minecraft.multishot": "Mưa tên",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Gai",
   "enchantment.minecraft.unbreaking": "Chậm hỏng",
   "enchantment.minecraft.vanishing_curse": "Lời nguyền biến mất",
-  "enchantment.minecraft.density": "Tỉ trọng",
-  "enchantment.minecraft.breach": "Phá giáp",
-  "enchantment.minecraft.wind_burst": "Phong bộc",
-  "enchantment.minecraft.lunge": "Lao tới"
+  "enchantment.minecraft.wind_burst": "Phong bộc"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bane of Spiderlikes",
   "enchantment.minecraft.binding_curse": "Curse of Binding",
   "enchantment.minecraft.blast_protection": "Blast Shielding",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Thunderwave",
   "enchantment.minecraft.cleaving": "Sundering",
+  "enchantment.minecraft.density": "Thickness",
   "enchantment.minecraft.depth_strider": "Depth Strider",
   "enchantment.minecraft.efficiency": "Frimfulness",
   "enchantment.minecraft.feather_falling": "Feather Falling",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Reaving",
   "enchantment.minecraft.loyalty": "Troth",
   "enchantment.minecraft.luck_of_the_sea": "Luck of the Sea",
+  "enchantment.minecraft.lunge": "Thrutch",
   "enchantment.minecraft.lure": "Eace",
   "enchantment.minecraft.mending": "Fettling",
   "enchantment.minecraft.multishot": "Manishot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Thorns",
   "enchantment.minecraft.unbreaking": "Unbreaking",
   "enchantment.minecraft.vanishing_curse": "Curse of Swinding",
-  "enchantment.minecraft.density": "Thickness",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Thrutch"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

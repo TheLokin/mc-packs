@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "גלידערפיס־שׂונא",
   "enchantment.minecraft.binding_curse": "בינדונגספלוך",
   "enchantment.minecraft.blast_protection": "עקספלאזיעסשוץ",
+  "enchantment.minecraft.breach": "לעדוירעס",
   "enchantment.minecraft.channeling": "קאנאליזאציע",
   "enchantment.minecraft.cleaving": "שפּאַלטונג",
+  "enchantment.minecraft.density": "געדיכטקייַט",
   "enchantment.minecraft.depth_strider": "וואסערלויפער",
   "enchantment.minecraft.efficiency": "עפעשטיווקייט",
   "enchantment.minecraft.feather_falling": "פעדערפאל",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "זאקרויב",
   "enchantment.minecraft.loyalty": "טרייַהייַט",
   "enchantment.minecraft.luck_of_the_sea": "מזל הים",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "מאניעניש",
   "enchantment.minecraft.mending": "רעפעראטור",
   "enchantment.minecraft.multishot": "מערפֿאכשאס",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "דערנער",
   "enchantment.minecraft.unbreaking": "אומברעשבארקייט",
   "enchantment.minecraft.vanishing_curse": "פארשווינדונגספלוך",
-  "enchantment.minecraft.density": "געדיכטקייַט",
-  "enchantment.minecraft.breach": "לעדוירעס",
-  "enchantment.minecraft.wind_burst": "ברעכן ווינט",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "ברעכן ווינט"
 }

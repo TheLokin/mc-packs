@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Gataka Sendipada",
   "enchantment.minecraft.binding_curse": "Sapa Wayungyung",
   "enchantment.minecraft.blast_protection": "Bledhosreksa",
+  "enchantment.minecraft.breach": "Pibedhah",
   "enchantment.minecraft.channeling": "Widyuta",
   "enchantment.minecraft.cleaving": "Nyigar",
+  "enchantment.minecraft.density": "Pipadhet",
   "enchantment.minecraft.depth_strider": "Tapak Teleng",
   "enchantment.minecraft.efficiency": "Remuk Agé",
   "enchantment.minecraft.feather_falling": "Wulutiba",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Jarah Rayah",
   "enchantment.minecraft.loyalty": "Kasetyan",
   "enchantment.minecraft.luck_of_the_sea": "Segarabeja",
+  "enchantment.minecraft.lunge": "Pangacar",
   "enchantment.minecraft.lure": "Umpan",
   "enchantment.minecraft.mending": "Waluya",
   "enchantment.minecraft.multishot": "Tréyastra",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Rwi",
   "enchantment.minecraft.unbreaking": "Tan Rusak",
   "enchantment.minecraft.vanishing_curse": "Sapa Sirna",
-  "enchantment.minecraft.density": "Pipadhet",
-  "enchantment.minecraft.breach": "Pibedhah",
-  "enchantment.minecraft.wind_burst": "Maruta",
-  "enchantment.minecraft.lunge": "Pangacar"
+  "enchantment.minecraft.wind_burst": "Maruta"
 }

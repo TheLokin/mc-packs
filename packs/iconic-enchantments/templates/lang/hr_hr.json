@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Prokletstvo člankonožaca",
   "enchantment.minecraft.binding_curse": "Kletva povezivanja",
   "enchantment.minecraft.blast_protection": "Zaštita od eksplozije",
+  "enchantment.minecraft.breach": "Prodor",
   "enchantment.minecraft.channeling": "Usmjerivanje",
   "enchantment.minecraft.cleaving": "Cijepanje",
+  "enchantment.minecraft.density": "Gustoća",
   "enchantment.minecraft.depth_strider": "Korak u dubinu",
   "enchantment.minecraft.efficiency": "Učinkovitost",
   "enchantment.minecraft.feather_falling": "Lagani pad",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Zarada",
   "enchantment.minecraft.loyalty": "Odanost",
   "enchantment.minecraft.luck_of_the_sea": "Podvodna sreća",
+  "enchantment.minecraft.lunge": "Nalet",
   "enchantment.minecraft.lure": "Privlačnost",
   "enchantment.minecraft.mending": "Popravljanje",
   "enchantment.minecraft.multishot": "Višestruka paljba",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Trnje",
   "enchantment.minecraft.unbreaking": "Trajnost",
   "enchantment.minecraft.vanishing_curse": "Kletva nestajanja",
-  "enchantment.minecraft.density": "Gustoća",
-  "enchantment.minecraft.breach": "Prodor",
-  "enchantment.minecraft.wind_burst": "Udarac vjetra",
-  "enchantment.minecraft.lunge": "Nalet"
+  "enchantment.minecraft.wind_burst": "Udarac vjetra"
 }

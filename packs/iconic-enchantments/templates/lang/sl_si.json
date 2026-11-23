@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Uničevalec členonožcev",
   "enchantment.minecraft.binding_curse": "Prekletstvo vezave",
   "enchantment.minecraft.blast_protection": "Zaščita pred eksplozijo",
+  "enchantment.minecraft.breach": "Prelom",
   "enchantment.minecraft.channeling": "Strela",
   "enchantment.minecraft.cleaving": "Cepljenje",
+  "enchantment.minecraft.density": "Gostota",
   "enchantment.minecraft.depth_strider": "Večja hitrost v vodi",
   "enchantment.minecraft.efficiency": "Učinkovitost",
   "enchantment.minecraft.feather_falling": "Peresno lahek",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plenjenje",
   "enchantment.minecraft.loyalty": "Zvestoba",
   "enchantment.minecraft.luck_of_the_sea": "Sreča morja",
+  "enchantment.minecraft.lunge": "Hitri zamik",
   "enchantment.minecraft.lure": "Vaba",
   "enchantment.minecraft.mending": "Popravljanje",
   "enchantment.minecraft.multishot": "Več strelov naenkrat",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Trnje",
   "enchantment.minecraft.unbreaking": "Neuničljivost",
   "enchantment.minecraft.vanishing_curse": "Prekletstvo izginjanja",
-  "enchantment.minecraft.density": "Gostota",
-  "enchantment.minecraft.breach": "Prelom",
-  "enchantment.minecraft.wind_burst": "Izbruh vetra",
-  "enchantment.minecraft.lunge": "Hitri zamik"
+  "enchantment.minecraft.wind_burst": "Izbruh vetra"
 }

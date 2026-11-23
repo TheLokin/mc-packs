@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Үет хөлтний мөхөл",
   "enchantment.minecraft.binding_curse": "Залхаагч хараал",
   "enchantment.minecraft.blast_protection": "Дэлбэрэлтийн хамгаалалт",
+  "enchantment.minecraft.breach": "Хуяг нэвтлэх",
   "enchantment.minecraft.channeling": "Сувагчлал",
   "enchantment.minecraft.cleaving": "Хагалах",
+  "enchantment.minecraft.density": "Нягт",
   "enchantment.minecraft.depth_strider": "Усанд явагч",
   "enchantment.minecraft.efficiency": "Хурд",
   "enchantment.minecraft.feather_falling": "Зөөлөн газардах",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Олз",
   "enchantment.minecraft.loyalty": "Үнэнч байдал",
   "enchantment.minecraft.luck_of_the_sea": "Тэнгисийн аз",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Өгөөш",
   "enchantment.minecraft.mending": "Нөхөх",
   "enchantment.minecraft.multishot": "Давхар харвах",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Хатгалт",
   "enchantment.minecraft.unbreaking": "Бат бөх",
   "enchantment.minecraft.vanishing_curse": "Замхрах хараал",
-  "enchantment.minecraft.density": "Нягт",
-  "enchantment.minecraft.breach": "Хуяг нэвтлэх",
-  "enchantment.minecraft.wind_burst": "Салхин тэсрэлт",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Салхин тэсрэлт"
 }

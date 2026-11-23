@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Liantendacil",
   "enchantment.minecraft.binding_curse": "Hapië",
   "enchantment.minecraft.blast_protection": "Varyalë anat ruvië",
+  "enchantment.minecraft.breach": "Terruvië",
   "enchantment.minecraft.channeling": "Ítaquantalë",
   "enchantment.minecraft.cleaving": "Sancie",
+  "enchantment.minecraft.density": "Nelcië",
   "enchantment.minecraft.depth_strider": "Nennúriendilië",
   "enchantment.minecraft.efficiency": "Tyaraitië",
   "enchantment.minecraft.feather_falling": "Moica lanta",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Maptalë",
   "enchantment.minecraft.loyalty": "Voronwë",
   "enchantment.minecraft.luck_of_the_sea": "Almë ëaron",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Telyantassë",
   "enchantment.minecraft.mending": "Apterië",
   "enchantment.minecraft.multishot": "Linquihtëa",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Neceli",
   "enchantment.minecraft.unbreaking": "Úrácimië",
   "enchantment.minecraft.vanishing_curse": "Picië",
-  "enchantment.minecraft.density": "Nelcië",
-  "enchantment.minecraft.breach": "Terruvië",
-  "enchantment.minecraft.wind_burst": "Oäsussë",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Oäsussë"
 }

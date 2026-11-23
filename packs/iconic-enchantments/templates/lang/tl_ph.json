@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Pagsugpo sa Ugnaypaa",
   "enchantment.minecraft.binding_curse": "Sumpa ng Dikit",
   "enchantment.minecraft.blast_protection": "Sanggalang sa Sabog",
+  "enchantment.minecraft.breach": "Panunuot",
   "enchantment.minecraft.channeling": "Kidlat",
   "enchantment.minecraft.cleaving": "Pagbibiyak",
+  "enchantment.minecraft.density": "Kasinsinan",
   "enchantment.minecraft.depth_strider": "Paghakbang sa Tubig",
   "enchantment.minecraft.efficiency": "Katalban",
   "enchantment.minecraft.feather_falling": "Malabalahibong Paghulog",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Dambong",
   "enchantment.minecraft.loyalty": "Katapatan",
   "enchantment.minecraft.luck_of_the_sea": "Palad ng Dagat",
+  "enchantment.minecraft.lunge": "Sugod",
   "enchantment.minecraft.lure": "Akit",
   "enchantment.minecraft.mending": "Kumpuni",
   "enchantment.minecraft.multishot": "Dagasa",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tinik",
   "enchantment.minecraft.unbreaking": "Katibayan",
   "enchantment.minecraft.vanishing_curse": "Sumpa ng Laho",
-  "enchantment.minecraft.density": "Kasinsinan",
-  "enchantment.minecraft.breach": "Panunuot",
-  "enchantment.minecraft.wind_burst": "Binuhawi",
-  "enchantment.minecraft.lunge": "Sugod"
+  "enchantment.minecraft.wind_burst": "Binuhawi"
 }

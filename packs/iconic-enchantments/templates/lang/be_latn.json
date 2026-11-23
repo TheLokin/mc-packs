@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bič členistanohich",
   "enchantment.minecraft.binding_curse": "Praklon niazdymnasci",
   "enchantment.minecraft.blast_protection": "Achova ad vybuchaŭ",
+  "enchantment.minecraft.breach": "Prałom",
   "enchantment.minecraft.channeling": "Hramaboj",
   "enchantment.minecraft.cleaving": "Rassjakanne",
+  "enchantment.minecraft.density": "Ščylnasć",
   "enchantment.minecraft.depth_strider": "Padvodnik",
   "enchantment.minecraft.efficiency": "Efiektyŭnasć",
   "enchantment.minecraft.feather_falling": "Biazvažkasć",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Maradziorstva",
   "enchantment.minecraft.loyalty": "Viernasć",
   "enchantment.minecraft.luck_of_the_sea": "Marskaja ŭdača",
+  "enchantment.minecraft.lunge": "Ryvok",
   "enchantment.minecraft.lure": "Prynada",
   "enchantment.minecraft.mending": "Ramont",
   "enchantment.minecraft.multishot": "Załp",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Kalučki",
   "enchantment.minecraft.unbreaking": "Macunak",
   "enchantment.minecraft.vanishing_curse": "Praklon znikniennia",
-  "enchantment.minecraft.density": "Ščylnasć",
-  "enchantment.minecraft.breach": "Prałom",
-  "enchantment.minecraft.wind_burst": "Paryŭ vietru",
-  "enchantment.minecraft.lunge": "Ryvok"
+  "enchantment.minecraft.wind_burst": "Paryŭ vietru"
 }

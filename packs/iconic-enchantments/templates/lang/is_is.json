@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Liðdýrabani",
   "enchantment.minecraft.binding_curse": "Bölvun bindingar",
   "enchantment.minecraft.blast_protection": "Sprengivörn",
+  "enchantment.minecraft.breach": "Skarð",
   "enchantment.minecraft.channeling": "Leiðandi",
   "enchantment.minecraft.cleaving": "Klofningur",
+  "enchantment.minecraft.density": "Eðlisþyngd",
   "enchantment.minecraft.depth_strider": "Vatnsgengill",
   "enchantment.minecraft.efficiency": "Dugnaður",
   "enchantment.minecraft.feather_falling": "Fjöðurfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Þjófnaður",
   "enchantment.minecraft.loyalty": "Tryggð",
   "enchantment.minecraft.luck_of_the_sea": "Heppni Hafsins",
+  "enchantment.minecraft.lunge": "Lag",
   "enchantment.minecraft.lure": "Beita",
   "enchantment.minecraft.mending": "Heilun",
   "enchantment.minecraft.multishot": "Hríðskot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Þyrnar",
   "enchantment.minecraft.unbreaking": "Óbrjótanlegt",
   "enchantment.minecraft.vanishing_curse": "Bölvun hvarfs",
-  "enchantment.minecraft.density": "Eðlisþyngd",
-  "enchantment.minecraft.breach": "Skarð",
-  "enchantment.minecraft.wind_burst": "Vindhríð",
-  "enchantment.minecraft.lunge": "Lag"
+  "enchantment.minecraft.wind_burst": "Vindhríð"
 }

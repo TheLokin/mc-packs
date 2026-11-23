@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "קללת פרוקי-הרגליים",
   "enchantment.minecraft.binding_curse": "קללת כבילה",
   "enchantment.minecraft.blast_protection": "חסינות מפיצוצים",
+  "enchantment.minecraft.breach": "חדירות",
   "enchantment.minecraft.channeling": "הכוונה",
   "enchantment.minecraft.cleaving": "ביקוע",
+  "enchantment.minecraft.density": "צפיפות",
   "enchantment.minecraft.depth_strider": "פסיעת מעמקים",
   "enchantment.minecraft.efficiency": "יעילות",
   "enchantment.minecraft.feather_falling": "נפילת נוצה",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "בזיזה",
   "enchantment.minecraft.loyalty": "נאמנות",
   "enchantment.minecraft.luck_of_the_sea": "מזל הים",
+  "enchantment.minecraft.lunge": "זינוק",
   "enchantment.minecraft.lure": "פיתיון",
   "enchantment.minecraft.mending": "תיקון",
   "enchantment.minecraft.multishot": "ייריה משולשת",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "קוצים",
   "enchantment.minecraft.unbreaking": "בלתי שביר",
   "enchantment.minecraft.vanishing_curse": "קללת היעלמות",
-  "enchantment.minecraft.density": "צפיפות",
-  "enchantment.minecraft.breach": "חדירות",
-  "enchantment.minecraft.wind_burst": "פרץ רוח",
-  "enchantment.minecraft.lunge": "זינוק"
+  "enchantment.minecraft.wind_burst": "פרץ רוח"
 }

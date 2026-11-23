@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Critter cutter",
   "enchantment.minecraft.binding_curse": "Evil witchery of stickiness",
   "enchantment.minecraft.blast_protection": "Cannon-proof",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Charging",
   "enchantment.minecraft.cleaving": "Cleavin'",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Mermaid legs",
   "enchantment.minecraft.efficiency": "Usefulness",
   "enchantment.minecraft.feather_falling": "Wind in yer breeches",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plunderin'",
   "enchantment.minecraft.loyalty": "Me loyal",
   "enchantment.minecraft.luck_of_the_sea": "Luck o' yer sea",
+  "enchantment.minecraft.lunge": "Launch",
   "enchantment.minecraft.lure": "Stronger bait",
   "enchantment.minecraft.mending": "Renovation",
   "enchantment.minecraft.multishot": "Fleet o' bolts",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spikes",
   "enchantment.minecraft.unbreaking": "Tough",
   "enchantment.minecraft.vanishing_curse": "Evil witchery of disappearin'",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Burst o' wind",
-  "enchantment.minecraft.lunge": "Launch"
+  "enchantment.minecraft.wind_burst": "Burst o' wind"
 }

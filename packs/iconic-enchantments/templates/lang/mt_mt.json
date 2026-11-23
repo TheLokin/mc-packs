@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Pjaga tal-Artropodi",
   "enchantment.minecraft.binding_curse": "Saħta tal-Irbit",
   "enchantment.minecraft.blast_protection": "Għotjet il-Fqigħ",
+  "enchantment.minecraft.breach": "Ksur",
   "enchantment.minecraft.channeling": "Kanaliment",
   "enchantment.minecraft.cleaving": "Tkissir",
+  "enchantment.minecraft.density": "Toqol",
   "enchantment.minecraft.depth_strider": "Ħeffa fil-Fond",
   "enchantment.minecraft.efficiency": "Effiċjenza",
   "enchantment.minecraft.feather_falling": "Waqgħet ir-Rix",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ġid",
   "enchantment.minecraft.loyalty": "Rabta",
   "enchantment.minecraft.luck_of_the_sea": "Xorti tal-Baħar",
+  "enchantment.minecraft.lunge": "Salta",
   "enchantment.minecraft.lure": "Sajd",
   "enchantment.minecraft.mending": "Tiswija",
   "enchantment.minecraft.multishot": "Sparar Imkattar",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Xewk",
   "enchantment.minecraft.unbreaking": "Bla Tkissir",
   "enchantment.minecraft.vanishing_curse": "Saħta tal-Għibien",
-  "enchantment.minecraft.density": "Toqol",
-  "enchantment.minecraft.breach": "Ksur",
-  "enchantment.minecraft.wind_burst": "Buffura",
-  "enchantment.minecraft.lunge": "Salta"
+  "enchantment.minecraft.wind_burst": "Buffura"
 }

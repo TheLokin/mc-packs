@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Insektenabwehr",
   "enchantment.minecraft.binding_curse": "Fluch da Bindung",
   "enchantment.minecraft.blast_protection": "Explosionsschutz",
+  "enchantment.minecraft.breach": "Duachbruch",
   "enchantment.minecraft.channeling": "Entladung",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Schwarigkeit",
   "enchantment.minecraft.depth_strider": "Wossaläufer",
   "enchantment.minecraft.efficiency": "Schneller",
   "enchantment.minecraft.feather_falling": "Federfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plünderung",
   "enchantment.minecraft.loyalty": "Treie",
   "enchantment.minecraft.luck_of_the_sea": "Glück des Meea",
+  "enchantment.minecraft.lunge": "Ausfoischritt",
   "enchantment.minecraft.lure": "Köder",
   "enchantment.minecraft.mending": "Reparatur",
   "enchantment.minecraft.multishot": "Multischuss",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dornen",
   "enchantment.minecraft.unbreaking": "Haltbarkeit",
   "enchantment.minecraft.vanishing_curse": "Fluch des Verschwindens",
-  "enchantment.minecraft.density": "Schwarigkeit",
-  "enchantment.minecraft.breach": "Duachbruch",
-  "enchantment.minecraft.wind_burst": "Liftal",
-  "enchantment.minecraft.lunge": "Ausfoischritt"
+  "enchantment.minecraft.wind_burst": "Liftal"
 }

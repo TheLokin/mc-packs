@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Leddyrets skrekk",
   "enchantment.minecraft.binding_curse": "Bindelsesforbannelse",
   "enchantment.minecraft.blast_protection": "Eksplosjonsbeskyttelse",
+  "enchantment.minecraft.breach": "Gjennombrudd",
   "enchantment.minecraft.channeling": "Lynleder",
   "enchantment.minecraft.cleaving": "Klyving",
+  "enchantment.minecraft.density": "Tetthet",
   "enchantment.minecraft.depth_strider": "Vannløper",
   "enchantment.minecraft.efficiency": "Effektivitet",
   "enchantment.minecraft.feather_falling": "Fjærfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plyndring",
   "enchantment.minecraft.loyalty": "Trofast",
   "enchantment.minecraft.luck_of_the_sea": "Havets hell",
+  "enchantment.minecraft.lunge": "Fremrykk",
   "enchantment.minecraft.lure": "Agn",
   "enchantment.minecraft.mending": "Bøting",
   "enchantment.minecraft.multishot": "Flerskudd",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Torner",
   "enchantment.minecraft.unbreaking": "Uknuselig",
   "enchantment.minecraft.vanishing_curse": "Forsvinnelsesforbannelse",
-  "enchantment.minecraft.density": "Tetthet",
-  "enchantment.minecraft.breach": "Gjennombrudd",
-  "enchantment.minecraft.wind_burst": "Vindstøt",
-  "enchantment.minecraft.lunge": "Fremrykk"
+  "enchantment.minecraft.wind_burst": "Vindstøt"
 }

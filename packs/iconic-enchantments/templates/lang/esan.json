@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Perdiçión de lô artrópodô",
   "enchantment.minecraft.binding_curse": "Mardiçión de ligamiento",
   "enchantment.minecraft.blast_protection": "Protêççión contra êpploçionê",
+  "enchantment.minecraft.breach": "Fiçura",
   "enchantment.minecraft.channeling": "Condûttibidá",
   "enchantment.minecraft.cleaving": "Hendimiento",
+  "enchantment.minecraft.density": "Dençidá",
   "enchantment.minecraft.depth_strider": "Ahilidá acuática",
   "enchantment.minecraft.efficiency": "Efiçiençia",
   "enchantment.minecraft.feather_falling": "Caída de pluma",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Botín",
   "enchantment.minecraft.loyalty": "Leartá",
   "enchantment.minecraft.luck_of_the_sea": "Potra marina",
+  "enchantment.minecraft.lunge": "Êttocá",
   "enchantment.minecraft.lure": "Atrâççión",
   "enchantment.minecraft.mending": "Reparaçión",
   "enchantment.minecraft.multishot": "Murtidîpparo",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Êppinâ",
   "enchantment.minecraft.unbreaking": "Irrompibilidá",
   "enchantment.minecraft.vanishing_curse": "Mardiçión de deçapariçión",
-  "enchantment.minecraft.density": "Dençidá",
-  "enchantment.minecraft.breach": "Fiçura",
-  "enchantment.minecraft.wind_burst": "Aeroimpurço",
-  "enchantment.minecraft.lunge": "Êttocá"
+  "enchantment.minecraft.wind_burst": "Aeroimpurço"
 }

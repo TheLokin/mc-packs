@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Diswrians Kevnis",
   "enchantment.minecraft.binding_curse": "Molleth Kelmi",
   "enchantment.minecraft.blast_protection": "Difresyans rag Tardhow",
+  "enchantment.minecraft.breach": "Terri",
   "enchantment.minecraft.channeling": "Dover Lughes",
   "enchantment.minecraft.cleaving": "Fendyans",
+  "enchantment.minecraft.density": "Dosedh",
   "enchantment.minecraft.depth_strider": "Hirgammer Downder",
   "enchantment.minecraft.efficiency": "Effeythadewder",
   "enchantment.minecraft.feather_falling": "Difresyans rag Kodh",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Preydha",
   "enchantment.minecraft.loyalty": "Lelder",
   "enchantment.minecraft.luck_of_the_sea": "Chons an Mor",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Dynya",
   "enchantment.minecraft.mending": "Ewna",
   "enchantment.minecraft.multishot": "Liestenn",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spern",
   "enchantment.minecraft.unbreaking": "Disderri",
   "enchantment.minecraft.vanishing_curse": "Molleth Vansya",
-  "enchantment.minecraft.density": "Dosedh",
-  "enchantment.minecraft.breach": "Terri",
-  "enchantment.minecraft.wind_burst": "Tardh Gwyns",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Tardh Gwyns"
 }

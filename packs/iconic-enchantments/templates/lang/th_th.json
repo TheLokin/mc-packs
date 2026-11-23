@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "สังหารอาร์โทรพอด",
   "enchantment.minecraft.binding_curse": "คำสาปแห่งการยึดติด",
   "enchantment.minecraft.blast_protection": "ทนแรงระเบิด",
+  "enchantment.minecraft.breach": "ฝ่าเกราะ",
   "enchantment.minecraft.channeling": "สายฟ้าพิฆาต",
   "enchantment.minecraft.cleaving": "การผ่า",
+  "enchantment.minecraft.density": "หนาแน่น",
   "enchantment.minecraft.depth_strider": "คล่องแคล่วใต้น้ำ",
   "enchantment.minecraft.efficiency": "ประสิทธิภาพ",
   "enchantment.minecraft.feather_falling": "เบาดุจขนนก",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "ฉกชิง",
   "enchantment.minecraft.loyalty": "ซื่อสัตย์",
   "enchantment.minecraft.luck_of_the_sea": "โชคแห่งท้องทะเล",
+  "enchantment.minecraft.lunge": "พุ่งแทง",
   "enchantment.minecraft.lure": "เหยื่อล่อ",
   "enchantment.minecraft.mending": "ซ่อมแซม",
   "enchantment.minecraft.multishot": "กระสุนกระจาย",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "สะท้อน",
   "enchantment.minecraft.unbreaking": "คงทน",
   "enchantment.minecraft.vanishing_curse": "คำสาปแห่งการสูญหาย",
-  "enchantment.minecraft.density": "หนาแน่น",
-  "enchantment.minecraft.breach": "ฝ่าเกราะ",
-  "enchantment.minecraft.wind_burst": "ลมระเบิด",
-  "enchantment.minecraft.lunge": "พุ่งแทง"
+  "enchantment.minecraft.wind_burst": "ลมระเบิด"
 }

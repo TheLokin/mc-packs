@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Буынаяқты соры",
   "enchantment.minecraft.binding_curse": "Шешілмес қарғыс",
   "enchantment.minecraft.blast_protection": "Жарылмас",
+  "enchantment.minecraft.breach": "Бұзар",
   "enchantment.minecraft.channeling": "Жасын",
   "enchantment.minecraft.cleaving": "Жару",
+  "enchantment.minecraft.density": "Кернеліс",
   "enchantment.minecraft.depth_strider": "Су кезер",
   "enchantment.minecraft.efficiency": "Нәтижелі",
   "enchantment.minecraft.feather_falling": "Құламас",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Олжа",
   "enchantment.minecraft.loyalty": "Бейіл",
   "enchantment.minecraft.luck_of_the_sea": "Сәтті қармақ",
+  "enchantment.minecraft.lunge": "Сермеу",
   "enchantment.minecraft.lure": "Жемтұзақ",
   "enchantment.minecraft.mending": "Күтім",
   "enchantment.minecraft.multishot": "Үш оқ",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Тікен",
   "enchantment.minecraft.unbreaking": "Сынбас",
   "enchantment.minecraft.vanishing_curse": "Жоғалтар қарғыс",
-  "enchantment.minecraft.density": "Кернеліс",
-  "enchantment.minecraft.breach": "Бұзар",
-  "enchantment.minecraft.wind_burst": "Жел қарқыны",
-  "enchantment.minecraft.lunge": "Сермеу"
+  "enchantment.minecraft.wind_burst": "Жел қарқыны"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "spodoɹɥʇɹⱯ ɟo ǝuɐᗺ",
   "enchantment.minecraft.binding_curse": "ᵷuᴉpuᴉᗺ ɟo ǝsɹnƆ",
   "enchantment.minecraft.blast_protection": "uoᴉʇɔǝʇoɹԀ ʇsɐꞁᗺ",
+  "enchantment.minecraft.breach": "ɥɔɐǝɹᗺ",
   "enchantment.minecraft.channeling": "ᵷuᴉꞁꞁǝuuɐɥƆ",
   "enchantment.minecraft.cleaving": "ᵷuᴉʌɐǝlƆ",
+  "enchantment.minecraft.density": "ʎʇᴉsuǝᗡ",
   "enchantment.minecraft.depth_strider": "ɹǝpᴉɹʇS ɥʇdǝᗡ",
   "enchantment.minecraft.efficiency": "ʎɔuǝᴉɔᴉɟɟƎ",
   "enchantment.minecraft.feather_falling": "ᵷuᴉꞁꞁɐℲ ɹǝɥʇɐǝℲ",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "ᵷuᴉʇooꞀ",
   "enchantment.minecraft.loyalty": "ʎʇꞁɐʎoꞀ",
   "enchantment.minecraft.luck_of_the_sea": "ɐǝS ǝɥʇ ɟo ʞɔnꞀ",
+  "enchantment.minecraft.lunge": "ǝᵷunꞀ",
   "enchantment.minecraft.lure": "ǝɹnꞀ",
   "enchantment.minecraft.mending": "ᵷuᴉpuǝW",
   "enchantment.minecraft.multishot": "ʇoɥsᴉʇꞁnW",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "suɹoɥ⟘",
   "enchantment.minecraft.unbreaking": "ᵷuᴉʞɐǝɹqu∩",
   "enchantment.minecraft.vanishing_curse": "ᵷuᴉɥsᴉuɐɅ ɟo ǝsɹnƆ",
-  "enchantment.minecraft.density": "ʎʇᴉsuǝᗡ",
-  "enchantment.minecraft.breach": "ɥɔɐǝɹᗺ",
-  "enchantment.minecraft.wind_burst": "ʇsɹnᗺ puᴉM",
-  "enchantment.minecraft.lunge": "ǝᵷunꞀ"
+  "enchantment.minecraft.wind_burst": "ʇsɹnᗺ puᴉM"
 }

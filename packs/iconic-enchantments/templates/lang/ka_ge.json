@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "ფეხსახსრიანების უბედურება",
   "enchantment.minecraft.binding_curse": "დაბმის წყევლა",
   "enchantment.minecraft.blast_protection": "დაცვა აფეთქებისაგან",
+  "enchantment.minecraft.breach": "გარღვევა",
   "enchantment.minecraft.channeling": "მქუხარე",
   "enchantment.minecraft.cleaving": "გაყოფა",
+  "enchantment.minecraft.density": "სიმკვრივე",
   "enchantment.minecraft.depth_strider": "წყალთამპყრობელი",
   "enchantment.minecraft.efficiency": "ქმედითობა",
   "enchantment.minecraft.feather_falling": "მსუბუქი ვარდნა",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "ნადავლი",
   "enchantment.minecraft.loyalty": "ერთგულება",
   "enchantment.minecraft.luck_of_the_sea": "ზღვის იღბალი",
+  "enchantment.minecraft.lunge": "კვეთება",
   "enchantment.minecraft.lure": "სატყუარა",
   "enchantment.minecraft.mending": "შეკეთება",
   "enchantment.minecraft.multishot": "სამმაგი გასროლა",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "ეკლები",
   "enchantment.minecraft.unbreaking": "გამაგრება",
   "enchantment.minecraft.vanishing_curse": "გაუჩინარების წყევლა",
-  "enchantment.minecraft.density": "სიმკვრივე",
-  "enchantment.minecraft.breach": "გარღვევა",
-  "enchantment.minecraft.wind_burst": "ქარტეხილი",
-  "enchantment.minecraft.lunge": "კვეთება"
+  "enchantment.minecraft.wind_burst": "ქარტეხილი"
 }

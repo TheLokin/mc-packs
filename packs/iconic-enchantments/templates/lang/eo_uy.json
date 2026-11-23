@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Turmento de artropodoj",
   "enchantment.minecraft.binding_curse": "Malbeno de kunligo",
   "enchantment.minecraft.blast_protection": "Eksploda protekto",
+  "enchantment.minecraft.breach": "Frakaso",
   "enchantment.minecraft.channeling": "Kanalado",
   "enchantment.minecraft.cleaving": "Fendado",
+  "enchantment.minecraft.density": "Denseco",
   "enchantment.minecraft.depth_strider": "Funda paŝanto",
   "enchantment.minecraft.efficiency": "Efikeco",
   "enchantment.minecraft.feather_falling": "Plumfalo",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Predado",
   "enchantment.minecraft.loyalty": "Fideleco",
   "enchantment.minecraft.luck_of_the_sea": "Bonŝanco de la maro",
+  "enchantment.minecraft.lunge": "Tiro",
   "enchantment.minecraft.lure": "Logilo",
   "enchantment.minecraft.mending": "Flikado",
   "enchantment.minecraft.multishot": "Multpafo",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dornoj",
   "enchantment.minecraft.unbreaking": "Nerompiĝemo",
   "enchantment.minecraft.vanishing_curse": "Malbeno de malapero",
-  "enchantment.minecraft.density": "Denseco",
-  "enchantment.minecraft.breach": "Frakaso",
-  "enchantment.minecraft.wind_burst": "Ventemo",
-  "enchantment.minecraft.lunge": "Tiro"
+  "enchantment.minecraft.wind_burst": "Ventemo"
 }

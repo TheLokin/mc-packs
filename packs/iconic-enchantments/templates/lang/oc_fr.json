@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Flagèl dels artropòdes",
   "enchantment.minecraft.binding_curse": "Malediccion del ligam eternal",
   "enchantment.minecraft.blast_protection": "Resisténcia a las explosions",
+  "enchantment.minecraft.breach": "Bèrca",
   "enchantment.minecraft.channeling": "Conductivitat",
   "enchantment.minecraft.cleaving": "Fendatge",
+  "enchantment.minecraft.density": "Densitat",
   "enchantment.minecraft.depth_strider": "Agilitat aqüatica",
   "enchantment.minecraft.efficiency": "Eficacitat",
   "enchantment.minecraft.feather_falling": "Pes pluma",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Butin",
   "enchantment.minecraft.loyalty": "Leialtat",
   "enchantment.minecraft.luck_of_the_sea": "Astre de la mar",
+  "enchantment.minecraft.lunge": "Aviada",
   "enchantment.minecraft.lure": "Esca",
   "enchantment.minecraft.mending": "Reparacion",
   "enchantment.minecraft.multishot": "Tir multiple",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espinas",
   "enchantment.minecraft.unbreaking": "Soliditat",
   "enchantment.minecraft.vanishing_curse": "Malediccion de desaparicion",
-  "enchantment.minecraft.density": "Densitat",
-  "enchantment.minecraft.breach": "Bèrca",
-  "enchantment.minecraft.wind_burst": "Ventòria",
-  "enchantment.minecraft.lunge": "Aviada"
+  "enchantment.minecraft.wind_burst": "Ventòria"
 }

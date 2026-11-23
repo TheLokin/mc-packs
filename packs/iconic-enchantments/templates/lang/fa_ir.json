@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "زهر بندپايان",
   "enchantment.minecraft.binding_curse": "نفرين پيوند ابدی",
   "enchantment.minecraft.blast_protection": "محافظت در برابر انفجار",
+  "enchantment.minecraft.breach": "شکافتن",
   "enchantment.minecraft.channeling": "نبش رعد",
   "enchantment.minecraft.cleaving": "شکاف",
+  "enchantment.minecraft.density": "تراکم",
   "enchantment.minecraft.depth_strider": "قدم‌زن اعماق",
   "enchantment.minecraft.efficiency": "بهره‌وری",
   "enchantment.minecraft.feather_falling": "سقوط پَر مانند",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "گردآوری غنيمت",
   "enchantment.minecraft.loyalty": "وفاداری",
   "enchantment.minecraft.luck_of_the_sea": "بخت دريا",
+  "enchantment.minecraft.lunge": "خير",
   "enchantment.minecraft.lure": "طعمه جاذب",
   "enchantment.minecraft.mending": "مرمّت",
   "enchantment.minecraft.multishot": "شليک چندگانه",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "شوک دهنده",
   "enchantment.minecraft.unbreaking": "نشکن",
   "enchantment.minecraft.vanishing_curse": "نفرين ناپديد شدن",
-  "enchantment.minecraft.density": "تراکم",
-  "enchantment.minecraft.breach": "شکافتن",
-  "enchantment.minecraft.wind_burst": "حمله بادی",
-  "enchantment.minecraft.lunge": "خير"
+  "enchantment.minecraft.wind_burst": "حمله بادی"
 }

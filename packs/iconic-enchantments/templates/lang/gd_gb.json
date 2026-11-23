@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Milleadh nan arthropod",
   "enchantment.minecraft.binding_curse": "Mallachd nasgaidh",
   "enchantment.minecraft.blast_protection": "Dìon an aghaidh spreadhaidh",
+  "enchantment.minecraft.breach": "Briseadh",
   "enchantment.minecraft.channeling": "Seanaileadh",
   "enchantment.minecraft.cleaving": "Sgoilteadh",
+  "enchantment.minecraft.density": "Dùmhlachd",
   "enchantment.minecraft.depth_strider": "Coiseachd na doimhne",
   "enchantment.minecraft.efficiency": "Dian-obair",
   "enchantment.minecraft.feather_falling": "Sgiath-thuiteam",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Spùinneadh",
   "enchantment.minecraft.loyalty": "Dìlseachd",
   "enchantment.minecraft.luck_of_the_sea": "Rath na mara",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Tàladh",
   "enchantment.minecraft.mending": "Càradh",
   "enchantment.minecraft.multishot": "Iom-urchair",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Drisean",
   "enchantment.minecraft.unbreaking": "Do-bhriseadh",
   "enchantment.minecraft.vanishing_curse": "Mallachd dol à sealladh",
-  "enchantment.minecraft.density": "Dùmhlachd",
-  "enchantment.minecraft.breach": "Briseadh",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

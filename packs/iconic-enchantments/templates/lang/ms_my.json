@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Alah Serangga",
   "enchantment.minecraft.binding_curse": "Sumpah Pengikat",
   "enchantment.minecraft.blast_protection": "Perlindungan Letupan",
+  "enchantment.minecraft.breach": "Tembusan",
   "enchantment.minecraft.channeling": "Saluran",
   "enchantment.minecraft.cleaving": "Membelah",
+  "enchantment.minecraft.density": "Kemampatan",
   "enchantment.minecraft.depth_strider": "Pejalan Dasar Laut",
   "enchantment.minecraft.efficiency": "Kecekapan",
   "enchantment.minecraft.feather_falling": "Peringan Kejatuhan",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Rampasan",
   "enchantment.minecraft.loyalty": "Kesetiaan",
   "enchantment.minecraft.luck_of_the_sea": "Keuntungan Samudera",
+  "enchantment.minecraft.lunge": "Tujahan",
   "enchantment.minecraft.lure": "Umpan",
   "enchantment.minecraft.mending": "Pulihan",
   "enchantment.minecraft.multishot": "Serangan Berbilang",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Duri",
   "enchantment.minecraft.unbreaking": "Tahan Pecah",
   "enchantment.minecraft.vanishing_curse": "Sumpah Pengghaib",
-  "enchantment.minecraft.density": "Kemampatan",
-  "enchantment.minecraft.breach": "Tembusan",
-  "enchantment.minecraft.wind_burst": "Ledakan Angin",
-  "enchantment.minecraft.lunge": "Tujahan"
+  "enchantment.minecraft.wind_burst": "Ledakan Angin"
 }

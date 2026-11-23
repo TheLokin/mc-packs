@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Verderf der geleedpuutigen",
   "enchantment.minecraft.binding_curse": "Vleuk der binding",
   "enchantment.minecraft.blast_protection": "Explosiebescherming",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Supergeleiding",
   "enchantment.minecraft.cleaving": "Splieting",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Waterlauper",
   "enchantment.minecraft.efficiency": "Efficiëntie",
   "enchantment.minecraft.feather_falling": "Vederzacht valle",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plundering",
   "enchantment.minecraft.loyalty": "Loyaliteit",
   "enchantment.minecraft.luck_of_the_sea": "Gelök der ziëen",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Lokoas",
   "enchantment.minecraft.mending": "Hersjtel",
   "enchantment.minecraft.multishot": "Multischot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Daores",
   "enchantment.minecraft.unbreaking": "Deurzaamheid",
   "enchantment.minecraft.vanishing_curse": "Vleuk der verdwiening",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Divrriid loahppa",
   "enchantment.minecraft.binding_curse": "Čatnašuvvon noaidun",
   "enchantment.minecraft.blast_protection": "Bávkalahttinsuojus",
+  "enchantment.minecraft.breach": "Cuvken",
   "enchantment.minecraft.channeling": "Áltagasti",
   "enchantment.minecraft.cleaving": "Luoddaneapmi",
+  "enchantment.minecraft.density": "Čoahkisvuohta",
   "enchantment.minecraft.depth_strider": "Čáhceleaktu",
   "enchantment.minecraft.efficiency": "Leahttoroggan",
   "enchantment.minecraft.feather_falling": "Dolgeseaivumuš",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Oažžun",
   "enchantment.minecraft.loyalty": "Oskkáldas",
   "enchantment.minecraft.luck_of_the_sea": "Ábilihkku",
+  "enchantment.minecraft.lunge": "Falleheapmi",
   "enchantment.minecraft.lure": "Seakti",
   "enchantment.minecraft.mending": "Divvun",
   "enchantment.minecraft.multishot": "Máŋgabáhčin",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Nálločuoggun",
   "enchantment.minecraft.unbreaking": "Nanusvuohta",
   "enchantment.minecraft.vanishing_curse": "Jávkadan noaidun",
-  "enchantment.minecraft.density": "Čoahkisvuohta",
-  "enchantment.minecraft.breach": "Cuvken",
-  "enchantment.minecraft.wind_burst": "Bieggabosaldat",
-  "enchantment.minecraft.lunge": "Falleheapmi"
+  "enchantment.minecraft.wind_burst": "Bieggabosaldat"
 }

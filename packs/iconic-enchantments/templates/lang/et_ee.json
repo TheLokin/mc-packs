@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Lülijalgsete kirstunael",
   "enchantment.minecraft.binding_curse": "Seotuse needus",
   "enchantment.minecraft.blast_protection": "Plahvatuskaitse",
+  "enchantment.minecraft.breach": "Läbimurdmine",
   "enchantment.minecraft.channeling": "Kanaldamine",
   "enchantment.minecraft.cleaving": "Lõhustamine",
+  "enchantment.minecraft.density": "Tihedus",
   "enchantment.minecraft.depth_strider": "Sügavusliugleja",
   "enchantment.minecraft.efficiency": "Tõhusus",
   "enchantment.minecraft.feather_falling": "Sulgkerge kukkumine",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saagikogumine",
   "enchantment.minecraft.loyalty": "Ustavus",
   "enchantment.minecraft.luck_of_the_sea": "Mereõnn",
+  "enchantment.minecraft.lunge": "Sööst",
   "enchantment.minecraft.lure": "Sööt",
   "enchantment.minecraft.mending": "Paikamine",
   "enchantment.minecraft.multishot": "Mitmiklask",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Okkad",
   "enchantment.minecraft.unbreaking": "Murdmatus",
   "enchantment.minecraft.vanishing_curse": "Hääbumise needus",
-  "enchantment.minecraft.density": "Tihedus",
-  "enchantment.minecraft.breach": "Läbimurdmine",
-  "enchantment.minecraft.wind_burst": "Tuulepuhang",
-  "enchantment.minecraft.lunge": "Sööst"
+  "enchantment.minecraft.wind_burst": "Tuulepuhang"
 }

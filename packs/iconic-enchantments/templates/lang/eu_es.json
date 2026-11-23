@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Artropodoen hondamendia",
   "enchantment.minecraft.binding_curse": "Loturazko madarikazioa",
   "enchantment.minecraft.blast_protection": "Eztanda babesa",
+  "enchantment.minecraft.breach": "Haustura",
   "enchantment.minecraft.channeling": "Eroankortasuna",
   "enchantment.minecraft.cleaving": "Ebakitzea",
+  "enchantment.minecraft.density": "Dentsitatea",
   "enchantment.minecraft.depth_strider": "Sakoneko zangokada",
   "enchantment.minecraft.efficiency": "Eraginkortasuna",
   "enchantment.minecraft.feather_falling": "Luma erorketa",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Harrapaketa",
   "enchantment.minecraft.loyalty": "Leialtasuna",
   "enchantment.minecraft.luck_of_the_sea": "Itsasoaren zortea",
+  "enchantment.minecraft.lunge": "Estokada",
   "enchantment.minecraft.lure": "Amua",
   "enchantment.minecraft.mending": "Konponketa",
   "enchantment.minecraft.multishot": "Jaurtiketa anizkoitza",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Arantzak",
   "enchantment.minecraft.unbreaking": "Apurtezina",
   "enchantment.minecraft.vanishing_curse": "Desagertzeko madarikazioa",
-  "enchantment.minecraft.density": "Dentsitatea",
-  "enchantment.minecraft.breach": "Haustura",
-  "enchantment.minecraft.wind_burst": "Aire-abiada",
-  "enchantment.minecraft.lunge": "Estokada"
+  "enchantment.minecraft.wind_burst": "Aire-abiada"
 }

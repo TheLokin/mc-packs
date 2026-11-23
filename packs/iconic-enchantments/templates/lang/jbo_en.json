@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "jukni daspo",
   "enchantment.minecraft.binding_curse": "nalmu'u dapma",
   "enchantment.minecraft.blast_protection": "spoja bandu",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "lindi klacpe",
   "enchantment.minecraft.cleaving": "katna",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "sutra",
   "enchantment.minecraft.efficiency": "sutygu'a",
   "enchantment.minecraft.feather_falling": "farlu jabre",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "crepu",
   "enchantment.minecraft.loyalty": "nu kraice",
   "enchantment.minecraft.luck_of_the_sea": "xamsi funca",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "trisku",
   "enchantment.minecraft.mending": "lo nu cikre",
   "enchantment.minecraft.multishot": "za'umei cecla",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "kinjipu",
   "enchantment.minecraft.unbreaking": "jdari",
   "enchantment.minecraft.vanishing_curse": "nuncanci dapma",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

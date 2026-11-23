@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Penumpas Artropoda",
   "enchantment.minecraft.binding_curse": "Kutukan Ikat",
   "enchantment.minecraft.blast_protection": "Perlindungan Ledakan",
+  "enchantment.minecraft.breach": "Penerobosan",
   "enchantment.minecraft.channeling": "Pemusatan",
   "enchantment.minecraft.cleaving": "Membelah",
+  "enchantment.minecraft.density": "Kepadatan",
   "enchantment.minecraft.depth_strider": "Pengarung Dasar",
   "enchantment.minecraft.efficiency": "Kedayagunaan",
   "enchantment.minecraft.feather_falling": "Peredaan Jatuh",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Penjarahan",
   "enchantment.minecraft.loyalty": "Kesetiaan",
   "enchantment.minecraft.luck_of_the_sea": "Keberuntungan Laut",
+  "enchantment.minecraft.lunge": "Penyergapan",
   "enchantment.minecraft.lure": "Umpan",
   "enchantment.minecraft.mending": "Pemulihan",
   "enchantment.minecraft.multishot": "Tembakan Berganda",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Duri",
   "enchantment.minecraft.unbreaking": "Tak Hancur",
   "enchantment.minecraft.vanishing_curse": "Kutukan Sirna",
-  "enchantment.minecraft.density": "Kepadatan",
-  "enchantment.minecraft.breach": "Penerobosan",
-  "enchantment.minecraft.wind_burst": "Embusan Angin",
-  "enchantment.minecraft.lunge": "Penyergapan"
+  "enchantment.minecraft.wind_burst": "Embusan Angin"
 }

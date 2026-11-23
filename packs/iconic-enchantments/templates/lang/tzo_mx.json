@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Ch'ayel ta artroporoetik",
   "enchantment.minecraft.binding_curse": "Chopol k'optael ta chukel",
   "enchantment.minecraft.blast_protection": "Som yu'un t'omeletik",
+  "enchantment.minecraft.breach": "K'asemal",
   "enchantment.minecraft.channeling": "Beiltaselal",
   "enchantment.minecraft.cleaving": "Xojobil",
+  "enchantment.minecraft.density": "Pimilal",
   "enchantment.minecraft.depth_strider": "Anil ta vo'",
   "enchantment.minecraft.efficiency": "Tunelal",
   "enchantment.minecraft.feather_falling": "Bulel",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Elek'",
   "enchantment.minecraft.loyalty": "Tuk'ilal",
   "enchantment.minecraft.luck_of_the_sea": "K'inal yu'un muk'ta nab",
+  "enchantment.minecraft.lunge": "Jomel",
   "enchantment.minecraft.lure": "Atraksion",
   "enchantment.minecraft.mending": "Meltsajel",
   "enchantment.minecraft.multishot": "Epal t'omesel",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Ch'ixetik",
   "enchantment.minecraft.unbreaking": "Mu jatelal",
   "enchantment.minecraft.vanishing_curse": "Chopol k'optael ta sakch'ayel",
-  "enchantment.minecraft.density": "Pimilal",
-  "enchantment.minecraft.breach": "K'asemal",
-  "enchantment.minecraft.wind_burst": "T'omel ik'",
-  "enchantment.minecraft.lunge": "Jomel"
+  "enchantment.minecraft.wind_burst": "T'omel ik'"
 }

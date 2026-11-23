@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Hmyzákova záhuba",
   "enchantment.minecraft.binding_curse": "Kletba spoutání",
   "enchantment.minecraft.blast_protection": "Ochrana proti výbuchu",
+  "enchantment.minecraft.breach": "Prolomení",
   "enchantment.minecraft.channeling": "Výboj",
   "enchantment.minecraft.cleaving": "Štípání",
+  "enchantment.minecraft.density": "Hustota",
   "enchantment.minecraft.depth_strider": "Rychloplavec",
   "enchantment.minecraft.efficiency": "Účinnost",
   "enchantment.minecraft.feather_falling": "Lehkost pírka",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Kořist",
   "enchantment.minecraft.loyalty": "Věrnost",
   "enchantment.minecraft.luck_of_the_sea": "Rybářské štěstí",
+  "enchantment.minecraft.lunge": "Výpad",
   "enchantment.minecraft.lure": "Návnada",
   "enchantment.minecraft.mending": "Oprava",
   "enchantment.minecraft.multishot": "Štěpení šípů",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Trny",
   "enchantment.minecraft.unbreaking": "Nerozbitnost",
   "enchantment.minecraft.vanishing_curse": "Kletba zmizení",
-  "enchantment.minecraft.density": "Hustota",
-  "enchantment.minecraft.breach": "Prolomení",
-  "enchantment.minecraft.wind_burst": "Poryv",
-  "enchantment.minecraft.lunge": "Výpad"
+  "enchantment.minecraft.wind_burst": "Poryv"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Xanuunka Arthropods",
   "enchantment.minecraft.binding_curse": "Inkaarta xidhidh",
   "enchantment.minecraft.blast_protection": "Ilaalinta Qaraxa",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Kanaalka",
   "enchantment.minecraft.cleaving": "Jeexitaan",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Qotodheeraha",
   "enchantment.minecraft.efficiency": "Waxtarka",
   "enchantment.minecraft.feather_falling": "Baal Dhaca",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Bililiqo",
   "enchantment.minecraft.loyalty": "Daacadnimo",
   "enchantment.minecraft.luck_of_the_sea": "Nasiibka Badda",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Dabin",
   "enchantment.minecraft.mending": "Hagaajin",
   "enchantment.minecraft.multishot": "Badan",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Qodxan",
   "enchantment.minecraft.unbreaking": "Aan jabin",
   "enchantment.minecraft.vanishing_curse": "Habaarkii Lumay",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Nasnasan de Artroprodo",
   "enchantment.minecraft.binding_curse": "Maldicion de Atadura",
   "enchantment.minecraft.blast_protection": "Proteccion na Explosion",
+  "enchantment.minecraft.breach": "Quebradura",
   "enchantment.minecraft.channeling": "Quirlat",
   "enchantment.minecraft.cleaving": "Hendimiento",
+  "enchantment.minecraft.density": "Densidad",
   "enchantment.minecraft.depth_strider": "Agilidad na Agua",
   "enchantment.minecraft.efficiency": "Eficiencia",
   "enchantment.minecraft.feather_falling": "Caida de Pluma",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saqueada",
   "enchantment.minecraft.loyalty": "Lealtad",
   "enchantment.minecraft.luck_of_the_sea": "Suerte del Mar",
+  "enchantment.minecraft.lunge": "Abalanzamiento",
   "enchantment.minecraft.lure": "Atraccion",
   "enchantment.minecraft.mending": "Componida",
   "enchantment.minecraft.multishot": "Multitirada",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espinas",
   "enchantment.minecraft.unbreaking": "Durabilidad",
   "enchantment.minecraft.vanishing_curse": "Maldicion de Desaparicion",
-  "enchantment.minecraft.density": "Densidad",
-  "enchantment.minecraft.breach": "Quebradura",
-  "enchantment.minecraft.wind_burst": "Impulso del Viento",
-  "enchantment.minecraft.lunge": "Abalanzamiento"
+  "enchantment.minecraft.wind_burst": "Impulso del Viento"
 }

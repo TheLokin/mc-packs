@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Муунак буттуулардын шору",
   "enchantment.minecraft.binding_curse": "Чечпестик каргышы",
   "enchantment.minecraft.blast_protection": "Жарылбастык",
+  "enchantment.minecraft.breach": "Талкалоо",
   "enchantment.minecraft.channeling": "Жайчы",
   "enchantment.minecraft.cleaving": "Жарылуу",
+  "enchantment.minecraft.density": "Тыгыздык",
   "enchantment.minecraft.depth_strider": "Суу астында жүрүү",
   "enchantment.minecraft.efficiency": "Натыйжалуулук",
   "enchantment.minecraft.feather_falling": "Салмаксыздык",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Олжо",
   "enchantment.minecraft.loyalty": "Берилгендик",
   "enchantment.minecraft.luck_of_the_sea": "Деңиздин бергени",
+  "enchantment.minecraft.lunge": "Жулкунуу",
   "enchantment.minecraft.lure": "Татканткыч жем",
   "enchantment.minecraft.mending": "Оңдоо",
   "enchantment.minecraft.multishot": "Үч ок",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Тикен",
   "enchantment.minecraft.unbreaking": "Бышыктык",
   "enchantment.minecraft.vanishing_curse": "Жоголуу каргышы",
-  "enchantment.minecraft.density": "Тыгыздык",
-  "enchantment.minecraft.breach": "Талкалоо",
-  "enchantment.minecraft.wind_burst": "Шамал күчү",
-  "enchantment.minecraft.lunge": "Жулкунуу"
+  "enchantment.minecraft.wind_burst": "Шамал күчү"
 }

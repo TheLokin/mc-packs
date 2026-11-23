@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Malson artròpode",
   "enchantment.minecraft.binding_curse": "Maledicció de vinculació",
   "enchantment.minecraft.blast_protection": "Anti-explosió",
+  "enchantment.minecraft.breach": "Fissura",
   "enchantment.minecraft.channeling": "Conductivitat",
   "enchantment.minecraft.cleaving": "Escissió",
+  "enchantment.minecraft.density": "Densitat",
   "enchantment.minecraft.depth_strider": "Aletes de peix",
   "enchantment.minecraft.efficiency": "Eficiència",
   "enchantment.minecraft.feather_falling": "Pes ploma",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saqueig",
   "enchantment.minecraft.loyalty": "Lleialtat",
   "enchantment.minecraft.luck_of_the_sea": "La sort de la mar",
+  "enchantment.minecraft.lunge": "Estocada",
   "enchantment.minecraft.lure": "Esquer",
   "enchantment.minecraft.mending": "Reparació",
   "enchantment.minecraft.multishot": "Multitret",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espines",
   "enchantment.minecraft.unbreaking": "Durabilitat",
   "enchantment.minecraft.vanishing_curse": "Maledicció de desaparició",
-  "enchantment.minecraft.density": "Densitat",
-  "enchantment.minecraft.breach": "Fissura",
-  "enchantment.minecraft.wind_burst": "Esclata de vent",
-  "enchantment.minecraft.lunge": "Estocada"
+  "enchantment.minecraft.wind_burst": "Esclata de vent"
 }

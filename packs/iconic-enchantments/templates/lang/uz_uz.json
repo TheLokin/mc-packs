@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Böğimoyoqlilar balosi",
   "enchantment.minecraft.binding_curse": "Yeçilmaslik la'nati",
   "enchantment.minecraft.blast_protection": "Portlaşdan himoya",
+  "enchantment.minecraft.breach": "Yorib ötiş",
   "enchantment.minecraft.channeling": "Çaqmoq",
   "enchantment.minecraft.cleaving": "Parchalash",
+  "enchantment.minecraft.density": "Ziçlik",
   "enchantment.minecraft.depth_strider": "Suv ostida yuriş",
   "enchantment.minecraft.efficiency": "Samaradorlik",
   "enchantment.minecraft.feather_falling": "Yengil tuşiş",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ölja",
   "enchantment.minecraft.loyalty": "Sadoqat",
   "enchantment.minecraft.luck_of_the_sea": "Dengiz omadi",
+  "enchantment.minecraft.lunge": "Hamla",
   "enchantment.minecraft.lure": "Xörak",
   "enchantment.minecraft.mending": "Ta'mir",
   "enchantment.minecraft.multishot": "Uç öq",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tikanlar",
   "enchantment.minecraft.unbreaking": "Mustahkamlik",
   "enchantment.minecraft.vanishing_curse": "Yöqoliş la'nati",
-  "enchantment.minecraft.density": "Ziçlik",
-  "enchantment.minecraft.breach": "Yorib ötiş",
-  "enchantment.minecraft.wind_burst": "Şamol şiddati",
-  "enchantment.minecraft.lunge": "Hamla"
+  "enchantment.minecraft.wind_burst": "Şamol şiddati"
 }

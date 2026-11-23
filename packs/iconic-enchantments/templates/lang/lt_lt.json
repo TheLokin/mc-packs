@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Voragyvių skausmas",
   "enchantment.minecraft.binding_curse": "Prisirišimo prakeiksmas",
   "enchantment.minecraft.blast_protection": "Apsauga nuo sprogimų",
+  "enchantment.minecraft.breach": "Sužeidimas",
   "enchantment.minecraft.channeling": "Nukreipimas",
   "enchantment.minecraft.cleaving": "Skilimas",
+  "enchantment.minecraft.density": "Tankumas",
   "enchantment.minecraft.depth_strider": "Gilumų keliautojas",
   "enchantment.minecraft.efficiency": "Efektyvumas",
   "enchantment.minecraft.feather_falling": "Lengvas nusileidimas",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Laimikis",
   "enchantment.minecraft.loyalty": "Lojalumas",
   "enchantment.minecraft.luck_of_the_sea": "Jūros sėkmė",
+  "enchantment.minecraft.lunge": "Veržimasis",
   "enchantment.minecraft.lure": "Masalas",
   "enchantment.minecraft.mending": "Susitaisymas",
   "enchantment.minecraft.multishot": "Daugiašovis",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spygliai",
   "enchantment.minecraft.unbreaking": "Nesulaužomumas",
   "enchantment.minecraft.vanishing_curse": "Pranykimo prakeiksmas",
-  "enchantment.minecraft.density": "Tankumas",
-  "enchantment.minecraft.breach": "Sužeidimas",
-  "enchantment.minecraft.wind_burst": "Vėjuotas sprogimas",
-  "enchantment.minecraft.lunge": "Veržimasis"
+  "enchantment.minecraft.wind_burst": "Vėjuotas sprogimas"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Буынтыгаяклылар каһәре",
   "enchantment.minecraft.binding_curse": "Салынылмау афәте",
   "enchantment.minecraft.blast_protection": "Шартлаудан сак",
+  "enchantment.minecraft.breach": "Тар-мар",
   "enchantment.minecraft.channeling": "Күктән иңдерү",
   "enchantment.minecraft.cleaving": "Яру",
+  "enchantment.minecraft.density": "Тыгызлык",
   "enchantment.minecraft.depth_strider": "Су асты йөреше",
   "enchantment.minecraft.efficiency": "Файдалылык",
   "enchantment.minecraft.feather_falling": "Җиңеллек",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Табыш",
   "enchantment.minecraft.loyalty": "Тугрылык",
   "enchantment.minecraft.luck_of_the_sea": "Диңгез уңышы",
+  "enchantment.minecraft.lunge": "Ыргылыш",
   "enchantment.minecraft.lure": "Алдавыч",
   "enchantment.minecraft.mending": "Төзәлү",
   "enchantment.minecraft.multishot": "Өчләтү",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Энәләр",
   "enchantment.minecraft.unbreaking": "Ныклык",
   "enchantment.minecraft.vanishing_curse": "Югалту афәте",
-  "enchantment.minecraft.density": "Тыгызлык",
-  "enchantment.minecraft.breach": "Тар-мар",
-  "enchantment.minecraft.wind_burst": "Җил капыл исүе",
-  "enchantment.minecraft.lunge": "Ыргылыш"
+  "enchantment.minecraft.wind_burst": "Җил капыл исүе"
 }

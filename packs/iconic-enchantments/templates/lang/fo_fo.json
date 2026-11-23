@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Kyktabani",
   "enchantment.minecraft.binding_curse": "Bindingarillbøn",
   "enchantment.minecraft.blast_protection": "Brestivernd",
+  "enchantment.minecraft.breach": "Skarðan",
   "enchantment.minecraft.channeling": "Foyran",
   "enchantment.minecraft.cleaving": "Kloyving",
+  "enchantment.minecraft.density": "Tættleiki",
   "enchantment.minecraft.depth_strider": "Margleivi",
   "enchantment.minecraft.efficiency": "Virkni",
   "enchantment.minecraft.feather_falling": "Fjaðrafall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Kvettið",
   "enchantment.minecraft.loyalty": "Trúfestni",
   "enchantment.minecraft.luck_of_the_sea": "Gullongul",
+  "enchantment.minecraft.lunge": "Framloyp",
   "enchantment.minecraft.lure": "Agn",
   "enchantment.minecraft.mending": "Endurbót",
   "enchantment.minecraft.multishot": "Margskot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tornar",
   "enchantment.minecraft.unbreaking": "Haldføri",
   "enchantment.minecraft.vanishing_curse": "Hvørvisillbøn",
-  "enchantment.minecraft.density": "Tættleiki",
-  "enchantment.minecraft.breach": "Skarðan",
-  "enchantment.minecraft.wind_burst": "Vindblástur",
-  "enchantment.minecraft.lunge": "Framloyp"
+  "enchantment.minecraft.wind_burst": "Vindblástur"
 }

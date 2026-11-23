@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Juaditjaan íxin artoroopodo",
   "enchantment.minecraft.binding_curse": "Juathenga íxin juathenchrua",
   "enchantment.minecraft.blast_protection": "Juadayakuꞌen ngaìn juatunthuni",
+  "enchantment.minecraft.breach": "Juachjejin",
   "enchantment.minecraft.channeling": "Kanalisasioon xrùꞌì",
   "enchantment.minecraft.cleaving": "Juataade",
+  "enchantment.minecraft.density": "Yexín",
   "enchantment.minecraft.depth_strider": "Ntheduxín ngaìn jinda",
   "enchantment.minecraft.efficiency": "Juadunda",
   "enchantment.minecraft.feather_falling": "Juakjamangi nene",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Juathee",
   "enchantment.minecraft.loyalty": "Nduíxín",
   "enchantment.minecraft.luck_of_the_sea": "Suertéè ndachaun",
+  "enchantment.minecraft.lunge": "Juathinchrja",
   "enchantment.minecraft.lure": "Ataraksioon",
   "enchantment.minecraft.mending": "Juatheyeꞌe",
   "enchantment.minecraft.multishot": "Tsjé juanchetunthuni",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Nchaꞌa",
   "enchantment.minecraft.unbreaking": "Chaxín",
   "enchantment.minecraft.vanishing_curse": "Juathenga íxin juaditjaan",
-  "enchantment.minecraft.density": "Yexín",
-  "enchantment.minecraft.breach": "Juachjejin",
-  "enchantment.minecraft.wind_burst": "Juatunthuni chrinthu",
-  "enchantment.minecraft.lunge": "Juathinchrja"
+  "enchantment.minecraft.wind_burst": "Juatunthuni chrinthu"
 }

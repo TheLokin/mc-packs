@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Skaza hávede",
   "enchantment.minecraft.binding_curse": "Kliatba zovretia",
   "enchantment.minecraft.blast_protection": "Ochrana proti výbuchom",
+  "enchantment.minecraft.breach": "Prerážanie",
   "enchantment.minecraft.channeling": "Vedenie",
   "enchantment.minecraft.cleaving": "Štiepenie",
+  "enchantment.minecraft.density": "Hustota",
   "enchantment.minecraft.depth_strider": "Chôdza po dne",
   "enchantment.minecraft.efficiency": "Efektivita",
   "enchantment.minecraft.feather_falling": "Ľahký ako pierko",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Rabovanie",
   "enchantment.minecraft.loyalty": "Vernosť",
   "enchantment.minecraft.luck_of_the_sea": "Šťastie mora",
+  "enchantment.minecraft.lunge": "Výpad",
   "enchantment.minecraft.lure": "Návnada",
   "enchantment.minecraft.mending": "Opravovanie",
   "enchantment.minecraft.multishot": "Rozštiepenie šípu",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tŕne",
   "enchantment.minecraft.unbreaking": "Nerozbitnosť",
   "enchantment.minecraft.vanishing_curse": "Kliatba zmiznutia",
-  "enchantment.minecraft.density": "Hustota",
-  "enchantment.minecraft.breach": "Prerážanie",
-  "enchantment.minecraft.wind_burst": "Veterná strela",
-  "enchantment.minecraft.lunge": "Výpad"
+  "enchantment.minecraft.wind_burst": "Veterná strela"
 }

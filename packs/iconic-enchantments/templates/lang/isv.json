@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bič členistonogyh",
   "enchantment.minecraft.binding_curse": "Kletva svezanja",
   "enchantment.minecraft.blast_protection": "Ohrana protiv izbuhu",
+  "enchantment.minecraft.breach": "Prodrenje",
   "enchantment.minecraft.channeling": "Nabitje",
   "enchantment.minecraft.cleaving": "Cěpanje",
+  "enchantment.minecraft.density": "Gustota",
   "enchantment.minecraft.depth_strider": "Bystroplavec",
   "enchantment.minecraft.efficiency": "Efektivnost",
   "enchantment.minecraft.feather_falling": "Beztežnost",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Graběž",
   "enchantment.minecraft.loyalty": "Lojalnost",
   "enchantment.minecraft.luck_of_the_sea": "Morsko ščestje",
+  "enchantment.minecraft.lunge": "Vypad",
   "enchantment.minecraft.lure": "Primamka",
   "enchantment.minecraft.mending": "Poprava",
   "enchantment.minecraft.multishot": "Mnogostrěl",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Trny",
   "enchantment.minecraft.unbreaking": "Neniščimost",
   "enchantment.minecraft.vanishing_curse": "Kletva izčezanja",
-  "enchantment.minecraft.density": "Gustota",
-  "enchantment.minecraft.breach": "Prodrenje",
-  "enchantment.minecraft.wind_burst": "Vihor",
-  "enchantment.minecraft.lunge": "Vypad"
+  "enchantment.minecraft.wind_burst": "Vihor"
 }

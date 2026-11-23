@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bane nke ogbu na nkwonkwo",
   "enchantment.minecraft.binding_curse": "Nkọcha nke indke",
   "enchantment.minecraft.blast_protection": "Gbawara Nchedo",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Igha",
   "enchantment.minecraft.cleaving": "Nwepu",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Omimi Strider",
   "enchantment.minecraft.efficiency": "Arụ Ọrụ",
   "enchantment.minecraft.feather_falling": "Nkpu nku ya",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Na-apụnara mmadụ ihe",
   "enchantment.minecraft.loyalty": "Iguzosi ike n'ihe",
   "enchantment.minecraft.luck_of_the_sea": "Oké Osimiri",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Agara",
   "enchantment.minecraft.mending": "Na-agbazinye ihe",
   "enchantment.minecraft.multishot": "Nnukwugbara",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Ogwu",
   "enchantment.minecraft.unbreaking": "Na-agbagha",
   "enchantment.minecraft.vanishing_curse": "Nkọcha nke Mmebi",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

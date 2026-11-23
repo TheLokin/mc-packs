@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "살충",
   "enchantment.minecraft.binding_curse": "귀속 저주",
   "enchantment.minecraft.blast_protection": "폭발로부터 보호",
+  "enchantment.minecraft.breach": "격파",
   "enchantment.minecraft.channeling": "집전",
   "enchantment.minecraft.cleaving": "쪼개짐",
+  "enchantment.minecraft.density": "육중",
   "enchantment.minecraft.depth_strider": "물갈퀴",
   "enchantment.minecraft.efficiency": "효율",
   "enchantment.minecraft.feather_falling": "가벼운 착지",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "약탈",
   "enchantment.minecraft.loyalty": "충성",
   "enchantment.minecraft.luck_of_the_sea": "바다의 행운",
+  "enchantment.minecraft.lunge": "돌진",
   "enchantment.minecraft.lure": "미끼",
   "enchantment.minecraft.mending": "수선",
   "enchantment.minecraft.multishot": "다중 발사",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "가시",
   "enchantment.minecraft.unbreaking": "내구성",
   "enchantment.minecraft.vanishing_curse": "소실 저주",
-  "enchantment.minecraft.density": "육중",
-  "enchantment.minecraft.breach": "격파",
-  "enchantment.minecraft.wind_burst": "돌풍",
-  "enchantment.minecraft.lunge": "돌진"
+  "enchantment.minecraft.wind_burst": "돌풍"
 }

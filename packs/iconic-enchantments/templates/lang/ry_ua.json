@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Батуг на членкарюв",
   "enchantment.minecraft.binding_curse": "Проклятя незнимности",
   "enchantment.minecraft.blast_protection": "Выбухостуйкость",
+  "enchantment.minecraft.breach": "Пробитя",
   "enchantment.minecraft.channeling": "Громовиця",
   "enchantment.minecraft.cleaving": "Розколюваня",
+  "enchantment.minecraft.density": "Густота",
   "enchantment.minecraft.depth_strider": "Пудводноє ходженя",
   "enchantment.minecraft.efficiency": "Ефективность",
   "enchantment.minecraft.feather_falling": "Тихоє паданя",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Добыча",
   "enchantment.minecraft.loyalty": "Вірность",
   "enchantment.minecraft.luck_of_the_sea": "Рыбарська серинча",
+  "enchantment.minecraft.lunge": "Выпад",
   "enchantment.minecraft.lure": "Онада",
   "enchantment.minecraft.mending": "Оправа",
   "enchantment.minecraft.multishot": "Тройна рана",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Тирня",
   "enchantment.minecraft.unbreaking": "Муцность",
   "enchantment.minecraft.vanishing_curse": "Проклятя страты",
-  "enchantment.minecraft.density": "Густота",
-  "enchantment.minecraft.breach": "Пробитя",
-  "enchantment.minecraft.wind_burst": "Вітряный выбух",
-  "enchantment.minecraft.lunge": "Выпад"
+  "enchantment.minecraft.wind_burst": "Вітряный выбух"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Niveljalkaisten kirous",
   "enchantment.minecraft.binding_curse": "Sitoutumisen kirous",
   "enchantment.minecraft.blast_protection": "Räjähdyssuojaus",
+  "enchantment.minecraft.breach": "Murtaja",
   "enchantment.minecraft.channeling": "Kanavointi",
   "enchantment.minecraft.cleaving": "Halkaisu",
+  "enchantment.minecraft.density": "Tiheys",
   "enchantment.minecraft.depth_strider": "Vesivipellys",
   "enchantment.minecraft.efficiency": "Tehokkuus",
   "enchantment.minecraft.feather_falling": "Höyhenkevyt",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ryöstely",
   "enchantment.minecraft.loyalty": "Uskollisuus",
   "enchantment.minecraft.luck_of_the_sea": "Meren onni",
+  "enchantment.minecraft.lunge": "Syöksy",
   "enchantment.minecraft.lure": "Viehe",
   "enchantment.minecraft.mending": "Paikkaus",
   "enchantment.minecraft.multishot": "Moniammunta",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Piikikäs",
   "enchantment.minecraft.unbreaking": "Hajoamaton",
   "enchantment.minecraft.vanishing_curse": "Katoamisen kirous",
-  "enchantment.minecraft.density": "Tiheys",
-  "enchantment.minecraft.breach": "Murtaja",
-  "enchantment.minecraft.wind_burst": "Puuska",
-  "enchantment.minecraft.lunge": "Syöksy"
+  "enchantment.minecraft.wind_burst": "Puuska"
 }

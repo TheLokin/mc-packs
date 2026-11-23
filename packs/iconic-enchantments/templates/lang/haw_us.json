@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Luku Lanalana",
   "enchantment.minecraft.binding_curse": "ʻĀnai ʻAhamaka",
   "enchantment.minecraft.blast_protection": "Palekana Pahū",
+  "enchantment.minecraft.breach": "Hulā",
   "enchantment.minecraft.channeling": "Hōʻuila",
   "enchantment.minecraft.cleaving": "Hoʻokaʻawale",
+  "enchantment.minecraft.density": "Paʻapū",
   "enchantment.minecraft.depth_strider": "Māmā Helekai",
   "enchantment.minecraft.efficiency": "ʻEleu",
   "enchantment.minecraft.feather_falling": "Hina Mālie",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Hao",
   "enchantment.minecraft.loyalty": "Kūpaʻa",
   "enchantment.minecraft.luck_of_the_sea": "Laki o ke Kai",
+  "enchantment.minecraft.lunge": "Leleʻino",
   "enchantment.minecraft.lure": "ʻŌnohilehua",
   "enchantment.minecraft.mending": "Pāhono Iho",
   "enchantment.minecraft.multishot": "Panapua Pākolu",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Kakalaioa",
   "enchantment.minecraft.unbreaking": "Paʻa",
   "enchantment.minecraft.vanishing_curse": "Poino o ka Nalo",
-  "enchantment.minecraft.density": "Paʻapū",
-  "enchantment.minecraft.breach": "Hulā",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Leleʻino"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Spaima artropodelor",
   "enchantment.minecraft.binding_curse": "Blestem al legării",
   "enchantment.minecraft.blast_protection": "Protecție împotriva exploziilor",
+  "enchantment.minecraft.breach": "Ruptură",
   "enchantment.minecraft.channeling": "Dirijare",
   "enchantment.minecraft.cleaving": "Despicare",
+  "enchantment.minecraft.density": "Densitate",
   "enchantment.minecraft.depth_strider": "Agilitate acvatică",
   "enchantment.minecraft.efficiency": "Eficiență",
   "enchantment.minecraft.feather_falling": "Ușor ca o pană",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Jefuire",
   "enchantment.minecraft.loyalty": "Loialitate",
   "enchantment.minecraft.luck_of_the_sea": "Norocul mării",
+  "enchantment.minecraft.lunge": "Fandare",
   "enchantment.minecraft.lure": "Momeală",
   "enchantment.minecraft.mending": "Refacere",
   "enchantment.minecraft.multishot": "Multiproiectil",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spini",
   "enchantment.minecraft.unbreaking": "Trăinicie",
   "enchantment.minecraft.vanishing_curse": "Blestemul dispariției",
-  "enchantment.minecraft.density": "Densitate",
-  "enchantment.minecraft.breach": "Ruptură",
-  "enchantment.minecraft.wind_burst": "Rafală de vânt",
-  "enchantment.minecraft.lunge": "Fandare"
+  "enchantment.minecraft.wind_burst": "Rafală de vânt"
 }

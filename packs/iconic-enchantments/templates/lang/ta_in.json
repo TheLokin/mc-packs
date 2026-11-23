@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "கனுக்காலிகளின் சாபம்",
   "enchantment.minecraft.binding_curse": "பிணைப்பு சாபம்",
   "enchantment.minecraft.blast_protection": "குண்டு வெடிப்பு பாதுகாப்பு",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "கால்வாய் வழி",
   "enchantment.minecraft.cleaving": "பிளவு",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "ஆழம் ஸ்ட்ரைடர்",
   "enchantment.minecraft.efficiency": "செயல்திறன்",
   "enchantment.minecraft.feather_falling": "இறகு விழுதல்",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "கொள்ளை",
   "enchantment.minecraft.loyalty": "லாயல்டி",
   "enchantment.minecraft.luck_of_the_sea": "கடல் அதிர்ஷ்டம்",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "லூர்",
   "enchantment.minecraft.mending": "பொருந்தச்செய்தல்",
   "enchantment.minecraft.multishot": "பலஷாட்",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "முட்கள்",
   "enchantment.minecraft.unbreaking": "உடைக்காத",
   "enchantment.minecraft.vanishing_curse": "மறைந்துபோன சாபம்",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

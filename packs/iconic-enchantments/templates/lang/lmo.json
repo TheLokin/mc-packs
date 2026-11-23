@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Desgrazzia di artropod",
   "enchantment.minecraft.binding_curse": "Maledizzion del ligam",
   "enchantment.minecraft.blast_protection": "Protezzion dei s'ciop",
+  "enchantment.minecraft.breach": "Breccia",
   "enchantment.minecraft.channeling": "Canalizazzion",
   "enchantment.minecraft.cleaving": "Scission",
+  "enchantment.minecraft.density": "Densità",
   "enchantment.minecraft.depth_strider": "Pass sotamarin",
   "enchantment.minecraft.efficiency": "Eficenza",
   "enchantment.minecraft.feather_falling": "Borlada morbida",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Botin",
   "enchantment.minecraft.loyalty": "Fedeltà",
   "enchantment.minecraft.luck_of_the_sea": "Fortuna del mar",
+  "enchantment.minecraft.lunge": "Affondo",
   "enchantment.minecraft.lure": "Lisca",
   "enchantment.minecraft.mending": "Reparazzion",
   "enchantment.minecraft.multishot": "Pussee tir insema",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spongignon",
   "enchantment.minecraft.unbreaking": "Ins'cepabilità",
   "enchantment.minecraft.vanishing_curse": "Maledizzion del spariment",
-  "enchantment.minecraft.density": "Densità",
-  "enchantment.minecraft.breach": "Breccia",
-  "enchantment.minecraft.wind_burst": "Colpo di vento",
-  "enchantment.minecraft.lunge": "Affondo"
+  "enchantment.minecraft.wind_burst": "Colpo di vento"
 }

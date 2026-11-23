@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bane ti Arthropods",
   "enchantment.minecraft.binding_curse": "Egún ti Abuda",
   "enchantment.minecraft.blast_protection": "Aruwo Idaabobo",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Palsy",
   "enchantment.minecraft.cleaving": "Pipa",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Ijinle Strider",
   "enchantment.minecraft.efficiency": "Ṣiṣe",
   "enchantment.minecraft.feather_falling": "Iyẹ Silẹ Iye",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ikogun",
   "enchantment.minecraft.loyalty": "Iṣootọ",
   "enchantment.minecraft.luck_of_the_sea": "Orire ti Okun",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Lure",
   "enchantment.minecraft.mending": "Fifiranṣẹ",
   "enchantment.minecraft.multishot": "Multishot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Ẹgún",
   "enchantment.minecraft.unbreaking": "Kikan",
   "enchantment.minecraft.vanishing_curse": "Egún ti Ṣegbé",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

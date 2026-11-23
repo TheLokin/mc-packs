@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Ruína dos Artrópodes",
   "enchantment.minecraft.binding_curse": "Maldição do Ligamento",
   "enchantment.minecraft.blast_protection": "Proteção contra Explosões",
+  "enchantment.minecraft.breach": "Ruptura",
   "enchantment.minecraft.channeling": "Condutividade",
   "enchantment.minecraft.cleaving": "Clivagem",
+  "enchantment.minecraft.density": "Densidade",
   "enchantment.minecraft.depth_strider": "Passos Profundos",
   "enchantment.minecraft.efficiency": "Eficiência",
   "enchantment.minecraft.feather_falling": "Peso-Pena",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saque",
   "enchantment.minecraft.loyalty": "Lealdade",
   "enchantment.minecraft.luck_of_the_sea": "Sorte do Mar",
+  "enchantment.minecraft.lunge": "Estocada",
   "enchantment.minecraft.lure": "Isca",
   "enchantment.minecraft.mending": "Remendo",
   "enchantment.minecraft.multishot": "Multidisparo",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espinhos",
   "enchantment.minecraft.unbreaking": "Inquebrável",
   "enchantment.minecraft.vanishing_curse": "Maldição do Desaparecimento",
-  "enchantment.minecraft.density": "Densidade",
-  "enchantment.minecraft.breach": "Ruptura",
-  "enchantment.minecraft.wind_burst": "Rajada de Vento",
-  "enchantment.minecraft.lunge": "Estocada"
+  "enchantment.minecraft.wind_burst": "Rajada de Vento"
 }

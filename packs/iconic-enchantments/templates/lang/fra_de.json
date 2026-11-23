@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Veadeabn dea Gliedafüßla",
   "enchantment.minecraft.binding_curse": "Fluch dea Bindung",
   "enchantment.minecraft.blast_protection": "Exblosionsschutz",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Endladung",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Wassaläufa",
   "enchantment.minecraft.efficiency": "Effizienz",
   "enchantment.minecraft.feather_falling": "Fedafall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Blündarung",
   "enchantment.minecraft.loyalty": "Dreue",
   "enchantment.minecraft.luck_of_the_sea": "Glügg des Meeas",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Köda",
   "enchantment.minecraft.mending": "Rebaradua",
   "enchantment.minecraft.multishot": "Meafachschuss",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Doanen",
   "enchantment.minecraft.unbreaking": "Haldbakeid",
   "enchantment.minecraft.vanishing_curse": "Fluch des Veaschwindns",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

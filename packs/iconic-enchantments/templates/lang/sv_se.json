@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Leddjurens skräck",
   "enchantment.minecraft.binding_curse": "Bindningsförbannelse",
   "enchantment.minecraft.blast_protection": "Explosionsskydd",
+  "enchantment.minecraft.breach": "Genombrytning",
   "enchantment.minecraft.channeling": "Kanalisering",
   "enchantment.minecraft.cleaving": "Klyvning",
+  "enchantment.minecraft.density": "Densitet",
   "enchantment.minecraft.depth_strider": "Djupgående",
   "enchantment.minecraft.efficiency": "Effektivitet",
   "enchantment.minecraft.feather_falling": "Fjäderfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plundring",
   "enchantment.minecraft.loyalty": "Lojalitet",
   "enchantment.minecraft.luck_of_the_sea": "Fiskelycka",
+  "enchantment.minecraft.lunge": "Utfall",
   "enchantment.minecraft.lure": "Bete",
   "enchantment.minecraft.mending": "Lagning",
   "enchantment.minecraft.multishot": "Multiskott",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Taggar",
   "enchantment.minecraft.unbreaking": "Oförstörbar",
   "enchantment.minecraft.vanishing_curse": "Försvinnandets förbannelse",
-  "enchantment.minecraft.density": "Densitet",
-  "enchantment.minecraft.breach": "Genombrytning",
-  "enchantment.minecraft.wind_burst": "Vindexplosion",
-  "enchantment.minecraft.lunge": "Utfall"
+  "enchantment.minecraft.wind_burst": "Vindexplosion"
 }

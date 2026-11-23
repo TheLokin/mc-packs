@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "اله سرڠݢ",
   "enchantment.minecraft.binding_curse": "سومڤه ڤڠيکت",
   "enchantment.minecraft.blast_protection": "ڤرليندوڠن لتوڤن",
+  "enchantment.minecraft.breach": "تمبوسن",
   "enchantment.minecraft.channeling": "سالورن",
   "enchantment.minecraft.cleaving": "ممبله",
+  "enchantment.minecraft.density": "کممڤتن",
   "enchantment.minecraft.depth_strider": "ڤجالن داسر لاٴوت",
   "enchantment.minecraft.efficiency": "کچکڤن",
   "enchantment.minecraft.feather_falling": "ڤريڠن کجاتوهن",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "رمڤسن",
   "enchantment.minecraft.loyalty": "کستياٴن",
   "enchantment.minecraft.luck_of_the_sea": "کأونتوڠن سمودرا",
+  "enchantment.minecraft.lunge": "توجهن",
   "enchantment.minecraft.lure": "اومڤن",
   "enchantment.minecraft.mending": "ڤوليهن",
   "enchantment.minecraft.multishot": "سرڠن بربيلڠ",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "دوري",
   "enchantment.minecraft.unbreaking": "تاهن ڤچه",
   "enchantment.minecraft.vanishing_curse": "سومڤه ڤڠغاٴيب",
-  "enchantment.minecraft.density": "کممڤتن",
-  "enchantment.minecraft.breach": "تمبوسن",
-  "enchantment.minecraft.wind_burst": "لدقن اڠين",
-  "enchantment.minecraft.lunge": "توجهن"
+  "enchantment.minecraft.wind_burst": "لدقن اڠين"
 }

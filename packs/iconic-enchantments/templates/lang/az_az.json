@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Buğumayaqlıların Qiyaməti",
   "enchantment.minecraft.binding_curse": "Bağlanma Lənəti",
   "enchantment.minecraft.blast_protection": "Partlayış Qoruması",
+  "enchantment.minecraft.breach": "Pozuntu",
   "enchantment.minecraft.channeling": "İldırım istiqamətləndirməsi",
   "enchantment.minecraft.cleaving": "Parçalanma",
+  "enchantment.minecraft.density": "Sıxlıq",
   "enchantment.minecraft.depth_strider": "Dərin Qaçışçı",
   "enchantment.minecraft.efficiency": "Effektivlik",
   "enchantment.minecraft.feather_falling": "Tük Enişi",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Qənimət",
   "enchantment.minecraft.loyalty": "Sədaqət",
   "enchantment.minecraft.luck_of_the_sea": "Dəniz Şansı",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Aldatma",
   "enchantment.minecraft.mending": "Təmir",
   "enchantment.minecraft.multishot": "Çoxlu atəş",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Tikanlar",
   "enchantment.minecraft.unbreaking": "Qırılmazlıq",
   "enchantment.minecraft.vanishing_curse": "İtmə Lənəti",
-  "enchantment.minecraft.density": "Sıxlıq",
-  "enchantment.minecraft.breach": "Pozuntu",
-  "enchantment.minecraft.wind_burst": "Külək partlaması",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Külək partlaması"
 }

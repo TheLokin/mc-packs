@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Jakkjalgsidõ halu",
   "enchantment.minecraft.binding_curse": "Köüdetüse niidüs",
   "enchantment.minecraft.blast_protection": "Plahvatuskaidsõq",
+  "enchantment.minecraft.breach": "Läbimurdminõ",
   "enchantment.minecraft.channeling": "Juhtminõ",
   "enchantment.minecraft.cleaving": "Lõhustamine",
+  "enchantment.minecraft.density": "Tihehüs",
   "enchantment.minecraft.depth_strider": "Sügävüseh liugõlõja",
   "enchantment.minecraft.efficiency": "Tegüsüs",
   "enchantment.minecraft.feather_falling": "Sulgkerge sadaminõ",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Saagikogominõ",
   "enchantment.minecraft.loyalty": "Truvvus",
   "enchantment.minecraft.luck_of_the_sea": "Mere õnn",
+  "enchantment.minecraft.lunge": "Sööst",
   "enchantment.minecraft.lure": "Süüt",
   "enchantment.minecraft.mending": "Paikaminõ",
   "enchantment.minecraft.multishot": "Mitmiklask",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Nõglaq",
   "enchantment.minecraft.unbreaking": "Lahkmiskimmüs",
   "enchantment.minecraft.vanishing_curse": "Hääbumise needus",
-  "enchantment.minecraft.density": "Tihehüs",
-  "enchantment.minecraft.breach": "Läbimurdminõ",
-  "enchantment.minecraft.wind_burst": "Tuulõpuhahus",
-  "enchantment.minecraft.lunge": "Sööst"
+  "enchantment.minecraft.wind_burst": "Tuulõpuhahus"
 }

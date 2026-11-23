@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Бичъ членистоногихъ",
   "enchantment.minecraft.binding_curse": "Проклятіе несъёмности",
   "enchantment.minecraft.blast_protection": "Взрывоустойчивость",
+  "enchantment.minecraft.breach": "Пробитіе",
   "enchantment.minecraft.channeling": "Громовержецъ",
   "enchantment.minecraft.cleaving": "Разсѣченіе",
+  "enchantment.minecraft.density": "Плотность",
   "enchantment.minecraft.depth_strider": "Подводная ходьба",
   "enchantment.minecraft.efficiency": "Эффективность",
   "enchantment.minecraft.feather_falling": "Невѣсомость",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Добыча",
   "enchantment.minecraft.loyalty": "Вѣрность",
   "enchantment.minecraft.luck_of_the_sea": "Везучій рыбакъ",
+  "enchantment.minecraft.lunge": "Рывокъ",
   "enchantment.minecraft.lure": "Приманка",
   "enchantment.minecraft.mending": "Починка",
   "enchantment.minecraft.multishot": "Тройной выстрѣлъ",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Шипы",
   "enchantment.minecraft.unbreaking": "Прочность",
   "enchantment.minecraft.vanishing_curse": "Проклятіе утраты",
-  "enchantment.minecraft.density": "Плотность",
-  "enchantment.minecraft.breach": "Пробитіе",
-  "enchantment.minecraft.wind_burst": "Порывъ вѣтра",
-  "enchantment.minecraft.lunge": "Рывокъ"
+  "enchantment.minecraft.wind_burst": "Порывъ вѣтра"
 }

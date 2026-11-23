@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Όλεθρος των Αρθρόποδων",
   "enchantment.minecraft.binding_curse": "Κατάρα της Δέσμευσης",
   "enchantment.minecraft.blast_protection": "Προστασία Εκρήξεων",
+  "enchantment.minecraft.breach": "Παραβίαση",
   "enchantment.minecraft.channeling": "Διοχέτευση",
   "enchantment.minecraft.cleaving": "Διάσπαση",
+  "enchantment.minecraft.density": "Πυκνότητα",
   "enchantment.minecraft.depth_strider": "Δρασκελιστής των Βαθών",
   "enchantment.minecraft.efficiency": "Αποδοτικότητα",
   "enchantment.minecraft.feather_falling": "Ελαφριά Πτώση",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Λεηλασία",
   "enchantment.minecraft.loyalty": "Αφοσίωση",
   "enchantment.minecraft.luck_of_the_sea": "Τύχη της Θάλασσας",
+  "enchantment.minecraft.lunge": "Ορμή",
   "enchantment.minecraft.lure": "Δόλωμα",
   "enchantment.minecraft.mending": "Επιδιόρθωση",
   "enchantment.minecraft.multishot": "Πολυβολή",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Αγκάθια",
   "enchantment.minecraft.unbreaking": "Άθραυστο",
   "enchantment.minecraft.vanishing_curse": "Κατάρα της Εξαφάνισης",
-  "enchantment.minecraft.density": "Πυκνότητα",
-  "enchantment.minecraft.breach": "Παραβίαση",
-  "enchantment.minecraft.wind_burst": "Έκρηξη Ανέμου",
-  "enchantment.minecraft.lunge": "Ορμή"
+  "enchantment.minecraft.wind_burst": "Έκρηξη Ανέμου"
 }

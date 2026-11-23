@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Загибель членистоногих",
   "enchantment.minecraft.binding_curse": "Прокляття прив'язування",
   "enchantment.minecraft.blast_protection": "Захист від вибухів",
+  "enchantment.minecraft.breach": "Пробивання",
   "enchantment.minecraft.channeling": "Блискавиця",
   "enchantment.minecraft.cleaving": "Розколювання",
+  "enchantment.minecraft.density": "Щільність",
   "enchantment.minecraft.depth_strider": "Глибинний бігун",
   "enchantment.minecraft.efficiency": "Ефективність",
   "enchantment.minecraft.feather_falling": "Невагомість",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Грабунок",
   "enchantment.minecraft.loyalty": "Вірність",
   "enchantment.minecraft.luck_of_the_sea": "Морське везіння",
+  "enchantment.minecraft.lunge": "Випад",
   "enchantment.minecraft.lure": "Приманка",
   "enchantment.minecraft.mending": "Лагодження",
   "enchantment.minecraft.multishot": "Мультипостріл",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Шипи",
   "enchantment.minecraft.unbreaking": "Незламність",
   "enchantment.minecraft.vanishing_curse": "Прокляття зникнення",
-  "enchantment.minecraft.density": "Щільність",
-  "enchantment.minecraft.breach": "Пробивання",
-  "enchantment.minecraft.wind_burst": "Порив вітру",
-  "enchantment.minecraft.lunge": "Випад"
+  "enchantment.minecraft.wind_burst": "Порив вітру"
 }

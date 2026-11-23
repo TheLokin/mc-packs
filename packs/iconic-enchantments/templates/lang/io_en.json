@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Pesto di artropodi",
   "enchantment.minecraft.binding_curse": "Malediko di bindado",
   "enchantment.minecraft.blast_protection": "Explozoprotekto",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Kanaligado",
   "enchantment.minecraft.cleaving": "Fendado",
+  "enchantment.minecraft.density": "Denseso",
   "enchantment.minecraft.depth_strider": "Marpazar",
   "enchantment.minecraft.efficiency": "Efikiveso",
   "enchantment.minecraft.feather_falling": "Plumfalado",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Spoilado",
   "enchantment.minecraft.loyalty": "Loyaleso",
   "enchantment.minecraft.luck_of_the_sea": "Chanco di la maro",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Lurado",
   "enchantment.minecraft.mending": "Reparado",
   "enchantment.minecraft.multishot": "Poliflecho",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dorni",
   "enchantment.minecraft.unbreaking": "Duriveso",
   "enchantment.minecraft.vanishing_curse": "Malediko di desparado",
-  "enchantment.minecraft.density": "Denseso",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }

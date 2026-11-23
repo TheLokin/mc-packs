@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "wawa tawa pipi",
   "enchantment.minecraft.binding_curse": "ike pi awen sijelo",
   "enchantment.minecraft.blast_protection": "awen pi seli pakala",
+  "enchantment.minecraft.breach": "pakala pi len awen",
   "enchantment.minecraft.channeling": "wawa pi linja suno",
   "enchantment.minecraft.cleaving": "kipisi",
+  "enchantment.minecraft.density": "wawa kiwen",
   "enchantment.minecraft.depth_strider": "noka kala",
   "enchantment.minecraft.efficiency": "wawa pakala",
   "enchantment.minecraft.feather_falling": "noka waso",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "alasa pona",
   "enchantment.minecraft.loyalty": "tawa sike",
   "enchantment.minecraft.luck_of_the_sea": "alasa kala pona",
+  "enchantment.minecraft.lunge": "wawa tawa utala",
   "enchantment.minecraft.lure": "kala mute",
   "enchantment.minecraft.mending": "kama sin",
   "enchantment.minecraft.multishot": "palisa mute",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "selo kipisi",
   "enchantment.minecraft.unbreaking": "pakala ala",
   "enchantment.minecraft.vanishing_curse": "ike pi ijo weka",
-  "enchantment.minecraft.density": "wawa kiwen",
-  "enchantment.minecraft.breach": "pakala pi len awen",
-  "enchantment.minecraft.wind_burst": "wawa kon",
-  "enchantment.minecraft.lunge": "wawa tawa utala"
+  "enchantment.minecraft.wind_burst": "wawa kon"
 }

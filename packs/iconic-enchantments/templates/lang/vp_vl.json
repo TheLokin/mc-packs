@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Utenmik na mangejalaka",
   "enchantment.minecraft.binding_curse": "Erfestanafa",
   "enchantment.minecraft.blast_protection": "Bam eshku",
+  "enchantment.minecraft.breach": "Ucher",
   "enchantment.minecraft.channeling": "Pipo",
   "enchantment.minecraft.cleaving": "Tsamena",
+  "enchantment.minecraft.density": "Vehtdai",
   "enchantment.minecraft.depth_strider": "Erbistra ojogi",
   "enchantment.minecraft.efficiency": "Tesaran",
   "enchantment.minecraft.feather_falling": "Pjera spada",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plussada",
   "enchantment.minecraft.loyalty": "Hinashkoi",
   "enchantment.minecraft.luck_of_the_sea": "Udacji fu hav",
+  "enchantment.minecraft.lunge": "Strelahtella",
   "enchantment.minecraft.lure": "Ertønni",
   "enchantment.minecraft.mending": "Reforma",
   "enchantment.minecraft.multishot": "Razpostrel",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Djidopin",
   "enchantment.minecraft.unbreaking": "Erdjong",
   "enchantment.minecraft.vanishing_curse": "Erbortenafa",
-  "enchantment.minecraft.density": "Vehtdai",
-  "enchantment.minecraft.breach": "Ucher",
-  "enchantment.minecraft.wind_burst": "Luftbam",
-  "enchantment.minecraft.lunge": "Strelahtella"
+  "enchantment.minecraft.wind_burst": "Luftbam"
 }

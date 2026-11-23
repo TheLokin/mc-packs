@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Eklembacaklıların Kıyameti",
   "enchantment.minecraft.binding_curse": "Bağlanma Laneti",
   "enchantment.minecraft.blast_protection": "Patlama Koruması",
+  "enchantment.minecraft.breach": "Aşma",
   "enchantment.minecraft.channeling": "Yıldırım Yönlendirmesi",
   "enchantment.minecraft.cleaving": "Yarma",
+  "enchantment.minecraft.density": "Yoğunluk",
   "enchantment.minecraft.depth_strider": "Derin Koşucu",
   "enchantment.minecraft.efficiency": "Verimlilik",
   "enchantment.minecraft.feather_falling": "Tüy Düşüşü",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Ganimet",
   "enchantment.minecraft.loyalty": "Sadakat",
   "enchantment.minecraft.luck_of_the_sea": "Deniz Şansı",
+  "enchantment.minecraft.lunge": "Atılma",
   "enchantment.minecraft.lure": "Yemleme",
   "enchantment.minecraft.mending": "Onarım",
   "enchantment.minecraft.multishot": "Çoklu Atış",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dikenli",
   "enchantment.minecraft.unbreaking": "Kırılmazlık",
   "enchantment.minecraft.vanishing_curse": "Kaybolma Laneti",
-  "enchantment.minecraft.density": "Yoğunluk",
-  "enchantment.minecraft.breach": "Aşma",
-  "enchantment.minecraft.wind_burst": "Rüzgâr Patlaması",
-  "enchantment.minecraft.lunge": "Atılma"
+  "enchantment.minecraft.wind_burst": "Rüzgâr Patlaması"
 }

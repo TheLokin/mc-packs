@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Spidersbane",
   "enchantment.minecraft.binding_curse": "Curse of Binding",
   "enchantment.minecraft.blast_protection": "Gunpowder Palladium",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Thunder-stone",
   "enchantment.minecraft.cleaving": "Cleaving Stroke",
+  "enchantment.minecraft.density": "Mass",
   "enchantment.minecraft.depth_strider": "Mermaid's Ease",
   "enchantment.minecraft.efficiency": "Efficacy Charm",
   "enchantment.minecraft.feather_falling": "Footfall Cushion",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Herne's Bounty",
   "enchantment.minecraft.loyalty": "Enchanted Bond",
   "enchantment.minecraft.luck_of_the_sea": "Luck of the Sea",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Siren's Lure",
   "enchantment.minecraft.mending": "Merlin's Repair",
   "enchantment.minecraft.multishot": "Thrice-loading",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Metrical Charm",
   "enchantment.minecraft.unbreaking": "Warrant Charm",
   "enchantment.minecraft.vanishing_curse": "Curse of Vanishing",
-  "enchantment.minecraft.density": "Mass",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Tempest's Wrath",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Tempest's Wrath"
 }

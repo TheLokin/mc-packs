@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Bosenn an artropoded",
   "enchantment.minecraft.binding_curse": "Mallozh al liamm",
   "enchantment.minecraft.blast_protection": "Gwarez a-enep an tarzhadennoù",
+  "enchantment.minecraft.breach": "Boulc'hañ",
   "enchantment.minecraft.channeling": "Luc'hediñ",
   "enchantment.minecraft.cleaving": "Faoutadur",
+  "enchantment.minecraft.density": "Fetisted",
   "enchantment.minecraft.depth_strider": "Ouesk en dour",
   "enchantment.minecraft.efficiency": "Efedusted",
   "enchantment.minecraft.feather_falling": "Kouezhadenn dousig",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Preizhañ",
   "enchantment.minecraft.loyalty": "Lealded",
   "enchantment.minecraft.luck_of_the_sea": "Chañs ar mor",
+  "enchantment.minecraft.lunge": "Lañs",
   "enchantment.minecraft.lure": "Bouedenn",
   "enchantment.minecraft.mending": "Dresañ",
   "enchantment.minecraft.multishot": "Tenn lies",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spern",
   "enchantment.minecraft.unbreaking": "Solut",
   "enchantment.minecraft.vanishing_curse": "Mallozh ar steuziadur",
-  "enchantment.minecraft.density": "Fetisted",
-  "enchantment.minecraft.breach": "Boulc'hañ",
-  "enchantment.minecraft.wind_burst": "Barrad avel",
-  "enchantment.minecraft.lunge": "Lañs"
+  "enchantment.minecraft.wind_burst": "Barrad avel"
 }

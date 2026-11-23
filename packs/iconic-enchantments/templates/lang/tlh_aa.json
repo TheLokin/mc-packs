@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "ghew jagh",
   "enchantment.minecraft.binding_curse": "'Ighmo' ngam",
   "enchantment.minecraft.blast_protection": "jorwI' QanwI'",
+  "enchantment.minecraft.breach": "'aw",
   "enchantment.minecraft.channeling": "pe'bIl rIt",
   "enchantment.minecraft.cleaving": "pe'ghach",
+  "enchantment.minecraft.density": "lIjbach",
   "enchantment.minecraft.depth_strider": "bIQ yItwI'",
   "enchantment.minecraft.efficiency": "vaQ",
   "enchantment.minecraft.feather_falling": "pumbogh boHey",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "latlh Huch",
   "enchantment.minecraft.loyalty": "matlh",
   "enchantment.minecraft.luck_of_the_sea": "bIQ'a' Do'",
+  "enchantment.minecraft.lunge": "jop",
   "enchantment.minecraft.lure": "ngel",
   "enchantment.minecraft.mending": "tI'",
   "enchantment.minecraft.multishot": "bach law'",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "cheyItmey",
   "enchantment.minecraft.unbreaking": "ghorHa'ghach",
   "enchantment.minecraft.vanishing_curse": "'Ighmo' ngab",
-  "enchantment.minecraft.density": "lIjbach",
-  "enchantment.minecraft.breach": "'aw",
-  "enchantment.minecraft.wind_burst": "SuS jorwI'",
-  "enchantment.minecraft.lunge": "jop"
+  "enchantment.minecraft.wind_burst": "SuS jorwI'"
 }

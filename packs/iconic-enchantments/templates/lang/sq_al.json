@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Mallkimi i artropodëve",
   "enchantment.minecraft.binding_curse": "Mallkimi i lidhjes",
   "enchantment.minecraft.blast_protection": "Mbrojtja nga shpërthimet",
+  "enchantment.minecraft.breach": "Thyerja",
   "enchantment.minecraft.channeling": "Kanalizimini",
   "enchantment.minecraft.cleaving": "Çarje",
+  "enchantment.minecraft.density": "Dendësia",
   "enchantment.minecraft.depth_strider": "Shkathtësia e ujit",
   "enchantment.minecraft.efficiency": "Efikasiteti",
   "enchantment.minecraft.feather_falling": "Rënia e zbutur",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Grabitja",
   "enchantment.minecraft.loyalty": "Besnikëria",
   "enchantment.minecraft.luck_of_the_sea": "Fati i detit",
+  "enchantment.minecraft.lunge": "Hedhja",
   "enchantment.minecraft.lure": "Karremi",
   "enchantment.minecraft.mending": "Riparimi",
   "enchantment.minecraft.multishot": "Gjuajtje e shumëfishtë",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Gjembat",
   "enchantment.minecraft.unbreaking": "Ngurtësia",
   "enchantment.minecraft.vanishing_curse": "Mallkimi i zhdukjes",
-  "enchantment.minecraft.density": "Dendësia",
-  "enchantment.minecraft.breach": "Thyerja",
-  "enchantment.minecraft.wind_burst": "Shpërthim i erës",
-  "enchantment.minecraft.lunge": "Hedhja"
+  "enchantment.minecraft.wind_burst": "Shpërthim i erës"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Maldición dos artrópodos",
   "enchantment.minecraft.binding_curse": "Maldición de ligazón",
   "enchantment.minecraft.blast_protection": "Protección contra explosións",
+  "enchantment.minecraft.breach": "Fenda",
   "enchantment.minecraft.channeling": "Condutividade",
   "enchantment.minecraft.cleaving": "Fendemento",
+  "enchantment.minecraft.density": "Densidade",
   "enchantment.minecraft.depth_strider": "Axilidade acuática",
   "enchantment.minecraft.efficiency": "Eficiencia",
   "enchantment.minecraft.feather_falling": "Caída feble",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Pillaxe",
   "enchantment.minecraft.loyalty": "Lealdade",
   "enchantment.minecraft.luck_of_the_sea": "Sorte do mar",
+  "enchantment.minecraft.lunge": "Estocada",
   "enchantment.minecraft.lure": "Isco",
   "enchantment.minecraft.mending": "Remendo",
   "enchantment.minecraft.multishot": "Disparo múltiple",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espiñas",
   "enchantment.minecraft.unbreaking": "Irrompibilidade",
   "enchantment.minecraft.vanishing_curse": "Maldición de desaparición",
-  "enchantment.minecraft.density": "Densidade",
-  "enchantment.minecraft.breach": "Fenda",
-  "enchantment.minecraft.wind_burst": "Impulso de vento",
-  "enchantment.minecraft.lunge": "Estocada"
+  "enchantment.minecraft.wind_burst": "Impulso de vento"
 }

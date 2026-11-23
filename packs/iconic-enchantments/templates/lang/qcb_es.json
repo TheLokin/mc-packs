@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Pirdición de los artrópodos",
   "enchantment.minecraft.binding_curse": "Maldición d'amarri",
   "enchantment.minecraft.blast_protection": "Proteción contra españius",
+  "enchantment.minecraft.breach": "Fisura",
   "enchantment.minecraft.channeling": "Conductividá",
   "enchantment.minecraft.cleaving": "Hendimiento",
+  "enchantment.minecraft.density": "Densidá",
   "enchantment.minecraft.depth_strider": "Agilidá acuáticu",
   "enchantment.minecraft.efficiency": "Ificiencia",
   "enchantment.minecraft.feather_falling": "Caía de pluma",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Butín",
   "enchantment.minecraft.loyalty": "Lealtá",
   "enchantment.minecraft.luck_of_the_sea": "Suerti la mar",
+  "enchantment.minecraft.lunge": "Estocáa",
   "enchantment.minecraft.lure": "Atración",
   "enchantment.minecraft.mending": "Arreparación",
   "enchantment.minecraft.multishot": "Multidisparu",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Espuncias",
   "enchantment.minecraft.unbreaking": "Irrompibilidá",
   "enchantment.minecraft.vanishing_curse": "Maldición de desaparición",
-  "enchantment.minecraft.density": "Densidá",
-  "enchantment.minecraft.breach": "Fisura",
-  "enchantment.minecraft.wind_burst": "Aeroimpulsu",
-  "enchantment.minecraft.lunge": "Estocáa"
+  "enchantment.minecraft.wind_burst": "Aeroimpulsu"
 }

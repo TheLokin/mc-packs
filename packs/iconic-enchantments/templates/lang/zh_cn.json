@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "节肢杀手",
   "enchantment.minecraft.binding_curse": "绑定诅咒",
   "enchantment.minecraft.blast_protection": "爆炸保护",
+  "enchantment.minecraft.breach": "破甲",
   "enchantment.minecraft.channeling": "引雷",
   "enchantment.minecraft.cleaving": "劈裂",
+  "enchantment.minecraft.density": "致密",
   "enchantment.minecraft.depth_strider": "深海探索者",
   "enchantment.minecraft.efficiency": "效率",
   "enchantment.minecraft.feather_falling": "摔落缓冲",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "抢夺",
   "enchantment.minecraft.loyalty": "忠诚",
   "enchantment.minecraft.luck_of_the_sea": "海之眷顾",
+  "enchantment.minecraft.lunge": "突进",
   "enchantment.minecraft.lure": "饵钓",
   "enchantment.minecraft.mending": "经验修补",
   "enchantment.minecraft.multishot": "多重射击",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "荆棘",
   "enchantment.minecraft.unbreaking": "耐久",
   "enchantment.minecraft.vanishing_curse": "消失诅咒",
-  "enchantment.minecraft.density": "致密",
-  "enchantment.minecraft.breach": "破甲",
-  "enchantment.minecraft.wind_burst": "风爆",
-  "enchantment.minecraft.lunge": "突进"
+  "enchantment.minecraft.wind_burst": "风爆"
 }

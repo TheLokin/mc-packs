@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Verderwer van Geleedpotiges",
   "enchantment.minecraft.binding_curse": "Vloek van Verbintenis",
   "enchantment.minecraft.blast_protection": "Ontploffings Beskerming",
+  "enchantment.minecraft.breach": "Breek",
   "enchantment.minecraft.channeling": "Kanaliseering",
   "enchantment.minecraft.cleaving": "Splitsing",
+  "enchantment.minecraft.density": "Digtheid",
   "enchantment.minecraft.depth_strider": "Dieploper",
   "enchantment.minecraft.efficiency": "Doeltreffendheid",
   "enchantment.minecraft.feather_falling": "Gekussingde val",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plundering",
   "enchantment.minecraft.loyalty": "Lojaliteit",
   "enchantment.minecraft.luck_of_the_sea": "Geluk van die See",
+  "enchantment.minecraft.lunge": "Uitval",
   "enchantment.minecraft.lure": "Lokaas",
   "enchantment.minecraft.mending": "Herstelling",
   "enchantment.minecraft.multishot": "Multi-skoot",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dorings",
   "enchantment.minecraft.unbreaking": "Onbreekbaarheid",
   "enchantment.minecraft.vanishing_curse": "Las van Verdwyning",
-  "enchantment.minecraft.density": "Digtheid",
-  "enchantment.minecraft.breach": "Breek",
-  "enchantment.minecraft.wind_burst": "Wind het gebars",
-  "enchantment.minecraft.lunge": "Uitval"
+  "enchantment.minecraft.wind_burst": "Wind het gebars"
 }

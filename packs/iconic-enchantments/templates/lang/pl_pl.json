@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Zmora stawonogów",
   "enchantment.minecraft.binding_curse": "Klątwa uwiązania",
   "enchantment.minecraft.blast_protection": "Ochrona przed wybuchem",
+  "enchantment.minecraft.breach": "Przedarcie",
   "enchantment.minecraft.channeling": "Porażenie",
   "enchantment.minecraft.cleaving": "Rozszczepianie",
+  "enchantment.minecraft.density": "Masywność",
   "enchantment.minecraft.depth_strider": "Głębinowy wędrowiec",
   "enchantment.minecraft.efficiency": "Wydajność",
   "enchantment.minecraft.feather_falling": "Łagodny upadek",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Grabież",
   "enchantment.minecraft.loyalty": "Lojalność",
   "enchantment.minecraft.luck_of_the_sea": "Morska fortuna",
+  "enchantment.minecraft.lunge": "Pchnięcie",
   "enchantment.minecraft.lure": "Przynęta",
   "enchantment.minecraft.mending": "Naprawa",
   "enchantment.minecraft.multishot": "Wielostrzał",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Ciernie",
   "enchantment.minecraft.unbreaking": "Niezniszczalność",
   "enchantment.minecraft.vanishing_curse": "Klątwa znikania",
-  "enchantment.minecraft.density": "Masywność",
-  "enchantment.minecraft.breach": "Przedarcie",
-  "enchantment.minecraft.wind_burst": "Wicher",
-  "enchantment.minecraft.lunge": "Pchnięcie"
+  "enchantment.minecraft.wind_burst": "Wicher"
 }

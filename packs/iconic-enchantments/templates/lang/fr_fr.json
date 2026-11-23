@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Fléau des arthropodes",
   "enchantment.minecraft.binding_curse": "Malédiction du lien éternel",
   "enchantment.minecraft.blast_protection": "Protection contre les explosions",
+  "enchantment.minecraft.breach": "Brèche",
   "enchantment.minecraft.channeling": "Canalisation",
   "enchantment.minecraft.cleaving": "Fendage",
+  "enchantment.minecraft.density": "Densité",
   "enchantment.minecraft.depth_strider": "Agilité aquatique",
   "enchantment.minecraft.efficiency": "Efficacité",
   "enchantment.minecraft.feather_falling": "Chute amortie",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Butin",
   "enchantment.minecraft.loyalty": "Loyauté",
   "enchantment.minecraft.luck_of_the_sea": "Chance de la mer",
+  "enchantment.minecraft.lunge": "Élan",
   "enchantment.minecraft.lure": "Appât",
   "enchantment.minecraft.mending": "Raccommodage",
   "enchantment.minecraft.multishot": "Tir multiple",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Épines",
   "enchantment.minecraft.unbreaking": "Solidité",
   "enchantment.minecraft.vanishing_curse": "Malédiction de disparition",
-  "enchantment.minecraft.density": "Densité",
-  "enchantment.minecraft.breach": "Brèche",
-  "enchantment.minecraft.wind_burst": "Rafale de vent",
-  "enchantment.minecraft.lunge": "Élan"
+  "enchantment.minecraft.wind_burst": "Rafale de vent"
 }

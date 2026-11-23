@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Үөн кыһалҕата",
   "enchantment.minecraft.binding_curse": "Устуллубат кырыыта",
   "enchantment.minecraft.blast_protection": "Эстииттэн тулуйумтуо",
+  "enchantment.minecraft.breach": "Үлтүрүтүү",
   "enchantment.minecraft.channeling": "Чаҕылҕаннааччы",
   "enchantment.minecraft.cleaving": "Кырбаа",
+  "enchantment.minecraft.density": "Түмүү",
   "enchantment.minecraft.depth_strider": "Ууннан хардыы",
   "enchantment.minecraft.efficiency": "Туһалаах",
   "enchantment.minecraft.feather_falling": "Куорсун охтуу",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Булумньу",
   "enchantment.minecraft.loyalty": "Бэриниилээх",
   "enchantment.minecraft.luck_of_the_sea": "Табыллыбыт балыксыт",
+  "enchantment.minecraft.lunge": "Эмискэ ыстаныы",
   "enchantment.minecraft.lure": "Мэҥиэ",
   "enchantment.minecraft.mending": "Абырахтааһын",
   "enchantment.minecraft.multishot": "Үс төгүл элбэх ытыы",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Хатыы",
   "enchantment.minecraft.unbreaking": "Кытаатыннарыы",
   "enchantment.minecraft.vanishing_curse": "Сүтэрии кырыыта",
-  "enchantment.minecraft.density": "Түмүү",
-  "enchantment.minecraft.breach": "Үлтүрүтүү",
-  "enchantment.minecraft.wind_burst": "Тыал сүрдүүтэ",
-  "enchantment.minecraft.lunge": "Эмискэ ыстаныы"
+  "enchantment.minecraft.wind_burst": "Тыал сүрдүүтэ"
 }

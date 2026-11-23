@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Nemesis dorr Gliedorfüßor",
   "enchantment.minecraft.binding_curse": "Fluch dorr Bindung",
   "enchantment.minecraft.blast_protection": "Eggsblosionsschudds",
+  "enchantment.minecraft.breach": "Durchbruch",
   "enchantment.minecraft.channeling": "Blidzschlach",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Dichte",
   "enchantment.minecraft.depth_strider": "Wassorrläuforr",
   "enchantment.minecraft.efficiency": "Effizienz",
   "enchantment.minecraft.feather_falling": "Fädorrfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Blündorung",
   "enchantment.minecraft.loyalty": "Dreue",
   "enchantment.minecraft.luck_of_the_sea": "Glügg des Meeres",
+  "enchantment.minecraft.lunge": "Ausfallschritt",
   "enchantment.minecraft.lure": "Ködor",
   "enchantment.minecraft.mending": "Reboradur",
   "enchantment.minecraft.multishot": "Mährfachschuss",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dornen",
   "enchantment.minecraft.unbreaking": "Haldbarkeed",
   "enchantment.minecraft.vanishing_curse": "Fluch des Vorschwindns",
-  "enchantment.minecraft.density": "Dichte",
-  "enchantment.minecraft.breach": "Durchbruch",
-  "enchantment.minecraft.wind_burst": "Windstoß",
-  "enchantment.minecraft.lunge": "Ausfallschritt"
+  "enchantment.minecraft.wind_burst": "Windstoß"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Nepolistli tlen artroporohmeh",
   "enchantment.minecraft.binding_curse": "Ilpikāyōtlapaktekalistli",
   "enchantment.minecraft.blast_protection": "Tlikwepōnilistlamokwitlawilistli",
+  "enchantment.minecraft.breach": "Tlapānkāyōtl",
   "enchantment.minecraft.channeling": "Tlakanalisarolissōtl",
   "enchantment.minecraft.cleaving": "Tlapanaliztli",
+  "enchantment.minecraft.density": "Tekaktikāyōtl",
   "enchantment.minecraft.depth_strider": "Āisiwkakāyōtl",
   "enchantment.minecraft.efficiency": "Tlatekiwilissōtl",
   "enchantment.minecraft.feather_falling": "Ākasotik wetsilistli",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Tlamātlasiwilistli",
   "enchantment.minecraft.loyalty": "Yōlkwallōtl",
   "enchantment.minecraft.luck_of_the_sea": "Wēyātl ītōnal",
+  "enchantment.minecraft.lunge": "Tēixilistli",
   "enchantment.minecraft.lure": "Atraksion",
   "enchantment.minecraft.mending": "Kwalchīwalistli",
   "enchantment.minecraft.multishot": "Miak tlamōtlalistli",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Witstli",
   "enchantment.minecraft.unbreaking": "Axtlatlatlapatsalissōtl",
   "enchantment.minecraft.vanishing_curse": "Poliwilistlapaktekalistli",
-  "enchantment.minecraft.density": "Tekaktikāyōtl",
-  "enchantment.minecraft.breach": "Tlapānkāyōtl",
-  "enchantment.minecraft.wind_burst": "Ehēkakwepōnilistli",
-  "enchantment.minecraft.lunge": "Tēixilistli"
+  "enchantment.minecraft.wind_burst": "Ehēkakwepōnilistli"
 }

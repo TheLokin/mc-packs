@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Nemesis der Gliederfüßer",
   "enchantment.minecraft.binding_curse": "Fluach der Bindung",
   "enchantment.minecraft.blast_protection": "Explosionsschutz",
+  "enchantment.minecraft.breach": "Duachbruch",
   "enchantment.minecraft.channeling": "Entlodung",
   "enchantment.minecraft.cleaving": "Spaltung",
+  "enchantment.minecraft.density": "Dichte",
   "enchantment.minecraft.depth_strider": "Wossaläufer",
   "enchantment.minecraft.efficiency": "Effizienz",
   "enchantment.minecraft.feather_falling": "Fedafoi",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plündarung",
   "enchantment.minecraft.loyalty": "Treue",
   "enchantment.minecraft.luck_of_the_sea": "Glück des Meeres",
+  "enchantment.minecraft.lunge": "Ausfoiischritt",
   "enchantment.minecraft.lure": "Köda",
   "enchantment.minecraft.mending": "Reparatur",
   "enchantment.minecraft.multishot": "Mehrfochschuss",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Dornen",
   "enchantment.minecraft.unbreaking": "Hoitborkeit",
   "enchantment.minecraft.vanishing_curse": "Fluach des Vaschwindns",
-  "enchantment.minecraft.density": "Dichte",
-  "enchantment.minecraft.breach": "Duachbruch",
-  "enchantment.minecraft.wind_burst": "Windböe",
-  "enchantment.minecraft.lunge": "Ausfoiischritt"
+  "enchantment.minecraft.wind_burst": "Windböe"
 }

@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Inimicus aranearum",
   "enchantment.minecraft.binding_curse": "Exsecratio ligandi",
   "enchantment.minecraft.blast_protection": "Depulsio fragorum",
+  "enchantment.minecraft.breach": "Perfringens",
   "enchantment.minecraft.channeling": "Ictus fulmineus",
   "enchantment.minecraft.cleaving": "Scissio",
+  "enchantment.minecraft.density": "Densitas",
   "enchantment.minecraft.depth_strider": "Cursor aquae",
   "enchantment.minecraft.efficiency": "Efficacia",
   "enchantment.minecraft.feather_falling": "Casus pinnatus",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Praedatio",
   "enchantment.minecraft.loyalty": "Fides",
   "enchantment.minecraft.luck_of_the_sea": "Fortuna maris",
+  "enchantment.minecraft.lunge": "Lanceatio",
   "enchantment.minecraft.lure": "Esca",
   "enchantment.minecraft.mending": "Refectio",
   "enchantment.minecraft.multishot": "Iactus multiplex",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Spinae",
   "enchantment.minecraft.unbreaking": "Infragilitas",
   "enchantment.minecraft.vanishing_curse": "Exsecratio evanescendi",
-  "enchantment.minecraft.density": "Densitas",
-  "enchantment.minecraft.breach": "Perfringens",
-  "enchantment.minecraft.wind_burst": "Displosio ventosa",
-  "enchantment.minecraft.lunge": "Lanceatio"
+  "enchantment.minecraft.wind_burst": "Displosio ventosa"
 }

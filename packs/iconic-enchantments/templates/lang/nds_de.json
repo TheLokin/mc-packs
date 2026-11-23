@@ -3,8 +3,10 @@
   "enchantment.minecraft.bane_of_arthropods": "Vödiäw van de Lidpoten",
   "enchantment.minecraft.binding_curse": "Flöök de Binning",
   "enchantment.minecraft.blast_protection": "Eksplosionsschuts",
+  "enchantment.minecraft.breach": "Breach",
   "enchantment.minecraft.channeling": "Entlading",
   "enchantment.minecraft.cleaving": "Splitting",
+  "enchantment.minecraft.density": "Density",
   "enchantment.minecraft.depth_strider": "Waterloper",
   "enchantment.minecraft.efficiency": "Düftigkait",
   "enchantment.minecraft.feather_falling": "Fiäderfall",
@@ -19,6 +21,7 @@
   "enchantment.minecraft.looting": "Plünnern",
   "enchantment.minecraft.loyalty": "Troo",
   "enchantment.minecraft.luck_of_the_sea": "Glük van de Se",
+  "enchantment.minecraft.lunge": "Lunge",
   "enchantment.minecraft.lure": "Lokspise",
   "enchantment.minecraft.mending": "Repareren",
   "enchantment.minecraft.multishot": "Mennigmaalschuuv",
@@ -39,8 +42,5 @@
   "enchantment.minecraft.thorns": "Däöns",
   "enchantment.minecraft.unbreaking": "Haltbaorkait",
   "enchantment.minecraft.vanishing_curse": "Flöök de Verswinnig",
-  "enchantment.minecraft.density": "Density",
-  "enchantment.minecraft.breach": "Breach",
-  "enchantment.minecraft.wind_burst": "Wind Burst",
-  "enchantment.minecraft.lunge": "Lunge"
+  "enchantment.minecraft.wind_burst": "Wind Burst"
 }
