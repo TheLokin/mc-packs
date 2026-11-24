@@ -1,3 +1,3 @@
 **🗒️ Changelog**
 
-- Updated to Minecraft ${game_version}.
+- Fixed missing `glass_pane` entry in the `mineable/pickaxe` tag.

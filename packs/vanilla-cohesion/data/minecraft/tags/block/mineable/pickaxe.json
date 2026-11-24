@@ -2,11 +2,12 @@
   "values": [
     "minecraft:beacon",
     "minecraft:frosted_ice",
-    "minecraft:glass",
     "minecraft:glowstone",
     "minecraft:redstone_lamp",
     "minecraft:sea_lantern",
     "minecraft:tinted_glass",
+    "minecraft:glass",
+    "minecraft:glass_pane",
     "minecraft:white_stained_glass",
     "minecraft:white_stained_glass_pane",
     "minecraft:orange_stained_glass",
