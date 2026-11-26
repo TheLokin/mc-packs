@@ -5,7 +5,7 @@ A bundle of vanilla-friendly tweaks that combines the features of several indivi
 ## What does it change?
 
 - **Stone variants:** Adds recipes for Calcite (Diorite + Dripstone Block), Tuff (Andesite + Diorite) and Cinnabar (Sulfur + Netherrack). Granite is now made from Cinnabar + Diorite and Diorite from Cobblestone + Quartz.
-- **Stairs and slabs:** Quartz, Sandstone and Red Sandstone Stairs and Slabs are now crafted from their base blocks. This replaces the Chiseled variant recipes for these blocks, since those inputs did not match the resulting blocks.
+- **Stairs and slabs:** Quartz, Sandstone, Red Sandstone and Purpur Stairs and Slabs are now crafted exclusively from their base blocks. This replaces the Chiseled and Pillar variant recipes for these blocks, since those inputs did not match the resulting blocks.
 - **Redstone recipes:** Dispensers, Droppers, Levers, Observers and Pistons can be crafted with Blackstone or Cobbled Deepslate in place of Cobblestone.
 - **Snow:** Two Snow Blocks in a row craft 3 Snow, following the same pattern as Carpet.
 - **Coral blocks:** Four matching Coral or Coral Fan craft one Coral Block and the same recipes are available for all Dead Coral variants.
